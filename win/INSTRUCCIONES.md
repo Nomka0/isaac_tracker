@@ -37,10 +37,11 @@ Los scripts `auto.bat` y `auto.ps1` detectan automáticamente ambas rutas y copi
 ## 3. Ejecución
 
 ### Opción A: Doble clic (Recomendado)
-Haz doble clic sobre:
+Haz doble clic sobre el archivo en la raíz:
 ```
-win\auto.bat
+ejecutar_windows.bat
 ```
+(O directamente sobre `win\auto.bat`).
 Se abrirá una ventana de comandos que copiará los respaldos, procesará el binario y actualizará `GUIA_PROXIMOS_DESBLOQUEOS.md`.
 
 ### Opción B: PowerShell

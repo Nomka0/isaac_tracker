@@ -16,16 +16,19 @@ echo ====================================================
 echo     Iniciando sincronizacion de partida Isaac (Win)
 echo ====================================================
 
-:: 1. Detectar comando de Python
+:: 1. Detectar comando de Python funcional
 set "PY_CMD="
-where py >nul 2>&1 && set "PY_CMD=py -3"
+py -3 -c "import sys" >nul 2>&1 && set "PY_CMD=py -3"
 if not defined PY_CMD (
-    where python >nul 2>&1 && set "PY_CMD=python"
+    python -c "import sys" >nul 2>&1 && set "PY_CMD=python"
 )
 
 if not defined PY_CMD (
-    echo [ERROR] Python no esta instalado o no se encuentra en el PATH.
-    echo Instala Python 3.10+ desde python.org o Microsoft Store.
+    echo [ERROR] Python no esta instalado, no funciona o no se encuentra en el PATH.
+    echo.
+    echo 1. Descarga Python 3.10+ desde https://www.python.org/downloads/
+    echo 2. IMPORTANTE: En el instalador marca la casilla "Add python.exe to PATH".
+    echo.
     pause
     exit /b 1
 )
@@ -41,31 +44,40 @@ if %ERRORLEVEL% neq 0 (
 echo.
 echo [1/4] Buscando carpeta de guardados de Isaac en Windows...
 
-set "STEAM_SAVE_DIR=%USERPROFILE%\Documents\My Games\Binding of Isaac Repentance+\save_backups"
-if not exist "!STEAM_SAVE_DIR!" (
-    set "STEAM_SAVE_DIR=%USERPROFILE%\OneDrive\Documents\My Games\Binding of Isaac Repentance+\save_backups"
-)
-
 if not exist "%BACKUP_DIR%" mkdir "%BACKUP_DIR%"
 
-if exist "!STEAM_SAVE_DIR!" (
+set "STEAM_SAVE_DIR="
+set "CANDIDATES="%USERPROFILE%\Documents\My Games\Binding of Isaac Repentance+\save_backups" "%USERPROFILE%\OneDrive\Documents\My Games\Binding of Isaac Repentance+\save_backups" "%USERPROFILE%\Documents\My Games\Binding of Isaac Repentance\save_backups" "%USERPROFILE%\OneDrive\Documents\My Games\Binding of Isaac Repentance\save_backups" "%USERPROFILE%\Documents\My Games\Binding of Isaac Afterbirth+\save_backups" "%USERPROFILE%\OneDrive\Documents\My Games\Binding of Isaac Afterbirth+\save_backups" "%USERPROFILE%\Documents\My Games\Binding of Isaac Repentance+" "%USERPROFILE%\Documents\My Games\Binding of Isaac Repentance""
+
+for %%D in (%CANDIDATES%) do (
+    if not defined STEAM_SAVE_DIR (
+        if exist %%D (
+            set "STEAM_SAVE_DIR=%%~fD"
+        )
+    )
+)
+
+if defined STEAM_SAVE_DIR (
     echo       [OK] Origen detectado: "!STEAM_SAVE_DIR!"
-    copy /y "!STEAM_SAVE_DIR!\*.rep+persistentgamedata1.dat" "%BACKUP_DIR%\" >nul 2>&1
+    copy /y "!STEAM_SAVE_DIR!\*persistentgamedata*.dat" "%BACKUP_DIR%\" >nul 2>&1
     echo       [OK] Archivos de guardado copiados a save_backups\
 ) else (
-    echo       [INFO] No se encontro la ruta estandar de Steam Documents. Usando respaldos existentes en save_backups\.
+    echo       [INFO] No se encontro ruta estandar de guardados. Usando existentes en save_backups\.
 )
 
 :: 3. Determinar el guardado mas reciente
 echo.
 echo [2/4] Identificando guardados mas recientes...
-set "TEMP_VARS=%TEMP%\isaac_saves_%RANDOM%.bat"
-%PY_CMD% "%ENRICHER%" --find-saves "%BACKUP_DIR%" > "%TEMP_VARS%"
-call "%TEMP_VARS%"
-del "%TEMP_VARS%" >nul 2>&1
+set "LATEST="
+set "PREVIOUS="
+for /f "tokens=1* delims==" %%A in ('%PY_CMD% "%ENRICHER%" --find-saves "%BACKUP_DIR%" 2^>nul') do (
+    set "%%A=%%B"
+)
 
 if not defined LATEST (
     echo [ERROR] No se encontraron archivos de guardado validos en: %BACKUP_DIR%
+    echo Asegurate de haber jugado al menos una partida en Isaac o copia tu archivo persistentgamedata1.dat a save_backups\
+    echo.
     pause
     exit /b 1
 )
@@ -75,7 +87,7 @@ if defined PREVIOUS echo       [INFO] Guardado previo: %PREVIOUS%
 
 :: 4. Generar guia con analisis IA
 echo.
-echo [3/4] Generando guia estrategica con Python y IA...
+echo [3/4] Generando guia estrategica con Python...
 if defined PREVIOUS (
     %PY_CMD% "%ENRICHER%" "%LATEST%" "%PREVIOUS%" | %PY_CMD% "%GENERATOR%" -o "%GUIDE_MD%"
 ) else (
@@ -99,5 +111,10 @@ if exist "%GUIDE_MD%" (
 )
 
 echo.
-echo Sincronizacion completada con exito.
-timeout /t 5 >nul
+echo ====================================================
+echo   ¡Sincronizacion completada con exito!
+echo   Abre GUIA_PROXIMOS_DESBLOQUEOS.md en Obsidian
+echo   para ver tus progresos e iconos interactivos.
+echo ====================================================
+echo.
+pause

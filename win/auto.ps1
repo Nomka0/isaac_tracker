@@ -37,7 +37,13 @@ if (-not $PyCmd) {
 Write-Host "`n[1/4] Buscando carpeta de guardados de Isaac..." -ForegroundColor Yellow
 $CandidateDirs = @(
     "$env:USERPROFILE\Documents\My Games\Binding of Isaac Repentance+\save_backups",
-    "$env:USERPROFILE\OneDrive\Documents\My Games\Binding of Isaac Repentance+\save_backups"
+    "$env:USERPROFILE\OneDrive\Documents\My Games\Binding of Isaac Repentance+\save_backups",
+    "$env:USERPROFILE\Documents\My Games\Binding of Isaac Repentance\save_backups",
+    "$env:USERPROFILE\OneDrive\Documents\My Games\Binding of Isaac Repentance\save_backups",
+    "$env:USERPROFILE\Documents\My Games\Binding of Isaac Afterbirth+\save_backups",
+    "$env:USERPROFILE\OneDrive\Documents\My Games\Binding of Isaac Afterbirth+\save_backups",
+    "$env:USERPROFILE\Documents\My Games\Binding of Isaac Repentance+",
+    "$env:USERPROFILE\Documents\My Games\Binding of Isaac Repentance"
 )
 
 if (-not (Test-Path $BackupDir)) {
@@ -48,7 +54,7 @@ $FoundSource = $false
 foreach ($dir in $CandidateDirs) {
     if (Test-Path $dir) {
         Write-Host "      ✔ Origen detectado: $dir" -ForegroundColor Green
-        Copy-Item -Path "$dir\*.rep+persistentgamedata1.dat" -Destination $BackupDir -Force -ErrorAction SilentlyContinue
+        Copy-Item -Path "$dir\*persistentgamedata*.dat" -Destination $BackupDir -Force -ErrorAction SilentlyContinue
         Write-Host "      ✔ Archivos de guardado copiados a save_backups\" -ForegroundColor Green
         $FoundSource = $true
         break

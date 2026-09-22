@@ -1,0 +1,24 @@
+# Respaldos y salida de la guía
+save_backups/
+GUIA_PROXIMOS_DESBLOQUEOS.md
+
+# Bytecode y cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Estado de sesión de Obsidian (mantiene snippets y configuración base)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Archivos del sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tmp

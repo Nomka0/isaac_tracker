@@ -6,6 +6,14 @@ import re
 import datetime
 from pathlib import Path
 
+# Asegurar codificación UTF-8 en Windows
+for _stream in (sys.stdin, sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 BASE_DIR = Path(__file__).resolve().parent
 MAP_FILE = BASE_DIR / "achievements.json"
 DEFAULT_BACKUP_DIR = BASE_DIR / "save_backups"

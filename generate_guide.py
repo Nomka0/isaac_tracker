@@ -18,6 +18,14 @@ import subprocess
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
+# Asegurar codificación UTF-8 en terminales de Windows
+for _stream in (sys.stdin, sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 BASE_DIR = Path(__file__).resolve().parent
 TEMPLATE_PATH = BASE_DIR / "guide_template.j2"
 EFFECTS_PATH = BASE_DIR / "achievement_effects.json"
@@ -429,7 +437,7 @@ def evaluar_utilidad_logro(item, custom_tier=None):
 
     return score
 
-def consultar_ia_bitacora_y_curacion(data, limit=25, timeout=60):
+def consultar_ia_bitacora_y_curacion(data, limit=25, timeout=120):
     """
     Pasa todos los logros bloqueados a la IA para que:
     1. Determine qué N objetos son genuinamente buenos y valiosos (independientemente del tier) para este punto de la partida.
@@ -528,8 +536,11 @@ REGLAS DE FORMATO (ESTRICTO):
             ["agy", "--dangerously-skip-permissions", "-p", prompt],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             timeout=timeout,
-            env=env
+            env=env,
+            stdin=subprocess.DEVNULL
         )
         if res.returncode == 0 and res.stdout.strip():
             raw = res.stdout.strip()
@@ -835,16 +846,16 @@ def main():
     tips_ia = None
     orden_secciones_ia = None
     if not args.no_ai and shutil.which("agy"):
-        print(f"      ✦ Curando los {args.limit} mejores objetivos, bitácora y consejos tácticos con IA (agy)...")
+        print(f"      ✦ Curando los {args.limit} mejores objetivos, bitácora y consejos tácticos con IA (agy)...", flush=True)
         analisis_ia, items_guia, tips_ia, orden_secciones_ia = consultar_ia_bitacora_y_curacion(data, limit=args.limit)
         if items_guia:
-            print(f"      ✔ {len(items_guia)} logros seleccionados estratégicamente por la IA.")
+            print(f"      ✔ {len(items_guia)} logros seleccionados estratégicamente por la IA.", flush=True)
         if tips_ia:
-            print(f"      ✔ {len(tips_ia)} consejos tácticos por categoría generados por la IA.")
+            print(f"      ✔ {len(tips_ia)} consejos tácticos por categoría generados por la IA.", flush=True)
         if orden_secciones_ia:
-            print(f"      ✔ Prioridad de {len(orden_secciones_ia)} secciones determinada por la IA.")
+            print(f"      ✔ Prioridad de {len(orden_secciones_ia)} secciones determinada por la IA.", flush=True)
         if analisis_ia:
-            print("      ✔ Bitácora táctica de la IA generada exitosamente.")
+            print("      ✔ Bitácora táctica de la IA generada exitosamente.", flush=True)
 
     if not items_guia:
         bloqueados = data.get("todos_bloqueados", [])
@@ -862,7 +873,7 @@ def main():
 
     out_path = Path(args.output)
     out_path.write_text(rendered, encoding="utf-8")
-    print(f"✓ Guía generada exitosamente en: {out_path} ({len(items_guia)} logros en {len(context['categorias'])} categorías)")
+    print(f"✓ Guía generada exitosamente en: {out_path} ({len(items_guia)} logros en {len(context['categorias'])} categorías)", flush=True)
 
 if __name__ == "__main__":
     main()

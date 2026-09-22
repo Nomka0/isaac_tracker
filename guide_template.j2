@@ -1,0 +1,55 @@
+# ![[images/items/compass.png|30]] Guía Estratégica de Próximos Desbloqueos | Repentance+
+
+> [!info] Estado actual del archivo de guardado
+> - **Progreso de logros:** <progress value="{{ desbloqueados_total }}" max="{{ total_logros }}" style="vertical-align: middle; width: 150px; height: 14px; accent-color: #c92a2a;"></progress> **{{ progreso_pct }}%** ({{ desbloqueados_total }} / {{ total_logros }} completados)
+> - **Archivo analizado:** `{{ archivo_actual }}`
+{% if archivo_previo %}
+> - **Guardado previo comparado:** `{{ archivo_previo }}`
+{% endif %}
+{% if hitos_recientes %}
+> - **Hitos consolidados recientemente:** {{ hitos_recientes }}
+{% endif %}
+{% if nuevos_esta_sesion %}
+> 
+> **Nuevos logros obtenidos en esta sesión:**
+{% for item in nuevos_esta_sesion %}
+> - ![[images/achievements/{{ item.id }}.png|38]] **{{ item.nombre }}** (ID {{ item.id }}) — {{ item.como_se_obtuvo }}
+{% endfor %}
+{% endif %}
+
+{% if analisis_ia %}
+> [!quote] ![[images/items/compass.png|22]] Protocolo para la Próxima Run
+{% for line in analisis_ia.splitlines() %}
+> {{ line }}
+{% endfor %}
+{% endif %}
+
+---
+
+## ![[images/items/compass.png|28]] Ranking de Prioridad de Desbloqueos
+
+| Icono | Logro | Requisito | Calidad / Tier | Sección | Efecto y Por Qué Sacarlo |
+| :---: | :--- | :--- | :---: | :--- | :--- |
+{% for item in items_priorizados %}
+| ![[images/achievements/{{ item.id }}.png\|38]] | **{{ item.nombre }}** | {{ item.requisito }} | {{ item.tier }} | ![[{{ item.cat_icono }}\|18]] {{ item.cat_nombre }} | {{ item.efecto }} |
+{% endfor %}
+
+---
+
+{% for cat in categorias %}
+## {{ loop.index }}. ![[{{ cat.icono }}|{{ cat.icono_size }}]] {{ cat.titulo }}
+
+{{ cat.descripcion }}
+
+| Icono | Logro | Requisito | Calidad / Tier | Efecto y Por Qué Sacarlo |
+| :---: | :--- | :--- | :---: | :--- |
+{% for row in cat.logros -%}
+| ![[images/achievements/{{ row.id }}.png\|45]] | **{{ row.nombre }}** | {{ row.requisito }} | {{ row.tier }} | {{ row.efecto }} |
+{% endfor %}
+
+> [!tip] Consejo táctico para {{ cat.nombre_corto }}:
+> {{ cat.tip }}
+
+---
+
+{% endfor %}

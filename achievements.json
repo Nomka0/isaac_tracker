@@ -1,0 +1,3212 @@
+{
+  "1": {
+    "name": "Magdalene",
+    "condition": "Tener 7 o más contenedores de corazón rojo a la vez",
+    "priority": "Alta"
+  },
+  "2": {
+    "name": "Cain",
+    "condition": "Tener 55 monedas a la vez",
+    "priority": "Alta"
+  },
+  "3": {
+    "name": "Judas",
+    "condition": "Derrotar a Satan por primera vez",
+    "priority": "Alta"
+  },
+  "4": {
+    "name": "The Womb",
+    "condition": "Derrotar a Mom por primera vez (desbloquea The Womb)",
+    "priority": "Media"
+  },
+  "5": {
+    "name": "The Harbingers",
+    "condition": "Derrotar a Mom por primera vez (desbloquea los Jinetes)",
+    "priority": "Media"
+  },
+  "6": {
+    "name": "A Cube of Meat",
+    "condition": "Derrotar a Mom por primera vez",
+    "priority": "Media"
+  },
+  "7": {
+    "name": "The Book of Revelations",
+    "condition": "Derrotar a un Jinete del Apocalipsis por primera vez",
+    "priority": "Alta"
+  },
+  "8": {
+    "name": "Transcendence (A Noose)",
+    "condition": "Derrotar a Mom's Heart 3 veces",
+    "priority": "Alta"
+  },
+  "9": {
+    "name": "The Nail",
+    "condition": "Completar Boss Rush con Azazel",
+    "priority": "Alta"
+  },
+  "10": {
+    "name": "A Quarter",
+    "condition": "Derrotar a Mom's Heart 8 veces",
+    "priority": "Alta"
+  },
+  "11": {
+    "name": "Dr. Fetus (A Fetus in a Jar)",
+    "condition": "Derrotar a Mom's Heart 9 veces",
+    "priority": "Alta"
+  },
+  "12": {
+    "name": "A Small Rock",
+    "condition": "Destruir 100 rocas marcadas (Tinted Rocks)",
+    "priority": "Media"
+  },
+  "13": {
+    "name": "Monstro's Tooth",
+    "condition": "Completar el Capítulo 1 (Basement / Cellar)",
+    "priority": "Media"
+  },
+  "14": {
+    "name": "Lil' Chubby",
+    "condition": "Completar el Capítulo 2 (Caves / Catacombs)",
+    "priority": "Media"
+  },
+  "15": {
+    "name": "Loki's Horns",
+    "condition": "Derrotar al jefe Lokii",
+    "priority": "Media"
+  },
+  "16": {
+    "name": "Steven (Something From The Future)",
+    "condition": "Completar Basement 40 veces",
+    "priority": "Media"
+  },
+  "17": {
+    "name": "C.H.A.D. (Something Cute)",
+    "condition": "Completar el Capítulo 2 (Caves) 30 veces",
+    "priority": "Media"
+  },
+  "18": {
+    "name": "Gish (Something Sticky)",
+    "condition": "Completar el Capítulo 3 (Depths) 20 veces",
+    "priority": "Media"
+  },
+  "19": {
+    "name": "Super Bandage (A Bandage)",
+    "condition": "Crear una Super Bandage Girl recogiendo 4 Ball of Bandages en una sola partida",
+    "priority": "Media"
+  },
+  "20": {
+    "name": "The Relic (A Cross)",
+    "condition": "Derrotar a Isaac con Magdalene",
+    "priority": "Alta"
+  },
+  "21": {
+    "name": "Sack of Pennies (A Bag of Pennies)",
+    "condition": "Derrotar a Isaac con Cain",
+    "priority": "Media"
+  },
+  "22": {
+    "name": "The Book of Sin",
+    "condition": "Derrotar a los 7 Pecados Capitales",
+    "priority": "Media"
+  },
+  "23": {
+    "name": "Little Gish",
+    "condition": "Derrotar al jefe Gish",
+    "priority": "Media"
+  },
+  "24": {
+    "name": "Little Steven",
+    "condition": "Derrotar al jefe Steven",
+    "priority": "Media"
+  },
+  "25": {
+    "name": "Little C.H.A.D.",
+    "condition": "Derrotar al jefe C.H.A.D.",
+    "priority": "Media"
+  },
+  "26": {
+    "name": "A Gamekid",
+    "condition": "Visitar 10 salas Arcade",
+    "priority": "Media"
+  },
+  "27": {
+    "name": "A Halo",
+    "condition": "Derrotar a Mom, Mom's Heart o It Lives! usando The Bible (o la carta XV - The Devil?)",
+    "priority": "Alta"
+  },
+  "28": {
+    "name": "Mr. Mega",
+    "condition": "Destruir 10 rocas marcadas (Tinted Rocks)",
+    "priority": "Media"
+  },
+  "29": {
+    "name": "The D6",
+    "condition": "Derrotar a Isaac con ??? (Blue Baby)",
+    "priority": "Crítica"
+  },
+  "30": {
+    "name": "The Scissors",
+    "condition": "Morir 100 veces",
+    "priority": "Media"
+  },
+  "31": {
+    "name": "The Parasite",
+    "condition": "Recoger 2 objetos relacionados con la muerte ('dead') en una sola partida",
+    "priority": "Media"
+  },
+  "32": {
+    "name": "???",
+    "condition": "Derrotar a Mom's Heart 10 veces",
+    "priority": "Media"
+  },
+  "33": {
+    "name": "Everything Is Terrible!!!",
+    "condition": "Derrotar a Mom's Heart 11 veces (desbloquea It Lives!)",
+    "priority": "Alta"
+  },
+  "34": {
+    "name": "It Lives!",
+    "condition": "Derrotar a Mom's Heart 11 veces",
+    "priority": "Media"
+  },
+  "35": {
+    "name": "Mom's Contact",
+    "condition": "Obtener 3 objetos de la transformación Yes Mother? (Mamá) en una sola partida",
+    "priority": "Alta"
+  },
+  "36": {
+    "name": "The Necronomicon",
+    "condition": "Usar la carta XIII - Death 4 veces",
+    "priority": "Media"
+  },
+  "37": {
+    "name": "Basement Boy",
+    "condition": "Completar el Capítulo 1 sin recibir daño",
+    "priority": "Media"
+  },
+  "38": {
+    "name": "Spelunker Boy",
+    "condition": "Completar el Capítulo 2 sin recibir daño",
+    "priority": "Media"
+  },
+  "39": {
+    "name": "Dark Boy",
+    "condition": "Completar el Capítulo 3 sin recibir daño",
+    "priority": "Media"
+  },
+  "40": {
+    "name": "Mama's Boy",
+    "condition": "Completar el Capítulo 4 sin recibir daño",
+    "priority": "Media"
+  },
+  "41": {
+    "name": "Golden God!",
+    "condition": "Completar The Chest o Dark Room sin recibir daño",
+    "priority": "Media"
+  },
+  "42": {
+    "name": "Eve",
+    "condition": "No recoger ningún corazón durante 2 pisos consecutivos",
+    "priority": "Media"
+  },
+  "43": {
+    "name": "Mom's Knife",
+    "condition": "Derrotar a Satan con Isaac",
+    "priority": "Crítica"
+  },
+  "44": {
+    "name": "Razor Blade (The Razor)",
+    "condition": "Derrotar a Satan con Eve",
+    "priority": "Alta"
+  },
+  "45": {
+    "name": "Guardian Angel",
+    "condition": "Derrotar a Satan con Magdalene",
+    "priority": "Media"
+  },
+  "46": {
+    "name": "Bomb Bag (A Bag of Bombs)",
+    "condition": "Derrotar a Satan con Cain",
+    "priority": "Media"
+  },
+  "47": {
+    "name": "Demon Baby",
+    "condition": "Derrotar a The Lamb con Azazel",
+    "priority": "Baja"
+  },
+  "48": {
+    "name": "Forget Me Now",
+    "condition": "Derrotar a Satan con ??? (Blue Baby)",
+    "priority": "Media"
+  },
+  "49": {
+    "name": "D20 (The D20)",
+    "condition": "Derrotar a ??? (Blue Baby) con Isaac",
+    "priority": "Alta"
+  },
+  "50": {
+    "name": "Celtic Cross",
+    "condition": "Derrotar a ??? (Blue Baby) con Magdalene",
+    "priority": "Alta"
+  },
+  "51": {
+    "name": "Abel",
+    "condition": "Derrotar a The Lamb con Cain",
+    "priority": "Media"
+  },
+  "52": {
+    "name": "Curved Horn",
+    "condition": "Derrotar a The Lamb con Judas",
+    "priority": "Media"
+  },
+  "53": {
+    "name": "Sacrificial Dagger",
+    "condition": "Derrotar a ??? (Blue Baby) con Eve",
+    "priority": "Media"
+  },
+  "54": {
+    "name": "Bloody Lust",
+    "condition": "Derrotar a Isaac con Samson",
+    "priority": "Media"
+  },
+  "55": {
+    "name": "Bloody Penny (Blood Penny)",
+    "condition": "Derrotar a ??? (Blue Baby) con Samson",
+    "priority": "Media"
+  },
+  "56": {
+    "name": "Blood Rights",
+    "condition": "Derrotar a Satan con Samson",
+    "priority": "Alta"
+  },
+  "57": {
+    "name": "The Polaroid",
+    "condition": "Derrotar a Isaac 5 veces (desbloquea The Polaroid)",
+    "priority": "Alta"
+  },
+  "58": {
+    "name": "Dad's Key",
+    "condition": "Obtener ambas Key Pieces de los Ángeles en una sola partida",
+    "priority": "Alta"
+  },
+  "59": {
+    "name": "The Candle (Blue Candle)",
+    "condition": "Donar 900 monedas en la máquina de donación",
+    "priority": "Alta"
+  },
+  "60": {
+    "name": "Burnt Penny",
+    "condition": "Completar el Desafío #13 (Beans!)",
+    "priority": "Media"
+  },
+  "61": {
+    "name": "Lucky Toe",
+    "condition": "Destruir con bombas a 20 tenderos (Shopkeepers)",
+    "priority": "Media"
+  },
+  "62": {
+    "name": "Epic Fetus",
+    "condition": "Completar el Desafío #19 (The Family Man)",
+    "priority": "Alta"
+  },
+  "63": {
+    "name": "SMB Super Fan",
+    "condition": "Completar el Desafío #14 (It's in the Cards)",
+    "priority": "Media"
+  },
+  "64": {
+    "name": "Counterfeit Penny (Counterfeit Coin)",
+    "condition": "Jugar 100 veces a los juegos Shell Game o Hell Game",
+    "priority": "Media"
+  },
+  "65": {
+    "name": "Guppy's Hairball",
+    "condition": "Transformarse en Guppy (recoger 3 objetos de Guppy)",
+    "priority": "Alta"
+  },
+  "66": {
+    "name": "Conquest (A Forgotten Horseman)",
+    "condition": "Tomar 10 objetos de salas del Ángel en total",
+    "priority": "Media"
+  },
+  "67": {
+    "name": "Samson",
+    "condition": "Completar 2 pisos consecutivos sin recibir daño",
+    "priority": "Alta"
+  },
+  "68": {
+    "name": "Something Icky",
+    "condition": "Derrotar a ??? (Blue Baby) en The Chest y a The Lamb en Dark Room",
+    "priority": "Media"
+  },
+  "69": {
+    "name": "!Platinum God!",
+    "condition": "Recoger todos los objetos no-DLC y desbloquear todos los secretos y finales base (excepto The Lost)",
+    "priority": "Media"
+  },
+  "70": {
+    "name": "Isaac's Head",
+    "condition": "Completar Boss Rush con Isaac",
+    "priority": "Media"
+  },
+  "71": {
+    "name": "Maggy's Faith",
+    "condition": "Derrotar a The Lamb con Magdalene",
+    "priority": "Media"
+  },
+  "72": {
+    "name": "Judas' Tongue",
+    "condition": "Derrotar a Satan con Judas",
+    "priority": "Media"
+  },
+  "73": {
+    "name": "???'s Soul",
+    "condition": "Derrotar a The Lamb con ??? (Blue Baby)",
+    "priority": "Media"
+  },
+  "74": {
+    "name": "Samson's Lock",
+    "condition": "Derrotar a The Lamb con Samson",
+    "priority": "Media"
+  },
+  "75": {
+    "name": "Cain's Eye",
+    "condition": "Derrotar a ??? (Blue Baby) con Cain",
+    "priority": "Media"
+  },
+  "76": {
+    "name": "Eve's Bird Foot",
+    "condition": "Derrotar a Isaac con Eve",
+    "priority": "Media"
+  },
+  "77": {
+    "name": "The Left Hand",
+    "condition": "Derrotar a Ultra Pride con any character, or ??? as Judas",
+    "priority": "Media"
+  },
+  "78": {
+    "name": "The Negative",
+    "condition": "Derrotar a Satan 5 veces",
+    "priority": "Media"
+  },
+  "79": {
+    "name": "Azazel",
+    "condition": "Hacer 3 pactos con el Diablo en una sola partida",
+    "priority": "Alta"
+  },
+  "80": {
+    "name": "Lazarus",
+    "condition": "Tener 4 o más corazones de alma a la vez",
+    "priority": "Alta"
+  },
+  "81": {
+    "name": "Eden",
+    "condition": "Completar el Capítulo 4 (The Womb) por primera vez",
+    "priority": "Alta"
+  },
+  "82": {
+    "name": "The Lost",
+    "condition": "Morir en una Sacrifice Room llevando equipado el Missing Poster",
+    "priority": "Crítica"
+  },
+  "83": {
+    "name": "Dead Boy",
+    "condition": "Completar el Capítulo 6 (The Chest / Dark Room) sin recibir daño",
+    "priority": "Media"
+  },
+  "84": {
+    "name": "The Real Platinum God",
+    "condition": "Completar el 100% de Rebirth: todos los objetos, secretos y finales no-DLC",
+    "priority": "Media"
+  },
+  "85": {
+    "name": "Lucky Rock",
+    "condition": "Destruir 100 rocas comunes",
+    "priority": "Media"
+  },
+  "86": {
+    "name": "The Cellar",
+    "condition": "Derrotar a todos los jefes de Basement (desbloquea The Cellar)",
+    "priority": "Alta"
+  },
+  "87": {
+    "name": "The Catacombs",
+    "condition": "Derrotar a todos los jefes de Caves (desbloquea The Catacombs)",
+    "priority": "Alta"
+  },
+  "88": {
+    "name": "The Necropolis",
+    "condition": "Derrotar a todos los jefes de Depths (desbloquea The Necropolis)",
+    "priority": "Alta"
+  },
+  "89": {
+    "name": "Rune of Hagalaz",
+    "condition": "Completar el Desafío #1 (Pitch Black)",
+    "priority": "Media"
+  },
+  "90": {
+    "name": "Rune of Jera",
+    "condition": "Completar el Desafío #2 (High Brow)",
+    "priority": "Alta"
+  },
+  "91": {
+    "name": "Rune of Ehwaz",
+    "condition": "Completar el Desafío #3 (Head Trauma)",
+    "priority": "Media"
+  },
+  "92": {
+    "name": "Rune of Dagaz",
+    "condition": "Completar el Desafío #4 (Darkness Falls)",
+    "priority": "Alta"
+  },
+  "93": {
+    "name": "Rune of Ansuz",
+    "condition": "Completar el Desafío #5 (The Tank)",
+    "priority": "Media"
+  },
+  "94": {
+    "name": "Rune of Perthro",
+    "condition": "Completar el Desafío #6 (Solar System)",
+    "priority": "Alta"
+  },
+  "95": {
+    "name": "Rune of Berkano",
+    "condition": "Completar el Desafío #20 (Purist)",
+    "priority": "Media"
+  },
+  "96": {
+    "name": "Rune of Algiz",
+    "condition": "Completar el Desafío #8 (Cat Got Your Tongue)",
+    "priority": "Alta"
+  },
+  "97": {
+    "name": "Chaos Card",
+    "condition": "Completar el Desafío #9 (Demo Man)",
+    "priority": "Alta"
+  },
+  "98": {
+    "name": "Credit Card",
+    "condition": "Completar el Desafío #10 (Cursed!)",
+    "priority": "Alta"
+  },
+  "99": {
+    "name": "Rules Card",
+    "condition": "Completar el Desafío #11 (Glass Cannon)",
+    "priority": "Media"
+  },
+  "100": {
+    "name": "Card Against Humanity",
+    "condition": "Completar el Desafío #12 (When Life Gives You Lemons)",
+    "priority": "Media"
+  },
+  "101": {
+    "name": "Swallowed Penny",
+    "condition": "Completar el Desafío #15 (Slow Roll)",
+    "priority": "Media"
+  },
+  "102": {
+    "name": "Robo-Baby 2.0",
+    "condition": "Completar el Desafío #16 (Computer Savvy)",
+    "priority": "Baja"
+  },
+  "103": {
+    "name": "Death's Touch",
+    "condition": "Completar el Desafío #17 (Waka Waka)",
+    "priority": "Alta"
+  },
+  "104": {
+    "name": "Technology .5",
+    "condition": "Completar el Desafío #18 (The Host)",
+    "priority": "Alta"
+  },
+  "105": {
+    "name": "Missing No.",
+    "condition": "Completar Boss Rush con Lazarus",
+    "priority": "Media"
+  },
+  "106": {
+    "name": "Isaac's Tears",
+    "condition": "Derrotar a Isaac con Isaac",
+    "priority": "Media"
+  },
+  "107": {
+    "name": "Guillotine",
+    "condition": "Derrotar a Isaac con Judas",
+    "priority": "Media"
+  },
+  "108": {
+    "name": "Judas' Shadow",
+    "condition": "Completar Boss Rush con Judas",
+    "priority": "Media"
+  },
+  "109": {
+    "name": "Maggy's Bow",
+    "condition": "Completar Boss Rush con Magdalene",
+    "priority": "Media"
+  },
+  "110": {
+    "name": "Cain's Other Eye",
+    "condition": "Completar Boss Rush con Cain",
+    "priority": "Media"
+  },
+  "111": {
+    "name": "Black Lipstick",
+    "condition": "Derrotar a The Lamb con Eve",
+    "priority": "Media"
+  },
+  "112": {
+    "name": "Eve's Mascara",
+    "condition": "Completar Boss Rush con Eve",
+    "priority": "Media"
+  },
+  "113": {
+    "name": "Fate",
+    "condition": "Derrotar a ??? (Blue Baby) con ??? (Blue Baby)",
+    "priority": "Alta"
+  },
+  "114": {
+    "name": "???'s Only Friend",
+    "condition": "Completar Boss Rush con ??? (Blue Baby)",
+    "priority": "Media"
+  },
+  "115": {
+    "name": "Samson's Chains",
+    "condition": "Completar Boss Rush con Samson",
+    "priority": "Media"
+  },
+  "116": {
+    "name": "Lazarus' Rags",
+    "condition": "Derrotar a Isaac con Lazarus",
+    "priority": "Media"
+  },
+  "117": {
+    "name": "Broken Ankh",
+    "condition": "Derrotar a Satan con Lazarus",
+    "priority": "Media"
+  },
+  "118": {
+    "name": "Store Credit",
+    "condition": "Derrotar a ??? (Blue Baby) con Lazarus",
+    "priority": "Media"
+  },
+  "119": {
+    "name": "Pandora's Box",
+    "condition": "Derrotar a The Lamb con Lazarus",
+    "priority": "Media"
+  },
+  "120": {
+    "name": "Suicide King",
+    "condition": "Completar el Desafío #7 (Suicide King)",
+    "priority": "Alta"
+  },
+  "121": {
+    "name": "Blank Card",
+    "condition": "Derrotar a Isaac con Eden",
+    "priority": "Crítica"
+  },
+  "122": {
+    "name": "Book of Secrets",
+    "condition": "Derrotar a Satan con Eden",
+    "priority": "Media"
+  },
+  "123": {
+    "name": "Mysterious Paper",
+    "condition": "Derrotar a ??? (Blue Baby) con Eden",
+    "priority": "Media"
+  },
+  "124": {
+    "name": "Mystery Sack",
+    "condition": "Derrotar a The Lamb con Eden",
+    "priority": "Media"
+  },
+  "125": {
+    "name": "Undefined",
+    "condition": "Completar Boss Rush con Eden",
+    "priority": "Media"
+  },
+  "126": {
+    "name": "Satanic Bible",
+    "condition": "Derrotar a Isaac con Azazel",
+    "priority": "Media"
+  },
+  "127": {
+    "name": "Daemon's Tail",
+    "condition": "Derrotar a Satan con Azazel",
+    "priority": "Media"
+  },
+  "128": {
+    "name": "Abaddon",
+    "condition": "Derrotar a ??? (Blue Baby) con Azazel",
+    "priority": "Media"
+  },
+  "129": {
+    "name": "Isaac's Heart",
+    "condition": "Derrotar a Isaac con The Lost",
+    "priority": "Media"
+  },
+  "130": {
+    "name": "The Mind",
+    "condition": "Derrotar a Satan con The Lost",
+    "priority": "Media"
+  },
+  "131": {
+    "name": "The Body",
+    "condition": "Derrotar a ??? (Blue Baby) con The Lost",
+    "priority": "Media"
+  },
+  "132": {
+    "name": "The Soul",
+    "condition": "Derrotar a The Lamb con The Lost",
+    "priority": "Media"
+  },
+  "133": {
+    "name": "The D100",
+    "condition": "Completar Boss Rush con The Lost",
+    "priority": "Media"
+  },
+  "134": {
+    "name": "Blue Map",
+    "condition": "Donar 10 monedas en la máquina de donación",
+    "priority": "Media"
+  },
+  "135": {
+    "name": "There's Options",
+    "condition": "Donar 50 monedas en la máquina de donación",
+    "priority": "Media"
+  },
+  "136": {
+    "name": "Black Candle",
+    "condition": "Donar 150 monedas en la máquina de donación",
+    "priority": "Alta"
+  },
+  "137": {
+    "name": "Red Candle",
+    "condition": "Donar 400 monedas en la máquina de donación",
+    "priority": "Alta"
+  },
+  "138": {
+    "name": "Stop Watch",
+    "condition": "Donar 999 monedas en la máquina de donación",
+    "priority": "Alta"
+  },
+  "139": {
+    "name": "Wire Coat Hanger",
+    "condition": "Derrotar a Mom's Heart 4 veces",
+    "priority": "Media"
+  },
+  "140": {
+    "name": "Ipecac",
+    "condition": "Derrotar a Mom's Heart 6 veces",
+    "priority": "Media"
+  },
+  "141": {
+    "name": "Experimental Treatment",
+    "condition": "Derrotar a Mom's Heart 7 veces",
+    "priority": "Media"
+  },
+  "142": {
+    "name": "Krampus",
+    "condition": "Tomar 20 objetos de salas del Diablo en total",
+    "priority": "Media"
+  },
+  "143": {
+    "name": "Head of Krampus",
+    "condition": "Derrotar a Krampus",
+    "priority": "Media"
+  },
+  "144": {
+    "name": "Super Meat Boy",
+    "condition": "Crear un Super Meat Boy recogiendo 4 Cube of Meat en una sola partida",
+    "priority": "Alta"
+  },
+  "145": {
+    "name": "Butter Bean",
+    "condition": "Destruir 100 cacas",
+    "priority": "Media"
+  },
+  "146": {
+    "name": "Little Baggy",
+    "condition": "Recoger 2 objetos tipo jeringa ('syringe') en una sola partida",
+    "priority": "Media"
+  },
+  "147": {
+    "name": "Blood Bag",
+    "condition": "Usar la máquina de donación de sangre 30 veces",
+    "priority": "Media"
+  },
+  "148": {
+    "name": "The D4",
+    "condition": "Destruir con bombas 30 máquinas tragaperras (Slot Machines)",
+    "priority": "Media"
+  },
+  "149": {
+    "name": "Missing Poster",
+    "condition": "Derrotar a The Lamb con Isaac",
+    "priority": "Media"
+  },
+  "150": {
+    "name": "Rubber Cement",
+    "condition": "Derrotar a Mom's Heart 2 veces",
+    "priority": "Media"
+  },
+  "151": {
+    "name": "Store Upgrade lv.1",
+    "condition": "Donar 20 monedas en la máquina de donación (mejora la tienda a nivel 1)",
+    "priority": "Media"
+  },
+  "152": {
+    "name": "Store Upgrade lv.2",
+    "condition": "Donar 100 monedas en la máquina de donación (mejora la tienda a nivel 2)",
+    "priority": "Media"
+  },
+  "153": {
+    "name": "Store Upgrade lv.3",
+    "condition": "Donar 200 monedas en la máquina de donación (mejora la tienda a nivel 3)",
+    "priority": "Media"
+  },
+  "154": {
+    "name": "Store Upgrade lv.4",
+    "condition": "Donar 600 monedas en la máquina de donación (mejora la tienda a nivel 4)",
+    "priority": "Alta"
+  },
+  "155": {
+    "name": "Angels",
+    "condition": "Completar el Capítulo 6 (The Chest / Dark Room)",
+    "priority": "Media"
+  },
+  "156": {
+    "name": "Godhead",
+    "condition": "Completar todas las marcas en Difícil con The Lost",
+    "priority": "Crítica"
+  },
+  "157": {
+    "name": "Darkness Falls",
+    "condition": "Completar Sheol con Eve (desbloquea Desafío #4)",
+    "priority": "Media"
+  },
+  "158": {
+    "name": "The Tank",
+    "condition": "Tener 7 o más contenedores de corazón rojo a la vez (desbloquea Desafío #5)",
+    "priority": "Media"
+  },
+  "159": {
+    "name": "Solar System",
+    "condition": "Completar Sheol con Judas (desbloquea Desafío #6)",
+    "priority": "Media"
+  },
+  "160": {
+    "name": "Suicide King",
+    "condition": "Completar The Chest con Lazarus (desbloquea Desafío #7)",
+    "priority": "Media"
+  },
+  "161": {
+    "name": "Cat Got Your Tongue",
+    "condition": "Transformarse en Guppy (desbloquea Desafío #8)",
+    "priority": "Media"
+  },
+  "162": {
+    "name": "Demo Man",
+    "condition": "Completar Caves 30 veces (desbloquea Desafío #9)",
+    "priority": "Media"
+  },
+  "163": {
+    "name": "Cursed!",
+    "condition": "Tener 7 o más contenedores de corazón rojo a la vez (desbloquea Desafío #10)",
+    "priority": "Media"
+  },
+  "164": {
+    "name": "Glass Cannon",
+    "condition": "Completar el Desafío #19, derrotar a Lokii y desbloquear a Judas e It Lives! (desbloquea Desafío #11)",
+    "priority": "Media"
+  },
+  "165": {
+    "name": "The Family Man",
+    "condition": "Obtener ambas Key Pieces de los Ángeles en una sola partida (desbloquea Desafío #19)",
+    "priority": "Media"
+  },
+  "166": {
+    "name": "Purist",
+    "condition": "Completar The Chest (desbloquea Desafío #20)",
+    "priority": "Media"
+  },
+  "167": {
+    "name": "Lost Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Isaac",
+    "priority": "Baja"
+  },
+  "168": {
+    "name": "Cute Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Magdalene",
+    "priority": "Baja"
+  },
+  "169": {
+    "name": "Crow Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Eve",
+    "priority": "Baja"
+  },
+  "170": {
+    "name": "Shadow Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Judas",
+    "priority": "Baja"
+  },
+  "171": {
+    "name": "Glass Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Cain",
+    "priority": "Baja"
+  },
+  "172": {
+    "name": "Wrapped Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Azazel Defeat Mom's Heart or It Lives! on Hard mode as Lazarus",
+    "priority": "Baja"
+  },
+  "173": {
+    "name": "Begotten Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Lazarus Defeat Mom's Heart or It Lives! on Hard mode as Azazel",
+    "priority": "Baja"
+  },
+  "174": {
+    "name": "Dead Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con ??? (Blue Baby)",
+    "priority": "Baja"
+  },
+  "175": {
+    "name": "-0- Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con The Lost",
+    "priority": "Baja"
+  },
+  "176": {
+    "name": "Glitch Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Eden",
+    "priority": "Baja"
+  },
+  "177": {
+    "name": "Fighting Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Samson",
+    "priority": "Baja"
+  },
+  "178": {
+    "name": "Lord of the Flies",
+    "condition": "Transformarse en Beelzebub (recoger 3 objetos de moscas)",
+    "priority": "Alta"
+  },
+  "179": {
+    "name": "Fart Baby",
+    "condition": "Derrotar a Hush con Isaac",
+    "priority": "Baja"
+  },
+  "180": {
+    "name": "Purity",
+    "condition": "Derrotar a Hush con Magdalene",
+    "priority": "Media"
+  },
+  "181": {
+    "name": "D12",
+    "condition": "Derrotar a Hush con Cain",
+    "priority": "Media"
+  },
+  "182": {
+    "name": "Betrayal",
+    "condition": "Derrotar a Hush con Judas",
+    "priority": "Media"
+  },
+  "183": {
+    "name": "Fate's Reward",
+    "condition": "Derrotar a Hush con ??? (Blue Baby)",
+    "priority": "Media"
+  },
+  "184": {
+    "name": "Athame",
+    "condition": "Derrotar a Hush con Eve",
+    "priority": "Media"
+  },
+  "185": {
+    "name": "Blind Rage",
+    "condition": "Derrotar a Hush con Samson",
+    "priority": "Media"
+  },
+  "186": {
+    "name": "Maw of the Void",
+    "condition": "Derrotar a Hush con Azazel",
+    "priority": "Media"
+  },
+  "187": {
+    "name": "Empty Vessel",
+    "condition": "Derrotar a Hush con Lazarus",
+    "priority": "Media"
+  },
+  "188": {
+    "name": "Eden's Blessing",
+    "condition": "Derrotar a Hush con Eden",
+    "priority": "Media"
+  },
+  "189": {
+    "name": "Sworn Protector",
+    "condition": "Derrotar a Hush con The Lost",
+    "priority": "Media"
+  },
+  "190": {
+    "name": "Incubus",
+    "condition": "Derrotar a Hush con Lilith",
+    "priority": "Crítica"
+  },
+  "191": {
+    "name": "Keeper now holds... A Penny!",
+    "condition": "Derrotar a Hush con Keeper",
+    "priority": "Media"
+  },
+  "192": {
+    "name": "Lil' Chest",
+    "condition": "Derrotar a Ultra Greed con Isaac",
+    "priority": "Media"
+  },
+  "193": {
+    "name": "Censer",
+    "condition": "Derrotar a Ultra Greed con Magdalene",
+    "priority": "Media"
+  },
+  "194": {
+    "name": "Evil Eye",
+    "condition": "Derrotar a Ultra Greed con Cain",
+    "priority": "Media"
+  },
+  "195": {
+    "name": "My Shadow",
+    "condition": "Derrotar a Ultra Greed con Judas",
+    "priority": "Media"
+  },
+  "196": {
+    "name": "Cracked Dice",
+    "condition": "Derrotar a Ultra Greed con ??? (Blue Baby)",
+    "priority": "Media"
+  },
+  "197": {
+    "name": "Black Feather",
+    "condition": "Derrotar a Ultra Greed con Eve",
+    "priority": "Media"
+  },
+  "198": {
+    "name": "Lusty Blood",
+    "condition": "Derrotar a Ultra Greed con Samson",
+    "priority": "Media"
+  },
+  "199": {
+    "name": "Lilith",
+    "condition": "Derrotar a Ultra Greed con Azazel",
+    "priority": "Alta"
+  },
+  "200": {
+    "name": "Key Bum",
+    "condition": "Derrotar a Ultra Greed con Lazarus",
+    "priority": "Media"
+  },
+  "201": {
+    "name": "GB Bug",
+    "condition": "Derrotar a Ultra Greed con Eden",
+    "priority": "Media"
+  },
+  "202": {
+    "name": "Zodiac",
+    "condition": "Derrotar a Ultra Greed con The Lost",
+    "priority": "Media"
+  },
+  "203": {
+    "name": "Box of Friends",
+    "condition": "Derrotar a Ultra Greed con Lilith",
+    "priority": "Alta"
+  },
+  "204": {
+    "name": "Rib of Greed",
+    "condition": "Derrotar a Ultra Greed con Keeper",
+    "priority": "Alta"
+  },
+  "205": {
+    "name": "Cry Baby",
+    "condition": "Derrotar a Mega Satan con Isaac",
+    "priority": "Baja"
+  },
+  "206": {
+    "name": "Red Baby",
+    "condition": "Derrotar a Mega Satan con Magdalene",
+    "priority": "Baja"
+  },
+  "207": {
+    "name": "Green Baby",
+    "condition": "Derrotar a Mega Satan con Cain",
+    "priority": "Baja"
+  },
+  "208": {
+    "name": "Brown Baby",
+    "condition": "Derrotar a Mega Satan con Judas",
+    "priority": "Baja"
+  },
+  "209": {
+    "name": "Blue Baby",
+    "condition": "Derrotar a Mega Satan con ??? (Blue Baby)",
+    "priority": "Baja"
+  },
+  "210": {
+    "name": "Lil' Baby",
+    "condition": "Derrotar a Mega Satan con Eve",
+    "priority": "Baja"
+  },
+  "211": {
+    "name": "Rage Baby",
+    "condition": "Derrotar a Mega Satan con Samson",
+    "priority": "Baja"
+  },
+  "212": {
+    "name": "Black Baby",
+    "condition": "Derrotar a Mega Satan con Azazel",
+    "priority": "Baja"
+  },
+  "213": {
+    "name": "Long Baby",
+    "condition": "Derrotar a Mega Satan con Lazarus",
+    "priority": "Baja"
+  },
+  "214": {
+    "name": "Yellow Baby",
+    "condition": "Derrotar a Mega Satan con Eden",
+    "priority": "Baja"
+  },
+  "215": {
+    "name": "White Baby",
+    "condition": "Derrotar a Mega Satan con The Lost",
+    "priority": "Baja"
+  },
+  "216": {
+    "name": "Big Baby",
+    "condition": "Derrotar a Mega Satan con Lilith",
+    "priority": "Alta"
+  },
+  "217": {
+    "name": "Noose Baby",
+    "condition": "Derrotar a Mega Satan con Keeper",
+    "priority": "Baja"
+  },
+  "218": {
+    "name": "Rune Bag",
+    "condition": "Derrotar a Isaac con Lilith",
+    "priority": "Alta"
+  },
+  "219": {
+    "name": "Cambion Conception",
+    "condition": "Derrotar a ??? (Blue Baby) con Lilith",
+    "priority": "Media"
+  },
+  "220": {
+    "name": "Serpent's Kiss",
+    "condition": "Derrotar a Satan con Lilith",
+    "priority": "Alta"
+  },
+  "221": {
+    "name": "Succubus",
+    "condition": "Derrotar a The Lamb con Lilith",
+    "priority": "Media"
+  },
+  "222": {
+    "name": "Immaculate Conception",
+    "condition": "Completar Boss Rush con Lilith",
+    "priority": "Media"
+  },
+  "223": {
+    "name": "Goat Head Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Lilith",
+    "priority": "Baja"
+  },
+  "224": {
+    "name": "Gold Heart",
+    "condition": "Completar el Desafío #21 (XXXXXXXXL)",
+    "priority": "Media"
+  },
+  "225": {
+    "name": "Get out of Jail Free Card",
+    "condition": "Completar el Desafío #22 (SPEED!)",
+    "priority": "Alta"
+  },
+  "226": {
+    "name": "Gold Bomb",
+    "condition": "Completar el Desafío #23 (Blue Bomber)",
+    "priority": "Media"
+  },
+  "227": {
+    "name": "2 New Pills (Percs! & Addicted!)",
+    "condition": "Completar el Desafío #24 (PAY TO PLAY)",
+    "priority": "Media"
+  },
+  "228": {
+    "name": "2 New Pills (Re-Lax & ???)",
+    "condition": "Completar el Desafío #25 (Have a Heart)",
+    "priority": "Media"
+  },
+  "229": {
+    "name": "Poker Chip",
+    "condition": "Completar el Desafío #26 (I RULE!)",
+    "priority": "Media"
+  },
+  "230": {
+    "name": "Stud Finder",
+    "condition": "Completar el Desafío #27 (BRAINS!)",
+    "priority": "Media"
+  },
+  "231": {
+    "name": "D8",
+    "condition": "Completar el Desafío #28 (PRIDE DAY!)",
+    "priority": "Media"
+  },
+  "232": {
+    "name": "Kidney Stone",
+    "condition": "Completar el Desafío #29 (Onan's Streak) y #30 (The Guardian)",
+    "priority": "Media"
+  },
+  "233": {
+    "name": "Blank Rune",
+    "condition": "Completar el Desafío #29 (Onan's Streak) y #30 (The Guardian)",
+    "priority": "Media"
+  },
+  "234": {
+    "name": "Blue Womb (Hush)",
+    "condition": "Derrotar a Mom's Heart en menos de 30 minutos (desbloquea Blue Womb / Hush)",
+    "priority": "Alta"
+  },
+  "235": {
+    "name": "1001%",
+    "condition": "Desbloquear todos los secretos de Afterbirth y conseguir todos los objetos de Afterbirth",
+    "priority": "Alta"
+  },
+  "236": {
+    "name": "Keeper holds Wooden Nickel",
+    "condition": "Derrotar a Isaac con Keeper",
+    "priority": "Alta"
+  },
+  "237": {
+    "name": "Keeper holds Store Key",
+    "condition": "Derrotar a Satan con Keeper",
+    "priority": "Media"
+  },
+  "238": {
+    "name": "Deep Pockets",
+    "condition": "Derrotar a ??? (Blue Baby) con Keeper",
+    "priority": "Media"
+  },
+  "239": {
+    "name": "Karma",
+    "condition": "Derrotar a The Lamb con Keeper",
+    "priority": "Alta"
+  },
+  "240": {
+    "name": "Sticky Nickels",
+    "condition": "Derrotar a Satan con Keeper",
+    "priority": "Crítica"
+  },
+  "241": {
+    "name": "Super Greed Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Keeper",
+    "priority": "Baja"
+  },
+  "242": {
+    "name": "Lucky Pennies",
+    "condition": "Donar 2 monedas en la máquina de Greed",
+    "priority": "Media"
+  },
+  "243": {
+    "name": "Special Hanging Shopkeepers",
+    "condition": "Donar 14 monedas en la máquina de Greed",
+    "priority": "Media"
+  },
+  "244": {
+    "name": "Wooden Nickel",
+    "condition": "Donar 33 monedas en la máquina de Greed",
+    "priority": "Alta"
+  },
+  "245": {
+    "name": "Cain holds Paperclip",
+    "condition": "Donar 68 monedas en la máquina de Greed",
+    "priority": "Alta"
+  },
+  "246": {
+    "name": "Everything is Terrible 2!!!",
+    "condition": "Donar 111 monedas en la máquina de Greed",
+    "priority": "Media"
+  },
+  "247": {
+    "name": "Special Shopkeepers",
+    "condition": "Donar 234 monedas en la máquina de Greed",
+    "priority": "Crítica"
+  },
+  "248": {
+    "name": "Eve now holds Razor Blade",
+    "condition": "Donar 439 monedas en la máquina de Greed",
+    "priority": "Alta"
+  },
+  "249": {
+    "name": "Store Key",
+    "condition": "Donar 666 monedas en la máquina de Greed",
+    "priority": "Media"
+  },
+  "250": {
+    "name": "Lost holds Holy Mantle",
+    "condition": "Donar 879 monedas en la máquina de Greed",
+    "priority": "Crítica"
+  },
+  "251": {
+    "name": "Keeper",
+    "condition": "Donar 1000 monedas en la máquina de Greed",
+    "priority": "Crítica"
+  },
+  "252": {
+    "name": "Hive Baby",
+    "condition": "Completar todas las marcas en Difícil con ??? (Blue Baby)",
+    "priority": "Baja"
+  },
+  "253": {
+    "name": "Buddy Baby",
+    "condition": "Completar todas las marcas en Difícil con Isaac",
+    "priority": "Baja"
+  },
+  "254": {
+    "name": "Colorful Baby",
+    "condition": "Completar todas las marcas en Difícil con Magdalene",
+    "priority": "Baja"
+  },
+  "255": {
+    "name": "Whore Baby",
+    "condition": "Completar todas las marcas en Difícil con Eve",
+    "priority": "Baja"
+  },
+  "256": {
+    "name": "Cracked Baby",
+    "condition": "Completar todas las marcas en Difícil con Eden",
+    "priority": "Baja"
+  },
+  "257": {
+    "name": "Dripping Baby",
+    "condition": "Completar todas las marcas en Difícil con Lazarus",
+    "priority": "Baja"
+  },
+  "258": {
+    "name": "Blinding Baby",
+    "condition": "Usar Blank Card mientras sostienes la carta XIX - The Sun",
+    "priority": "Media"
+  },
+  "259": {
+    "name": "Sucky Baby",
+    "condition": "Completar todas las marcas en Difícil con Azazel",
+    "priority": "Baja"
+  },
+  "260": {
+    "name": "Dark Baby",
+    "condition": "Completar todas las marcas en Difícil con Lilith",
+    "priority": "Baja"
+  },
+  "261": {
+    "name": "Picky Baby",
+    "condition": "Completar todas las marcas en Difícil con Cain",
+    "priority": "Baja"
+  },
+  "262": {
+    "name": "Revenge Baby",
+    "condition": "Completar todas las marcas en Difícil con Samson",
+    "priority": "Baja"
+  },
+  "263": {
+    "name": "Belial Baby",
+    "condition": "Completar todas las marcas en Difícil con Judas",
+    "priority": "Baja"
+  },
+  "264": {
+    "name": "Sale Baby",
+    "condition": "Completar todas las marcas en Difícil con Keeper",
+    "priority": "Baja"
+  },
+  "265": {
+    "name": "XXXXXXXXL",
+    "condition": "Derrotar a Mom's Heart 11 veces (desbloquea Desafío #21)",
+    "priority": "Media"
+  },
+  "266": {
+    "name": "SPEED!",
+    "condition": "Derrotar a Mom's Heart 11 veces (desbloquea Desafío #22)",
+    "priority": "Media"
+  },
+  "267": {
+    "name": "Blue Bomber",
+    "condition": "Destruir 10 rocas marcadas y derrotar a Mom's Heart 11 veces (desbloquea Desafío #23)",
+    "priority": "Media"
+  },
+  "268": {
+    "name": "PAY TO PLAY",
+    "condition": "Derrotar a Mom's Heart 11 veces (desbloquea Desafío #24)",
+    "priority": "Media"
+  },
+  "269": {
+    "name": "Have a Heart",
+    "condition": "Derrotar a Mom's Heart 11 veces (desbloquea Desafío #25)",
+    "priority": "Media"
+  },
+  "270": {
+    "name": "I RULE!",
+    "condition": "Derrotar a Satan con Isaac y desbloquear The Negative (desbloquea Desafío #26)",
+    "priority": "Alta"
+  },
+  "271": {
+    "name": "BRAINS!",
+    "condition": "Derrotar a Isaac con ??? (desbloquea Desafío #27)",
+    "priority": "Media"
+  },
+  "272": {
+    "name": "PRIDE DAY!",
+    "condition": "Derrotar a Mom's Heart 11 veces (desbloquea Desafío #28)",
+    "priority": "Media"
+  },
+  "273": {
+    "name": "Onan's Streak",
+    "condition": "Derrotar a Isaac con Judas (desbloquea Desafío #29)",
+    "priority": "Media"
+  },
+  "274": {
+    "name": "The Guardian",
+    "condition": "Derrotar a Mom's Heart 11 veces (desbloquea Desafío #30)",
+    "priority": "Media"
+  },
+  "275": {
+    "name": "Generosity",
+    "condition": "Donar 999 monedas en la máquina de Greed",
+    "priority": "Media"
+  },
+  "276": {
+    "name": "Mega Blast (Mega)",
+    "condition": "Derrotar a Mega Satan con todos los personajes de Afterbirth",
+    "priority": "Alta"
+  },
+  "277": {
+    "name": "Backasswards",
+    "condition": "Derrotar a ??? o The Lamb y a Mega Satan (desbloquea Desafío #31 Backasswards)",
+    "priority": "Alta"
+  },
+  "278": {
+    "name": "Aprils fool",
+    "condition": "Derrotar a Mom (desbloquea Desafío #32 Aprils Fool)",
+    "priority": "Alta"
+  },
+  "279": {
+    "name": "Pokey Mans",
+    "condition": "Derrotar a Mom's Heart 11 veces (desbloquea Desafío #33 Pokey Mans)",
+    "priority": "Media"
+  },
+  "280": {
+    "name": "Ultra Hard",
+    "condition": "Derrotar a Mega Satan y desbloquear The Negative (desbloquea Desafío #34 Ultra Hard)",
+    "priority": "Alta"
+  },
+  "281": {
+    "name": "PONG",
+    "condition": "Derrotar a Isaac 5 veces (desbloquea Desafío #35 Pong)",
+    "priority": "Media"
+  },
+  "282": {
+    "name": "D infinity",
+    "condition": "Derrotar a Delirium con Isaac",
+    "priority": "Crítica"
+  },
+  "283": {
+    "name": "Eucharist",
+    "condition": "Derrotar a Delirium con Magdalene",
+    "priority": "Media"
+  },
+  "284": {
+    "name": "Silver Dollar",
+    "condition": "Derrotar a Delirium con Cain",
+    "priority": "Media"
+  },
+  "285": {
+    "name": "Shade",
+    "condition": "Derrotar a Delirium con Judas",
+    "priority": "Media"
+  },
+  "286": {
+    "name": "King Baby",
+    "condition": "Derrotar a Delirium con ??? (Blue Baby)",
+    "priority": "Baja"
+  },
+  "287": {
+    "name": "Bloody Crown",
+    "condition": "Derrotar a Delirium con Samson",
+    "priority": "Media"
+  },
+  "288": {
+    "name": "Dull Razor",
+    "condition": "Derrotar a Delirium con Eve",
+    "priority": "Media"
+  },
+  "289": {
+    "name": "Eden's Soul",
+    "condition": "Derrotar a Delirium con Eden",
+    "priority": "Media"
+  },
+  "290": {
+    "name": "Dark Prince's Crown",
+    "condition": "Derrotar a Delirium con Azazel",
+    "priority": "Media"
+  },
+  "291": {
+    "name": "Compound Fracture",
+    "condition": "Derrotar a Delirium con Lazarus",
+    "priority": "Media"
+  },
+  "292": {
+    "name": "Euthanasia",
+    "condition": "Derrotar a Delirium con Lilith",
+    "priority": "Media"
+  },
+  "293": {
+    "name": "Holy Card",
+    "condition": "Derrotar a Delirium con The Lost",
+    "priority": "Media"
+  },
+  "294": {
+    "name": "Crooked Penny",
+    "condition": "Derrotar a Delirium con Keeper",
+    "priority": "Media"
+  },
+  "295": {
+    "name": "Void",
+    "condition": "Derrotar a Delirium con Apollyon",
+    "priority": "Media"
+  },
+  "296": {
+    "name": "D1",
+    "condition": "Derrotar a Ultra Greedier con Isaac",
+    "priority": "Media"
+  },
+  "297": {
+    "name": "Glyph of Balance",
+    "condition": "Derrotar a Ultra Greedier con Magdalene",
+    "priority": "Media"
+  },
+  "298": {
+    "name": "Sack of Sacks",
+    "condition": "Derrotar a Ultra Greedier con Cain",
+    "priority": "Media"
+  },
+  "299": {
+    "name": "Eye of Belial",
+    "condition": "Derrotar a Ultra Greedier con Judas",
+    "priority": "Media"
+  },
+  "300": {
+    "name": "Meconium",
+    "condition": "Derrotar a Ultra Greedier con ??? (Blue Baby)",
+    "priority": "Media"
+  },
+  "301": {
+    "name": "Stem Cell",
+    "condition": "Derrotar a Ultra Greedier con Samson",
+    "priority": "Media"
+  },
+  "302": {
+    "name": "Crow Heart",
+    "condition": "Derrotar a Ultra Greedier con Eve",
+    "priority": "Media"
+  },
+  "303": {
+    "name": "Metronome",
+    "condition": "Derrotar a Ultra Greedier con Eden",
+    "priority": "Media"
+  },
+  "304": {
+    "name": "Bat Wing",
+    "condition": "Derrotar a Ultra Greedier con Azazel",
+    "priority": "Media"
+  },
+  "305": {
+    "name": "Plan C",
+    "condition": "Derrotar a Ultra Greedier con Lazarus",
+    "priority": "Media"
+  },
+  "306": {
+    "name": "Duality",
+    "condition": "Derrotar a Ultra Greedier con Lilith",
+    "priority": "Media"
+  },
+  "307": {
+    "name": "Dad's Lost Coin",
+    "condition": "Derrotar a Ultra Greedier con The Lost",
+    "priority": "Media"
+  },
+  "308": {
+    "name": "Eye of Greed",
+    "condition": "Derrotar a Ultra Greedier con Keeper",
+    "priority": "Media"
+  },
+  "309": {
+    "name": "Black Rune",
+    "condition": "Derrotar a Ultra Greedier con Apollyon",
+    "priority": "Media"
+  },
+  "310": {
+    "name": "Locust of Wrath",
+    "condition": "Derrotar a Isaac con Apollyon",
+    "priority": "Media"
+  },
+  "311": {
+    "name": "Locust of Pestilence",
+    "condition": "Derrotar a Satan con Apollyon",
+    "priority": "Media"
+  },
+  "312": {
+    "name": "Locust of Famine",
+    "condition": "Derrotar a ??? (Blue Baby) con Apollyon",
+    "priority": "Media"
+  },
+  "313": {
+    "name": "Locust of Death",
+    "condition": "Derrotar a The Lamb con Apollyon",
+    "priority": "Media"
+  },
+  "314": {
+    "name": "Locust of Conquest",
+    "condition": "Completar Boss Rush con Apollyon",
+    "priority": "Media"
+  },
+  "315": {
+    "name": "Hushy",
+    "condition": "Derrotar a Hush con Apollyon",
+    "priority": "Media"
+  },
+  "316": {
+    "name": "Brown Nugget",
+    "condition": "Derrotar a Ultra Greed con Apollyon",
+    "priority": "Media"
+  },
+  "317": {
+    "name": "Mort Baby",
+    "condition": "Derrotar a Mega Satan con Apollyon",
+    "priority": "Baja"
+  },
+  "318": {
+    "name": "Smelter",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Apollyon",
+    "priority": "Media"
+  },
+  "319": {
+    "name": "Apollyon Baby",
+    "condition": "Completar todas las marcas en Difícil con Apollyon",
+    "priority": "Baja"
+  },
+  "320": {
+    "name": "New Area",
+    "condition": "Derrotar a Hush por primera vez (desbloquea The Void)",
+    "priority": "Alta"
+  },
+  "321": {
+    "name": "Gulp! (Once More with Feeling!)",
+    "condition": "Completar una Victory Lap derrotando a The Lamb",
+    "priority": "Media"
+  },
+  "322": {
+    "name": "Ace of Clubs (Hat trick!)",
+    "condition": "Conseguir una racha de 3 victorias consecutivas",
+    "priority": "Media"
+  },
+  "323": {
+    "name": "Super Special Rocks (5 Nights at Mom's)",
+    "condition": "Conseguir una racha de 5 victorias consecutivas usando un personaje diferente cada vez",
+    "priority": "Alta"
+  },
+  "324": {
+    "name": "Feels like I'm walking on sunshine! (Sin collector)",
+    "condition": "Registrar todas las entradas en el Bestiario",
+    "priority": "Media"
+  },
+  "325": {
+    "name": "Horf! (Dedication)",
+    "condition": "Participar en 31 Daily Challenges (no necesitan ser consecutivos ni ganarse)",
+    "priority": "Alta"
+  },
+  "326": {
+    "name": "Ace of Diamonds (ZIP!)",
+    "condition": "Derrotar a The Lamb en menos de 20 minutos",
+    "priority": "Alta"
+  },
+  "327": {
+    "name": "Ace of Spades (It's the Key)",
+    "condition": "Derrotar a The Lamb sin recoger corazones, monedas ni bombas en toda la partida",
+    "priority": "Alta"
+  },
+  "328": {
+    "name": "Scared Heart (Mr. Resetter!)",
+    "condition": "Reiniciar la partida (R) 7 veces seguidas",
+    "priority": "Media"
+  },
+  "329": {
+    "name": "Ace of Hearts (Living on the edge)",
+    "condition": "Completar un capítulo entero tras Basement de principio a fin con solo medio corazón (o con The Lost)",
+    "priority": "Media"
+  },
+  "330": {
+    "name": "Vurp! (U Broke It!)",
+    "condition": "Obtener 50 objetos en una sola partida",
+    "priority": "Media"
+  },
+  "331": {
+    "name": "Lazarus holds Anemic (Laz Bleeds More!)",
+    "condition": "Completar el Desafío #31 (Backasswards)",
+    "priority": "Media"
+  },
+  "332": {
+    "name": "Magdalene holds Pill (Maggy Now Holds a Pill!)",
+    "condition": "Completar el Desafío #32 (Aprils Fool)",
+    "priority": "Media"
+  },
+  "333": {
+    "name": "Charged Key",
+    "condition": "Completar el Desafío #33 (Pokey Mans)",
+    "priority": "Media"
+  },
+  "334": {
+    "name": "Samson holds Child's Heart (Samson Feels Healthy!)",
+    "condition": "Completar el Desafío #34 (Ultra Hard)",
+    "priority": "Media"
+  },
+  "335": {
+    "name": "Greed's Gullet",
+    "condition": "Completar el Desafío #35 (Pong)",
+    "priority": "Media"
+  },
+  "336": {
+    "name": "Cracked Crown (The Marathon)",
+    "condition": "Conseguir una racha de 5 victorias en Daily Challenges",
+    "priority": "Alta"
+  },
+  "337": {
+    "name": "RERUN",
+    "condition": "Completar 3 Victory Laps consecutivas derrotando a The Lamb",
+    "priority": "Media"
+  },
+  "338": {
+    "name": "Delirious",
+    "condition": "Derrotar a Delirium",
+    "priority": "Media"
+  },
+  "339": {
+    "name": "1000000%",
+    "condition": "Conseguir el 100% de Afterbirth+: todos los objetos, secretos, finales y bestiario",
+    "priority": "Media"
+  },
+  "340": {
+    "name": "Apollyon",
+    "condition": "Derrotar a Mega Satan",
+    "priority": "Media"
+  },
+  "341": {
+    "name": "Greedier Mode (Greedier!)",
+    "condition": "Donar 500 monedas en la máquina de Greed (desbloquea modo Greedier)",
+    "priority": "Crítica"
+  },
+  "342": {
+    "name": "Burning Basement",
+    "condition": "Derrotar a Mom's Heart 11 veces",
+    "priority": "Media"
+  },
+  "343": {
+    "name": "Flooded Caves",
+    "condition": "Derrotar a Mom's Heart / It Lives! 16 veces",
+    "priority": "Media"
+  },
+  "344": {
+    "name": "Dank Depths",
+    "condition": "Derrotar a Mom's Heart / It Lives! 21 veces",
+    "priority": "Alta"
+  },
+  "345": {
+    "name": "Scarred Womb",
+    "condition": "Derrotar a Mom's Heart / It Lives! 30 veces",
+    "priority": "Alta"
+  },
+  "346": {
+    "name": "Something wicked this way comes!",
+    "condition": "Derrotar a ??? (Blue Baby) con 3 different Characters",
+    "priority": "Media"
+  },
+  "347": {
+    "name": "Something wicked this way comes+! (Alt Bosses)",
+    "condition": "Derrotar a todos los nuevos jefes de Afterbirth+",
+    "priority": "Media"
+  },
+  "348": {
+    "name": "The Void Portal (The gate is open!)",
+    "condition": "Derrotar a Hush o a los jefes finales para abrir el portal a The Void",
+    "priority": "Media"
+  },
+  "349": {
+    "name": "Black Hole",
+    "condition": "Derrotar a 20 Portals",
+    "priority": "Media"
+  },
+  "350": {
+    "name": "Mystery Gift",
+    "condition": "Destruir 500 rocas",
+    "priority": "Media"
+  },
+  "351": {
+    "name": "Sprinkler",
+    "condition": "Completar el Capítulo 1 sin recibir daño",
+    "priority": "Media"
+  },
+  "352": {
+    "name": "Angry Fly",
+    "condition": "Transformarse en Beelzebub (recoger 3 objetos de moscas)",
+    "priority": "Media"
+  },
+  "353": {
+    "name": "Bozo",
+    "condition": "Destruir 5 cacas arcoíris",
+    "priority": "Media"
+  },
+  "354": {
+    "name": "Broken Modem",
+    "condition": "Completar 7 Daily Challenges con victoria",
+    "priority": "Media"
+  },
+  "355": {
+    "name": "Buddy in a Box",
+    "condition": "Recoger 5 familiares en una sola partida",
+    "priority": "Media"
+  },
+  "356": {
+    "name": "Fast Bombs",
+    "condition": "Derrotar a Little Horn 20 veces",
+    "priority": "Media"
+  },
+  "357": {
+    "name": "Lil Delirium",
+    "condition": "Derrotar a Delirium for the 1st time",
+    "priority": "Media"
+  },
+  "358": {
+    "name": "Hairpin",
+    "condition": "Recargar objetos usando microbaterías 20 veces",
+    "priority": "Media"
+  },
+  "359": {
+    "name": "Wooden Cross",
+    "condition": "Dormir en una cama",
+    "priority": "Media"
+  },
+  "360": {
+    "name": "Butter!",
+    "condition": "Completar 2 Victory Laps derrotando a The Lamb",
+    "priority": "Media"
+  },
+  "361": {
+    "name": "Huge Growth",
+    "condition": "Aumentar de tamaño 3 veces por encima del inicial en una sola partida",
+    "priority": "Media"
+  },
+  "362": {
+    "name": "Ancient Recall",
+    "condition": "Usar cartas o runas 20 veces",
+    "priority": "Media"
+  },
+  "363": {
+    "name": "Era Walk",
+    "condition": "Tener Broken Watch y Stop Watch registrados en tu colección",
+    "priority": "Media"
+  },
+  "364": {
+    "name": "Coupon",
+    "condition": "Comprar 50 objetos en tiendas, pactos con el Diablo o mercados negros",
+    "priority": "Media"
+  },
+  "365": {
+    "name": "Telekinesis",
+    "condition": "Completar el Capítulo 2 sin recibir daño",
+    "priority": "Media"
+  },
+  "366": {
+    "name": "Moving Box",
+    "condition": "Usar Pandora's Box en la Dark Room",
+    "priority": "Media"
+  },
+  "367": {
+    "name": "Jumper Cables",
+    "condition": "Recoger 2 objetos relacionados con baterías en una sola partida",
+    "priority": "Media"
+  },
+  "368": {
+    "name": "Leprosy",
+    "condition": "Completar el Capítulo 3 sin recibir daño",
+    "priority": "Media"
+  },
+  "369": {
+    "name": "Technology Zero",
+    "condition": "Recoger 2 objetos de tecnología en una sola partida",
+    "priority": "Media"
+  },
+  "370": {
+    "name": "Filigree Feather",
+    "condition": "Adquirir Key Piece 1 y Key Piece 2 en una sola partida",
+    "priority": "Media"
+  },
+  "371": {
+    "name": "Mr. ME!",
+    "condition": "Abrir 20 cofres con cerradura",
+    "priority": "Media"
+  },
+  "372": {
+    "name": "7 Seals",
+    "condition": "Derrotar a all 5 Harbingers",
+    "priority": "Media"
+  },
+  "373": {
+    "name": "Angelic Prism",
+    "condition": "Derrotar a an Angel 10 veces",
+    "priority": "Media"
+  },
+  "374": {
+    "name": "Pop!",
+    "condition": "Completar el Capítulo 4 sin recibir daño",
+    "priority": "Media"
+  },
+  "375": {
+    "name": "Door Stop",
+    "condition": "Destruir con bombas 50 puertas y paredes secretas",
+    "priority": "Media"
+  },
+  "376": {
+    "name": "Death's List",
+    "condition": "Hacer 25 pactos con el Diablo en total",
+    "priority": "Media"
+  },
+  "377": {
+    "name": "Haemolacria",
+    "condition": "Recoger Blood Clot 10 veces en total",
+    "priority": "Media"
+  },
+  "378": {
+    "name": "Lachryphagy",
+    "condition": "Recoger 10 aumentos de lágrimas (Tears Up) en una sola partida",
+    "priority": "Media"
+  },
+  "379": {
+    "name": "Schoolbag",
+    "condition": "Entrar en 6 tiendas en una sola partida",
+    "priority": "Media"
+  },
+  "380": {
+    "name": "Trisagion",
+    "condition": "Tomar 25 objetos de salas del Ángel en total",
+    "priority": "Media"
+  },
+  "381": {
+    "name": "Extension Cord",
+    "condition": "Tener The Battery, 9 Volt y Car Battery registrados en la colección",
+    "priority": "Media"
+  },
+  "382": {
+    "name": "Flat Stone",
+    "condition": "Recoger Rubber Cement 5 veces en total",
+    "priority": "Media"
+  },
+  "383": {
+    "name": "Sacrificial Altar",
+    "condition": "Hacer 50 pactos con el Diablo en total",
+    "priority": "Media"
+  },
+  "384": {
+    "name": "Lil Spewer",
+    "condition": "Morir por tu propia explosión con lágrimas venenosas y explosivas",
+    "priority": "Media"
+  },
+  "385": {
+    "name": "Blanket",
+    "condition": "Dormir en 10 camas en total",
+    "priority": "Media"
+  },
+  "386": {
+    "name": "Marbles",
+    "condition": "Usar 5 píldoras Gulp! en una sola partida",
+    "priority": "Alta"
+  },
+  "387": {
+    "name": "Mystery Egg",
+    "condition": "Tener 3 enemigos encantados al mismo tiempo en una sala",
+    "priority": "Media"
+  },
+  "388": {
+    "name": "Rotten Penny",
+    "condition": "Tener 20 moscas azules al mismo tiempo",
+    "priority": "Media"
+  },
+  "389": {
+    "name": "Baby-Bender",
+    "condition": "Usar The Magician o Telepathy For Dummies teniendo lágrimas teledirigidas",
+    "priority": "Alta"
+  },
+  "390": {
+    "name": "The Forgotten",
+    "condition": "Superar la misión secreta de The Forgotten (pala rota y cavar en Dark Room)",
+    "priority": "Alta"
+  },
+  "391": {
+    "name": "Bone Heart",
+    "condition": "Desbloquear al personaje The Forgotten",
+    "priority": "Media"
+  },
+  "392": {
+    "name": "Marrow",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con The Forgotten",
+    "priority": "Media"
+  },
+  "393": {
+    "name": "Slipped Rib",
+    "condition": "Derrotar a Isaac con The Forgotten",
+    "priority": "Media"
+  },
+  "394": {
+    "name": "Pointy Rib",
+    "condition": "Derrotar a Satan con The Forgotten",
+    "priority": "Media"
+  },
+  "395": {
+    "name": "Jaw Bone",
+    "condition": "Derrotar a ??? (Blue Baby) con The Forgotten",
+    "priority": "Media"
+  },
+  "396": {
+    "name": "Brittle Bones",
+    "condition": "Derrotar a The Lamb con The Forgotten",
+    "priority": "Alta"
+  },
+  "397": {
+    "name": "Divorce Papers",
+    "condition": "Completar Boss Rush con The Forgotten",
+    "priority": "Media"
+  },
+  "398": {
+    "name": "Hallowed Ground",
+    "condition": "Derrotar a Hush con The Forgotten",
+    "priority": "Media"
+  },
+  "399": {
+    "name": "Finger Bone",
+    "condition": "Derrotar a Ultra Greed con The Forgotten",
+    "priority": "Media"
+  },
+  "400": {
+    "name": "Dad's Ring",
+    "condition": "Derrotar a Ultra Greedier con The Forgotten",
+    "priority": "Media"
+  },
+  "401": {
+    "name": "Book of the Dead",
+    "condition": "Derrotar a Delirium con The Forgotten",
+    "priority": "Media"
+  },
+  "402": {
+    "name": "Bone Baby",
+    "condition": "Completar todas las marcas en Difícil con The Forgotten",
+    "priority": "Baja"
+  },
+  "403": {
+    "name": "Bound Baby",
+    "condition": "Derrotar a Mega Satan con The Forgotten",
+    "priority": "Baja"
+  },
+  "404": {
+    "name": "Bethany",
+    "condition": "Derrotar a Mom's Heart en modo Difícil sin perder vidas adicionales con Lazarus",
+    "priority": "Alta"
+  },
+  "405": {
+    "name": "Jacob and Esau",
+    "condition": "Derrotar a Mother",
+    "priority": "Alta"
+  },
+  "406": {
+    "name": "The Planetarium",
+    "condition": "Recoger 3 objetos con la etiqueta 'stars' en una sola partida",
+    "priority": "Alta"
+  },
+  "407": {
+    "name": "A Secret Exit (Downpour / Alt Path)",
+    "condition": "Derrotar a Hush 3 veces (desbloquea la ruta alternativa: Downpour/Dross)",
+    "priority": "Alta"
+  },
+  "408": {
+    "name": "Forgotten Lullaby",
+    "condition": "Destruir con una bomba la calavera de The Siren tras derrotarla",
+    "priority": "Media"
+  },
+  "409": {
+    "name": "Fruity Plum",
+    "condition": "Derrotar a Baby Plum 10 veces",
+    "priority": "Media"
+  },
+  "410": {
+    "name": "Plum Flute",
+    "condition": "Dejar escapar a Baby Plum pacíficamente sin hacerle daño",
+    "priority": "Media"
+  },
+  "411": {
+    "name": "Rotten Heart",
+    "condition": "Entrar en Corpse por primera vez",
+    "priority": "Media"
+  },
+  "412": {
+    "name": "Dross",
+    "condition": "Derrotar a all bosses in Downpour",
+    "priority": "Media"
+  },
+  "413": {
+    "name": "Ashpit",
+    "condition": "Derrotar a all bosses in Mines",
+    "priority": "Media"
+  },
+  "414": {
+    "name": "Gehenna",
+    "condition": "Derrotar a all bosses in Mausoleum",
+    "priority": "Media"
+  },
+  "415": {
+    "name": "Red Key",
+    "condition": "Abrir el cofre de Mom en Home por primera vez (desbloquea Red Key)",
+    "priority": "Alta"
+  },
+  "416": {
+    "name": "Wisp Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Bethany",
+    "priority": "Baja"
+  },
+  "417": {
+    "name": "Book of Virtues",
+    "condition": "Derrotar a Isaac con Bethany",
+    "priority": "Media"
+  },
+  "418": {
+    "name": "Urn of Souls",
+    "condition": "Derrotar a Satan con Bethany",
+    "priority": "Media"
+  },
+  "419": {
+    "name": "Blessed Penny",
+    "condition": "Derrotar a ??? (Blue Baby) con Bethany",
+    "priority": "Crítica"
+  },
+  "420": {
+    "name": "Alabaster Box",
+    "condition": "Derrotar a The Lamb con Bethany",
+    "priority": "Media"
+  },
+  "421": {
+    "name": "Beth's Faith",
+    "condition": "Completar Boss Rush con Bethany",
+    "priority": "Media"
+  },
+  "422": {
+    "name": "Soul Locket",
+    "condition": "Derrotar a Ultra Greed con Bethany",
+    "priority": "Alta"
+  },
+  "423": {
+    "name": "Divine Intervention",
+    "condition": "Derrotar a Hush con Bethany",
+    "priority": "Media"
+  },
+  "424": {
+    "name": "Vade Retro",
+    "condition": "Derrotar a Ultra Greedier con Bethany",
+    "priority": "Alta"
+  },
+  "425": {
+    "name": "Star of Bethlehem",
+    "condition": "Derrotar a Delirium con Bethany",
+    "priority": "Media"
+  },
+  "426": {
+    "name": "Hope Baby",
+    "condition": "Completar todas las marcas en Difícil con Bethany",
+    "priority": "Baja"
+  },
+  "427": {
+    "name": "Glowing Baby",
+    "condition": "Derrotar a Mega Satan con Bethany",
+    "priority": "Baja"
+  },
+  "428": {
+    "name": "Double Baby",
+    "condition": "Derrotar a Mom's Heart o It Lives! en Difícil con Jacob & Esau",
+    "priority": "Baja"
+  },
+  "429": {
+    "name": "The Stairway",
+    "condition": "Derrotar a Isaac con Jacob & Esau",
+    "priority": "Alta"
+  },
+  "430": {
+    "name": "Red Stew",
+    "condition": "Derrotar a Satan con Jacob & Esau",
+    "priority": "Alta"
+  },
+  "431": {
+    "name": "Birthright",
+    "condition": "Derrotar a ??? (Blue Baby) con Jacob & Esau",
+    "priority": "Crítica"
+  },
+  "432": {
+    "name": "Damocles",
+    "condition": "Derrotar a The Lamb con Jacob & Esau",
+    "priority": "Crítica"
+  },
+  "433": {
+    "name": "Rock Bottom",
+    "condition": "Completar Boss Rush con Jacob & Esau",
+    "priority": "Crítica"
+  },
+  "434": {
+    "name": "Inner Child",
+    "condition": "Derrotar a Ultra Greed con Jacob & Esau",
+    "priority": "Alta"
+  },
+  "435": {
+    "name": "Vanishing Twin",
+    "condition": "Derrotar a Hush con Jacob & Esau",
+    "priority": "Alta"
+  },
+  "436": {
+    "name": "Genesis",
+    "condition": "Derrotar a Ultra Greedier con Jacob & Esau",
+    "priority": "Crítica"
+  },
+  "437": {
+    "name": "Suplex!",
+    "condition": "Derrotar a Delirium con Jacob & Esau",
+    "priority": "Alta"
+  },
+  "438": {
+    "name": "Solomon's Baby",
+    "condition": "Completar todas las marcas en Difícil con Jacob & Esau",
+    "priority": "Alta"
+  },
+  "439": {
+    "name": "Illusion Baby",
+    "condition": "Derrotar a Mega Satan con Jacob & Esau",
+    "priority": "Baja"
+  },
+  "440": {
+    "name": "Meat Cleaver",
+    "condition": "Derrotar a Mother con Isaac",
+    "priority": "Crítica"
+  },
+  "441": {
+    "name": "Options?",
+    "condition": "Derrotar a The Beast con Isaac",
+    "priority": "Alta"
+  },
+  "442": {
+    "name": "Yuck Heart",
+    "condition": "Derrotar a Mother con Magdalene",
+    "priority": "Alta"
+  },
+  "443": {
+    "name": "Candy Heart",
+    "condition": "Derrotar a The Beast con Magdalene",
+    "priority": "Media"
+  },
+  "444": {
+    "name": "Guppy's Eye",
+    "condition": "Derrotar a Mother con Cain",
+    "priority": "Media"
+  },
+  "445": {
+    "name": "A Pound of Flesh",
+    "condition": "Derrotar a The Beast con Cain",
+    "priority": "Media"
+  },
+  "446": {
+    "name": "Akeldama",
+    "condition": "Derrotar a Mother con Judas",
+    "priority": "Alta"
+  },
+  "447": {
+    "name": "Redemption",
+    "condition": "Derrotar a The Beast con Judas",
+    "priority": "Media"
+  },
+  "448": {
+    "name": "Eternal D6",
+    "condition": "Derrotar a Mother con ??? (Blue Baby)",
+    "priority": "Alta"
+  },
+  "449": {
+    "name": "Montezuma's Revenge",
+    "condition": "Derrotar a The Beast con ??? (Blue Baby)",
+    "priority": "Media"
+  },
+  "450": {
+    "name": "Bird Cage",
+    "condition": "Derrotar a Mother con Eve",
+    "priority": "Alta"
+  },
+  "451": {
+    "name": "Cracked Orb",
+    "condition": "Derrotar a The Beast con Eve",
+    "priority": "Alta"
+  },
+  "452": {
+    "name": "Bloody Gust",
+    "condition": "Derrotar a Mother con Samson",
+    "priority": "Alta"
+  },
+  "453": {
+    "name": "Empty Heart",
+    "condition": "Derrotar a The Beast con Samson",
+    "priority": "Media"
+  },
+  "454": {
+    "name": "Devil's Crown",
+    "condition": "Derrotar a Mother con Azazel",
+    "priority": "Media"
+  },
+  "455": {
+    "name": "Lil Abaddon",
+    "condition": "Derrotar a The Beast con Azazel",
+    "priority": "Alta"
+  },
+  "456": {
+    "name": "Tinytoma",
+    "condition": "Derrotar a Mother con Lazarus",
+    "priority": "Media"
+  },
+  "457": {
+    "name": "Astral Projection",
+    "condition": "Derrotar a The Beast con Lazarus",
+    "priority": "Alta"
+  },
+  "458": {
+    "name": "'M",
+    "condition": "Derrotar a Mother con Eden",
+    "priority": "Alta"
+  },
+  "459": {
+    "name": "Everything Jar",
+    "condition": "Derrotar a The Beast con Eden",
+    "priority": "Alta"
+  },
+  "460": {
+    "name": "Lost Soul",
+    "condition": "Derrotar a Mother con The Lost",
+    "priority": "Crítica"
+  },
+  "461": {
+    "name": "Hungry Soul",
+    "condition": "Derrotar a The Beast con The Lost",
+    "priority": "Alta"
+  },
+  "462": {
+    "name": "Blood Puppy",
+    "condition": "Derrotar a Mother con Lilith",
+    "priority": "Alta"
+  },
+  "463": {
+    "name": "C Section",
+    "condition": "Derrotar a The Beast con Lilith",
+    "priority": "Crítica"
+  },
+  "464": {
+    "name": "Keeper's Sack",
+    "condition": "Derrotar a Mother con Keeper",
+    "priority": "Alta"
+  },
+  "465": {
+    "name": "Keeper's Box",
+    "condition": "Derrotar a The Beast con Keeper",
+    "priority": "Alta"
+  },
+  "466": {
+    "name": "Lil Portal",
+    "condition": "Derrotar a Mother con Apollyon",
+    "priority": "Alta"
+  },
+  "467": {
+    "name": "Worm Friend",
+    "condition": "Derrotar a The Beast con Apollyon",
+    "priority": "Alta"
+  },
+  "468": {
+    "name": "Bone Spurs",
+    "condition": "Derrotar a Mother con The Forgotten",
+    "priority": "Alta"
+  },
+  "469": {
+    "name": "Spirit Shackles",
+    "condition": "Derrotar a The Beast con The Forgotten",
+    "priority": "Alta"
+  },
+  "470": {
+    "name": "Revelation",
+    "condition": "Derrotar a Mother con Bethany",
+    "priority": "Alta"
+  },
+  "471": {
+    "name": "Jar of Wisps",
+    "condition": "Derrotar a The Beast con Bethany",
+    "priority": "Alta"
+  },
+  "472": {
+    "name": "Magic Skin",
+    "condition": "Derrotar a Mother con Jacob & Esau",
+    "priority": "Alta"
+  },
+  "473": {
+    "name": "Friend Finder",
+    "condition": "Derrotar a The Beast con Jacob & Esau",
+    "priority": "Alta"
+  },
+  "474": {
+    "name": "Tainted Isaac (The Broken)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Isaac",
+    "priority": "Crítica"
+  },
+  "475": {
+    "name": "Tainted Magdalene (The Dauntless)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Magdalene",
+    "priority": "Alta"
+  },
+  "476": {
+    "name": "Tainted Cain (The Hoarder)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Cain",
+    "priority": "Alta"
+  },
+  "477": {
+    "name": "Tainted Judas (The Deceiver)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Judas",
+    "priority": "Crítica"
+  },
+  "478": {
+    "name": "Tainted ??? (The Soiled)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con ??? (Blue Baby)",
+    "priority": "Alta"
+  },
+  "479": {
+    "name": "Tainted Eve (The Curdled)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Eve",
+    "priority": "Alta"
+  },
+  "480": {
+    "name": "Tainted Samson (The Savage)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Samson",
+    "priority": "Alta"
+  },
+  "481": {
+    "name": "Tainted Azazel (The Benighted)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Azazel",
+    "priority": "Alta"
+  },
+  "482": {
+    "name": "Tainted Lazarus (The Enigma)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Lazarus",
+    "priority": "Alta"
+  },
+  "483": {
+    "name": "Tainted Eden (The Capricious)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Eden",
+    "priority": "Alta"
+  },
+  "484": {
+    "name": "Tainted Lost (The Baleful)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con The Lost",
+    "priority": "Alta"
+  },
+  "485": {
+    "name": "Tainted Lilith (The Harlot)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Lilith",
+    "priority": "Crítica"
+  },
+  "486": {
+    "name": "Tainted Keeper (The Miser)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Keeper",
+    "priority": "Crítica"
+  },
+  "487": {
+    "name": "Tainted Apollyon (The Empty)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Apollyon",
+    "priority": "Alta"
+  },
+  "488": {
+    "name": "Tainted Forgotten (The Fettered)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con The Forgotten",
+    "priority": "Alta"
+  },
+  "489": {
+    "name": "Tainted Bethany (The Zealot)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Bethany",
+    "priority": "Alta"
+  },
+  "490": {
+    "name": "Tainted Jacob (The Deserter)",
+    "condition": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Jacob & Esau",
+    "priority": "Alta"
+  },
+  "491": {
+    "name": "Glitched Crown",
+    "condition": "Derrotar a The Beast con Tainted Isaac",
+    "priority": "Crítica"
+  },
+  "492": {
+    "name": "Belly Jelly",
+    "condition": "Derrotar a The Beast con Tainted Magdalene",
+    "priority": "Media"
+  },
+  "493": {
+    "name": "Blue Key",
+    "condition": "Derrotar a The Beast con Tainted Cain",
+    "priority": "Media"
+  },
+  "494": {
+    "name": "Sanguine Bond",
+    "condition": "Derrotar a The Beast con Tainted Judas",
+    "priority": "Media"
+  },
+  "495": {
+    "name": "The Swarm",
+    "condition": "Derrotar a The Beast con Tainted ???",
+    "priority": "Media"
+  },
+  "496": {
+    "name": "Heartbreak",
+    "condition": "Derrotar a The Beast con Tainted Eve",
+    "priority": "Media"
+  },
+  "497": {
+    "name": "Larynx",
+    "condition": "Derrotar a The Beast con Tainted Samson",
+    "priority": "Media"
+  },
+  "498": {
+    "name": "Azazel's Rage",
+    "condition": "Derrotar a The Beast con Tainted Azazel",
+    "priority": "Media"
+  },
+  "499": {
+    "name": "Salvation",
+    "condition": "Derrotar a The Beast con Tainted Lazarus",
+    "priority": "Media"
+  },
+  "500": {
+    "name": "TMTRAINER",
+    "condition": "Derrotar a The Beast con Tainted Eden",
+    "priority": "Media"
+  },
+  "501": {
+    "name": "Sacred Orb",
+    "condition": "Derrotar a The Beast con Tainted Lost",
+    "priority": "Media"
+  },
+  "502": {
+    "name": "Twisted Pair",
+    "condition": "Derrotar a The Beast con Tainted Lilith",
+    "priority": "Media"
+  },
+  "503": {
+    "name": "Strawman",
+    "condition": "Derrotar a The Beast con Tainted Keeper",
+    "priority": "Alta"
+  },
+  "504": {
+    "name": "Echo Chamber",
+    "condition": "Derrotar a The Beast con Tainted Apollyon",
+    "priority": "Crítica"
+  },
+  "505": {
+    "name": "Isaac's Tomb",
+    "condition": "Derrotar a The Beast con Tainted Forgotten",
+    "priority": "Media"
+  },
+  "506": {
+    "name": "Vengeful Spirit",
+    "condition": "Derrotar a The Beast con Tainted Bethany",
+    "priority": "Media"
+  },
+  "507": {
+    "name": "Esau Jr.",
+    "condition": "Derrotar a The Beast con Tainted Jacob",
+    "priority": "Media"
+  },
+  "508": {
+    "name": "Bloody Mary",
+    "condition": "Desbloquear a Bethany, Blood Bag e It Lives! (desbloquea Desafío #37)",
+    "priority": "Alta"
+  },
+  "509": {
+    "name": "Baptism by Fire",
+    "condition": "Derrotar a Satan con Bethany, derrotar a Mom's Heart 11 veces y desbloquear Maggy's Faith (desbloquea Desafío #38)",
+    "priority": "Media"
+  },
+  "510": {
+    "name": "Isaac's Awakening",
+    "condition": "Derrotar a Mother (desbloquea Desafío #39)",
+    "priority": "Media"
+  },
+  "511": {
+    "name": "Seeing Double",
+    "condition": "Derrotar a Mother (desbloquea Desafío #40)",
+    "priority": "Media"
+  },
+  "512": {
+    "name": "Pica Run",
+    "condition": "Derrotar a Mom's Heart 11 veces y desbloquear Marbles (desbloquea Desafío #41)",
+    "priority": "Media"
+  },
+  "513": {
+    "name": "Hot Potato",
+    "condition": "Desbloquear a Tainted Forgotten (desbloquea Desafío #42)",
+    "priority": "Media"
+  },
+  "514": {
+    "name": "Cantripped!",
+    "condition": "Desbloquear a Tainted Cain (desbloquea Desafío #43)",
+    "priority": "Media"
+  },
+  "515": {
+    "name": "Red Redemption",
+    "condition": "Desbloquear a Tainted Jacob (desbloquea Desafío #44)",
+    "priority": "Media"
+  },
+  "516": {
+    "name": "DELETE THIS",
+    "condition": "Desbloquear a Tainted Eden (desbloquea Desafío #45)",
+    "priority": "Media"
+  },
+  "517": {
+    "name": "Dirty Mind",
+    "condition": "Completar el Desafío #36 (Scat Man)",
+    "priority": "Alta"
+  },
+  "518": {
+    "name": "Sigil of Baphomet",
+    "condition": "Completar el Desafío #37 (Bloody Mary)",
+    "priority": "Alta"
+  },
+  "519": {
+    "name": "Purgatory",
+    "condition": "Completar el Desafío #38 (Baptism by Fire)",
+    "priority": "Media"
+  },
+  "520": {
+    "name": "Spirit Sword",
+    "condition": "Completar el Desafío #39 (Isaac's Awakening)",
+    "priority": "Alta"
+  },
+  "521": {
+    "name": "Broken Glasses",
+    "condition": "Completar el Desafío #40 (Seeing Double)",
+    "priority": "Media"
+  },
+  "522": {
+    "name": "Ice Cube",
+    "condition": "Completar el Desafío #41 (Pica Run)",
+    "priority": "Media"
+  },
+  "523": {
+    "name": "Charged Penny",
+    "condition": "Donar a Battery Bums hasta que entreguen un objeto 5 veces",
+    "priority": "Media"
+  },
+  "524": {
+    "name": "0 - The Fool? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Lost",
+    "priority": "Alta"
+  },
+  "525": {
+    "name": "I - The Magician? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Judas",
+    "priority": "Media"
+  },
+  "526": {
+    "name": "II - The High Priestess? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Lilith",
+    "priority": "Media"
+  },
+  "527": {
+    "name": "III - The Empress? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Eve",
+    "priority": "Media"
+  },
+  "528": {
+    "name": "IV - The Emperor? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted ???",
+    "priority": "Media"
+  },
+  "529": {
+    "name": "V - The Hierophant? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Bethany",
+    "priority": "Alta"
+  },
+  "530": {
+    "name": "VI - The Lovers? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Magdalene",
+    "priority": "Alta"
+  },
+  "531": {
+    "name": "VII - The Chariot? (Reversed)",
+    "condition": "Completar el Desafío #42 (Hot Potato)",
+    "priority": "Media"
+  },
+  "532": {
+    "name": "VIII - Justice? (Reversed)",
+    "condition": "Completar el Desafío #43 (Cantripped!)",
+    "priority": "Media"
+  },
+  "533": {
+    "name": "IX - The Hermit? (Reversed)",
+    "condition": "Completar el Desafío #44 (Red Redemption)",
+    "priority": "Media"
+  },
+  "534": {
+    "name": "X - Wheel of Fortune? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Cain",
+    "priority": "Media"
+  },
+  "535": {
+    "name": "XI - Strength? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Samson",
+    "priority": "Media"
+  },
+  "536": {
+    "name": "XII - The Hanged Man? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Keeper",
+    "priority": "Media"
+  },
+  "537": {
+    "name": "XIII - Death? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Forgotten",
+    "priority": "Media"
+  },
+  "538": {
+    "name": "XIV - Temperance? (Reversed)",
+    "condition": "Completar el Desafío #45 (DELETE_THIS)",
+    "priority": "Media"
+  },
+  "539": {
+    "name": "XV - The Devil? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Azazel",
+    "priority": "Media"
+  },
+  "540": {
+    "name": "XVI - The Tower? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Apollyon",
+    "priority": "Media"
+  },
+  "541": {
+    "name": "XVII - The Stars? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Isaac",
+    "priority": "Alta"
+  },
+  "542": {
+    "name": "XVIII - The Moon? / XIX - The Sun? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Jacob",
+    "priority": "Alta"
+  },
+  "543": {
+    "name": "XX - Judgement? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Lazarus",
+    "priority": "Media"
+  },
+  "544": {
+    "name": "XXI - The World? (Reversed)",
+    "condition": "Derrotar a Ultra Greedier con Tainted Eden",
+    "priority": "Media"
+  },
+  "545": {
+    "name": "Old Capacitor",
+    "condition": "Matar a 10 Battery Bums",
+    "priority": "Media"
+  },
+  "546": {
+    "name": "Brimstone Bombs",
+    "condition": "Destruir el vagoncito de Hornfel y matarlo antes de que escape",
+    "priority": "Media"
+  },
+  "547": {
+    "name": "Mega Mush",
+    "condition": "Completar todas las marcas en Difícil con todos los personajes no-Tainted",
+    "priority": "Crítica"
+  },
+  "548": {
+    "name": "Mom's Lock",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Isaac",
+    "priority": "Media"
+  },
+  "549": {
+    "name": "Dice Bag",
+    "condition": "Derrotar a Mother con Tainted Isaac",
+    "priority": "Media"
+  },
+  "550": {
+    "name": "Holy Crown",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Magdalene",
+    "priority": "Media"
+  },
+  "551": {
+    "name": "Mother's Kiss",
+    "condition": "Derrotar a Mother con Tainted Magdalene",
+    "priority": "Media"
+  },
+  "552": {
+    "name": "Gilded Key",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Cain",
+    "priority": "Media"
+  },
+  "553": {
+    "name": "Lucky Sack",
+    "condition": "Derrotar a Mother con Tainted Cain",
+    "priority": "Media"
+  },
+  "554": {
+    "name": "Your Soul",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Judas",
+    "priority": "Media"
+  },
+  "555": {
+    "name": "Number Magnet",
+    "condition": "Derrotar a Mother con Tainted Judas",
+    "priority": "Media"
+  },
+  "556": {
+    "name": "Dingle Berry",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted ???",
+    "priority": "Media"
+  },
+  "557": {
+    "name": "Ring Cap",
+    "condition": "Derrotar a Mother con Tainted ???",
+    "priority": "Media"
+  },
+  "558": {
+    "name": "Strange Key",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Eve",
+    "priority": "Media"
+  },
+  "559": {
+    "name": "Lil Clot",
+    "condition": "Derrotar a Mother con Tainted Eve",
+    "priority": "Media"
+  },
+  "560": {
+    "name": "Temporary Tattoo",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Samson",
+    "priority": "Media"
+  },
+  "561": {
+    "name": "Swallowed M80",
+    "condition": "Derrotar a Mother con Tainted Samson",
+    "priority": "Media"
+  },
+  "562": {
+    "name": "Wicked Crown",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Azazel",
+    "priority": "Media"
+  },
+  "563": {
+    "name": "Azazel's Stump",
+    "condition": "Derrotar a Mother con Tainted Azazel",
+    "priority": "Media"
+  },
+  "564": {
+    "name": "Torn Pocket",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Lazarus",
+    "priority": "Media"
+  },
+  "565": {
+    "name": "Torn Card",
+    "condition": "Derrotar a Mother con Tainted Lazarus",
+    "priority": "Media"
+  },
+  "566": {
+    "name": "Nuh Uh!",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Eden",
+    "priority": "Media"
+  },
+  "567": {
+    "name": "Modeling Clay",
+    "condition": "Derrotar a Mother con Tainted Eden",
+    "priority": "Media"
+  },
+  "568": {
+    "name": "Kid's Drawing",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Lost",
+    "priority": "Media"
+  },
+  "569": {
+    "name": "Crystal Key",
+    "condition": "Derrotar a Mother con Tainted Lost",
+    "priority": "Media"
+  },
+  "570": {
+    "name": "The Twins",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Lilith",
+    "priority": "Media"
+  },
+  "571": {
+    "name": "Adoption Papers",
+    "condition": "Derrotar a Mother con Tainted Lilith",
+    "priority": "Media"
+  },
+  "572": {
+    "name": "Keeper's Bargain",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Keeper",
+    "priority": "Alta"
+  },
+  "573": {
+    "name": "Cursed Penny",
+    "condition": "Derrotar a Mother con Tainted Keeper",
+    "priority": "Media"
+  },
+  "574": {
+    "name": "Cricket Leg",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Apollyon",
+    "priority": "Media"
+  },
+  "575": {
+    "name": "Apollyon's Best Friend",
+    "condition": "Derrotar a Mother con Tainted Apollyon",
+    "priority": "Media"
+  },
+  "576": {
+    "name": "Polished Bone",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Forgotten",
+    "priority": "Media"
+  },
+  "577": {
+    "name": "Hollow Heart",
+    "condition": "Derrotar a Mother con Tainted Forgotten",
+    "priority": "Media"
+  },
+  "578": {
+    "name": "Expansion Pack",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Bethany",
+    "priority": "Media"
+  },
+  "579": {
+    "name": "Beth's Essence",
+    "condition": "Derrotar a Mother con Tainted Bethany",
+    "priority": "Media"
+  },
+  "580": {
+    "name": "RC Remote",
+    "condition": "Derrotar a Isaac, ???, Satan y The Lamb con Tainted Jacob",
+    "priority": "Media"
+  },
+  "581": {
+    "name": "Found Soul",
+    "condition": "Derrotar a Mother con Tainted Jacob",
+    "priority": "Media"
+  },
+  "582": {
+    "name": "Member Card",
+    "condition": "Gastar 40 o más monedas en una sola tienda",
+    "priority": "Media"
+  },
+  "583": {
+    "name": "Golden Razor",
+    "condition": "Acumular 99 monedas y gastarlas todas en una misma partida",
+    "priority": "Media"
+  },
+  "584": {
+    "name": "Spindown Dice",
+    "condition": "Derrotar a Delirium con Tainted Isaac",
+    "priority": "Crítica"
+  },
+  "585": {
+    "name": "Hypercoagulation",
+    "condition": "Derrotar a Delirium con Tainted Magdalene",
+    "priority": "Media"
+  },
+  "586": {
+    "name": "Bag of Crafting",
+    "condition": "Derrotar a Delirium con Tainted Cain",
+    "priority": "Media"
+  },
+  "587": {
+    "name": "Dark Arts",
+    "condition": "Derrotar a Delirium con Tainted Judas",
+    "priority": "Crítica"
+  },
+  "588": {
+    "name": "IBS",
+    "condition": "Derrotar a Delirium con Tainted ???",
+    "priority": "Media"
+  },
+  "589": {
+    "name": "Sumptorium",
+    "condition": "Derrotar a Delirium con Tainted Eve",
+    "priority": "Media"
+  },
+  "590": {
+    "name": "Berserk!",
+    "condition": "Derrotar a Delirium con Tainted Samson",
+    "priority": "Media"
+  },
+  "591": {
+    "name": "Hemoptysis",
+    "condition": "Derrotar a Delirium con Tainted Azazel",
+    "priority": "Media"
+  },
+  "592": {
+    "name": "Flip",
+    "condition": "Derrotar a Delirium con Tainted Lazarus",
+    "priority": "Media"
+  },
+  "593": {
+    "name": "Corrupted Data",
+    "condition": "Derrotar a Delirium con Tainted Eden",
+    "priority": "Media"
+  },
+  "594": {
+    "name": "Ghost Bombs",
+    "condition": "Derrotar a Delirium con Tainted Lost",
+    "priority": "Media"
+  },
+  "595": {
+    "name": "Gello",
+    "condition": "Derrotar a Delirium con Tainted Lilith",
+    "priority": "Media"
+  },
+  "596": {
+    "name": "Keeper's Kin",
+    "condition": "Derrotar a Delirium con Tainted Keeper",
+    "priority": "Alta"
+  },
+  "597": {
+    "name": "Abyss",
+    "condition": "Derrotar a Delirium con Tainted Apollyon",
+    "priority": "Media"
+  },
+  "598": {
+    "name": "Decap Attack",
+    "condition": "Derrotar a Delirium con Tainted Forgotten",
+    "priority": "Media"
+  },
+  "599": {
+    "name": "Lemegeton",
+    "condition": "Derrotar a Delirium con Tainted Bethany",
+    "priority": "Media"
+  },
+  "600": {
+    "name": "Anima Sola",
+    "condition": "Derrotar a Delirium con Tainted Jacob",
+    "priority": "Media"
+  },
+  "601": {
+    "name": "Mega Chest",
+    "condition": "Derrotar a Mega Satan con Tainted Isaac",
+    "priority": "Alta"
+  },
+  "602": {
+    "name": "Queen of Hearts",
+    "condition": "Derrotar a Mega Satan con Tainted Magdalene",
+    "priority": "Media"
+  },
+  "603": {
+    "name": "Gold Pill",
+    "condition": "Derrotar a Mega Satan con Tainted Cain",
+    "priority": "Alta"
+  },
+  "604": {
+    "name": "Black Sack",
+    "condition": "Derrotar a Mega Satan con Tainted Judas",
+    "priority": "Media"
+  },
+  "605": {
+    "name": "Charming Poop",
+    "condition": "Derrotar a Mega Satan con Tainted ???",
+    "priority": "Media"
+  },
+  "606": {
+    "name": "Horse Pill",
+    "condition": "Derrotar a Mega Satan con Tainted Eve",
+    "priority": "Alta"
+  },
+  "607": {
+    "name": "Crane Game",
+    "condition": "Derrotar a Mega Satan con Tainted Samson",
+    "priority": "Crítica"
+  },
+  "608": {
+    "name": "Hell Game",
+    "condition": "Derrotar a Mega Satan con Tainted Azazel",
+    "priority": "Media"
+  },
+  "609": {
+    "name": "Wooden Chest",
+    "condition": "Derrotar a Mega Satan con Tainted Lazarus",
+    "priority": "Alta"
+  },
+  "610": {
+    "name": "Wild Card",
+    "condition": "Derrotar a Mega Satan con Tainted Eden",
+    "priority": "Media"
+  },
+  "611": {
+    "name": "Haunted Chest",
+    "condition": "Derrotar a Mega Satan con Tainted Lost",
+    "priority": "Alta"
+  },
+  "612": {
+    "name": "Fool's Gold",
+    "condition": "Derrotar a Mega Satan con Tainted Lilith",
+    "priority": "Media"
+  },
+  "613": {
+    "name": "Golden Penny",
+    "condition": "Derrotar a Mega Satan con Tainted Keeper",
+    "priority": "Alta"
+  },
+  "614": {
+    "name": "Rotten Beggar",
+    "condition": "Derrotar a Mega Satan con Tainted Apollyon",
+    "priority": "Media"
+  },
+  "615": {
+    "name": "Golden Battery",
+    "condition": "Derrotar a Mega Satan con Tainted Forgotten",
+    "priority": "Alta"
+  },
+  "616": {
+    "name": "Confessional",
+    "condition": "Derrotar a Mega Satan con Tainted Bethany",
+    "priority": "Crítica"
+  },
+  "617": {
+    "name": "Golden Trinket",
+    "condition": "Derrotar a Mega Satan con Tainted Jacob",
+    "priority": "Media"
+  },
+  "618": {
+    "name": "Soul of Isaac",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Isaac",
+    "priority": "Crítica"
+  },
+  "619": {
+    "name": "Soul of Magdalene",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Magdalene",
+    "priority": "Media"
+  },
+  "620": {
+    "name": "Soul of Cain",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Cain",
+    "priority": "Alta"
+  },
+  "621": {
+    "name": "Soul of Judas",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Judas",
+    "priority": "Media"
+  },
+  "622": {
+    "name": "Soul of ???",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted ???",
+    "priority": "Media"
+  },
+  "623": {
+    "name": "Soul of Eve",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Eve",
+    "priority": "Media"
+  },
+  "624": {
+    "name": "Soul of Samson",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Samson",
+    "priority": "Media"
+  },
+  "625": {
+    "name": "Soul of Azazel",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Azazel",
+    "priority": "Media"
+  },
+  "626": {
+    "name": "Soul of Lazarus",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Lazarus",
+    "priority": "Media"
+  },
+  "627": {
+    "name": "Soul of Eden",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Eden",
+    "priority": "Alta"
+  },
+  "628": {
+    "name": "Soul of the Lost",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Lost",
+    "priority": "Alta"
+  },
+  "629": {
+    "name": "Soul of Lilith",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Lilith",
+    "priority": "Crítica"
+  },
+  "630": {
+    "name": "Soul of the Keeper",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Keeper",
+    "priority": "Alta"
+  },
+  "631": {
+    "name": "Soul of Apollyon",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Apollyon",
+    "priority": "Media"
+  },
+  "632": {
+    "name": "Soul of the Forgotten",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Forgotten",
+    "priority": "Media"
+  },
+  "633": {
+    "name": "Soul of Bethany",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Bethany",
+    "priority": "Alta"
+  },
+  "634": {
+    "name": "Soul of Jacob and Esau",
+    "condition": "Derrotar a Hush y completar Boss Rush con Tainted Jacob",
+    "priority": "Media"
+  },
+  "635": {
+    "name": "A Strange Door",
+    "condition": "Derrotar a Mother",
+    "priority": "Alta"
+  },
+  "636": {
+    "name": "Death Certificate",
+    "condition": "Completar todas las marcas en Difícil con todos los personajes (normales y Tainted)",
+    "priority": "Crítica"
+  },
+  "637": {
+    "name": "Dead God",
+    "condition": "Desbloquear todos los demás logros del juego (incluidos los 4 de Repentance+) y recoger todos los objetos",
+    "priority": "Crítica"
+  },
+  "638": {
+    "name": "Play Online",
+    "condition": "Jugar una partida en modo Online",
+    "priority": "Media"
+  },
+  "639": {
+    "name": "Win Online",
+    "condition": "Ganar una partida en modo Online",
+    "priority": "Alta"
+  },
+  "640": {
+    "name": "Win Online Daily",
+    "condition": "Ganar una partida Daily Run en modo Online",
+    "priority": "Media"
+  },
+  "641": {
+    "name": "Item Descriptions",
+    "condition": "Derrotar a Mom (activa descripciones de objetos en Repentance+)",
+    "priority": "Alta"
+  },
+  "642": {
+    "name": "Save File Check",
+    "condition": "Marca interna del motor de guardado de Isaac Repentance+",
+    "priority": "Baja"
+  }
+}

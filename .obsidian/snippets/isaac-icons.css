@@ -1,0 +1,38 @@
+/* Alineación vertical centrada de iconos e imágenes embebidas con el texto */
+span.image-embed,
+img.internal-embed,
+.markdown-rendered img,
+.cm-embed-block img,
+p img,
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+td img,
+th img,
+li img {
+    vertical-align: middle !important;
+    display: inline-block;
+    image-rendering: pixelated;
+}
+
+/* Espaciado sutil para que no se peguen las letras al icono */
+.markdown-rendered p img,
+.markdown-rendered td img,
+.markdown-rendered h1 img,
+.markdown-rendered h2 img,
+.markdown-rendered h3 img,
+.markdown-rendered li img {
+    margin: 0 3px;
+}
+
+/* Estilo estilizado para la barra de progreso de logros */
+progress {
+    vertical-align: middle !important;
+    width: 150px;
+    height: 14px;
+    border-radius: 4px;
+    accent-color: #c92a2a;
+    display: inline-block;
+    margin: 0 6px;
+}

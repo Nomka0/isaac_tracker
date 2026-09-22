@@ -17,6 +17,7 @@ import shutil
 import subprocess
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
+from isaac_enricher import es_logro_factible, get_unlocked_ids, find_latest_saves
 
 # Asegurar codificación UTF-8 en terminales de Windows
 for _stream in (sys.stdin, sys.stdout, sys.stderr):
@@ -446,8 +447,17 @@ def consultar_ia_bitacora_y_curacion(data, limit=25, timeout=120):
     if not shutil.which("agy"):
         return None, None
 
-    # Obtener lista completa de bloqueados
-    bloqueados = data.get("todos_bloqueados", [])
+    unlocked_set = set(data.get("desbloqueados_ids", []))
+    if not unlocked_set:
+        latest, _ = find_latest_saves(BASE_DIR / "save_backups")
+        if latest:
+            unlocked_set = get_unlocked_ids(latest)
+
+    # Obtener lista completa de bloqueados factibles
+    bloqueados = [
+        b for b in data.get("todos_bloqueados", [])
+        if es_logro_factible(b, unlocked_set)
+    ]
     if not bloqueados:
         ach_map = {}
         if ACH_MAP_PATH.exists():
@@ -457,12 +467,14 @@ def consultar_ia_bitacora_y_curacion(data, limit=25, timeout=120):
             except Exception:
                 pass
         for aid, info in ach_map.items():
-            bloqueados.append({
+            entry = {
                 "id": int(aid),
                 "nombre": info.get("name", ""),
                 "desbloqueo": info.get("condition", ""),
                 "prioridad": info.get("priority", "Media")
-            })
+            }
+            if int(aid) not in unlocked_set and es_logro_factible(entry, unlocked_set):
+                bloqueados.append(entry)
 
     bloqueados_dict = {b["id"]: b for b in bloqueados}
     locked_lines = "\n".join([f"{item['id']}: {item['nombre']} | {item['desbloqueo']}" for item in bloqueados])
@@ -496,10 +508,11 @@ CRITERIOS DE CLASIFICACIÓN (DE ARRIBA A ABAJO):
    - Desbloqueos que exigen jefes finales brutales o personajes frustrantes (Mother, Delirium, The Beast, marcas duras de Jacob & Esau, The Lost). Solo inclúyelos si su recompensa es trascendental (ej. Spindown Dice, Glitched Crown).
 4. EXCLUSIONES TOTALES:
    - PROHIBIDO incluir logros de completismo masivo o inalcanzables a corto plazo como Mega Mush, Death Certificate, Dead God o Platinum God.
+   - PROHIBIDO recomendar logros de personajes que el jugador NO tenga desbloqueados (la lista ya fue filtrada estrictamente para contener únicamente objetivos viables con los personajes que el jugador posee; no inventes logros de otros personajes).
 Para cada logro seleccionado incluye su 'id' y un 'motivo' táctico conciso (1-2 líneas) destacando su efecto y por qué es rentable sacarlo por su facilidad/impacto.
 
 TAREA 2: PROTOCOLO COMPACTO PARA LA PRÓXIMA RUN
-Presenta exactamente 2 sugerencias tácticas viables y de rápida consecución (enfocadas en la mejor relación utilidad/facilidad de la lista):
+Presenta exactamente 2 sugerencias tácticas viables y de rápida consecución (enfocadas en la mejor relación utilidad/facilidad de la lista y EXCLUSIVAMENTE con personajes ya desbloqueados):
 - **Plan A (Principal - Mejor balance Utilidad/Facilidad):** ![[images/achievements/<id>.png|20]] **[Nombre Ítem]** con ![[images/characters/<char>.png|20]] [Personaje] vs ![[images/bosses/<boss>.png|20]] [Jefe / Meta]. Directiva: [Estrategia clave en 1 línea].
 - **Plan B (Alternativo):** ![[images/achievements/<id>.png|20]] **[Nombre Ítem]** con ![[images/characters/<char>.png|20]] [Personaje] vs ![[images/bosses/<boss>.png|20]] [Jefe / Meta]. Directiva: [Estrategia clave en 1 línea].
 
@@ -580,8 +593,10 @@ REGLAS DE FORMATO (ESTRICTO):
             for s in seleccionados_raw:
                 aid = int(s.get("id", 0))
                 if aid in bloqueados_dict and aid not in seen_ids:
-                    seen_ids.add(aid)
                     info = bloqueados_dict[aid]
+                    if not es_logro_factible(info, unlocked_set):
+                        continue
+                    seen_ids.add(aid)
                     items_seleccionados.append({
                         "id": aid,
                         "nombre": info.get("nombre", f"Logro #{aid}"),
@@ -596,7 +611,7 @@ REGLAS DE FORMATO (ESTRICTO):
             if len(items_seleccionados) < limit:
                 candidatos = [
                     b for b in bloqueados
-                    if b["id"] not in seen_ids and b["id"] in bloqueados_dict
+                    if b["id"] not in seen_ids and b["id"] in bloqueados_dict and es_logro_factible(b, unlocked_set)
                 ]
                 candidatos.sort(key=lambda b: -(evaluar_utilidad_logro(b) + evaluar_facilidad_logro(b)))
                 for p in candidatos:
@@ -692,11 +707,19 @@ def sanear_texto_ia(texto):
     texto = re.sub(r"!\[\[([^\|\]]+)(\\?\|)?([^\]]*)\]\]", resolver_enlace, texto)
     return re.sub(r"[ ]{2,}", " ", texto)
 
-def extraer_ids_protocolo(analisis_ia):
-    """Extrae los IDs de logros mencionados como objetivos en Plan A y Plan B."""
+def extraer_ids_protocolo(analisis_ia, unlocked_set=None):
+    """Extrae los IDs de logros mencionados como objetivos en Plan A y Plan B, validando su factibilidad."""
     plan_a_ids, plan_b_ids = set(), set()
     if not analisis_ia:
         return plan_a_ids, plan_b_ids
+
+    ach_map = {}
+    if unlocked_set is not None and ACH_MAP_PATH.exists():
+        try:
+            with open(ACH_MAP_PATH, "r", encoding="utf-8") as f:
+                ach_map = json.load(f)
+        except Exception:
+            pass
 
     for line in analisis_ia.splitlines():
         target_set = plan_a_ids if ("Plan A" in line or "Sugerencia A" in line) else (
@@ -706,7 +729,12 @@ def extraer_ids_protocolo(analisis_ia):
             for m in re.findall(r"achievements/(\d+)\.png|#(\d+)|ID\s*(\d+)", line):
                 val = next((x for x in m if x), None)
                 if val:
-                    target_set.add(int(val))
+                    aid = int(val)
+                    if unlocked_set is not None and ach_map:
+                        item_info = ach_map.get(str(aid), {})
+                        if not es_logro_factible(item_info, unlocked_set):
+                            continue
+                    target_set.add(aid)
     return plan_a_ids, plan_b_ids
 
 def calcular_puntaje_logro(item, rank_idx, total_items, plan_a_ids, plan_b_ids, custom_tier=None):
@@ -723,8 +751,13 @@ def calcular_puntaje_logro(item, rank_idx, total_items, plan_a_ids, plan_b_ids, 
 
 def procesar_guia(data, items, analisis_ia=None, tips_ia=None, orden_secciones_ia=None):
     """Transforma los datos del guardado y los ítems curados en la estructura requerida por guide_template.j2."""
+    unlocked_set = set(data.get("desbloqueados_ids", []))
+    if not unlocked_set:
+        latest, _ = find_latest_saves(BASE_DIR / "save_backups")
+        if latest:
+            unlocked_set = get_unlocked_ids(latest)
     effects_db = cargar_efectos_existentes()
-    plan_a_ids, plan_b_ids = extraer_ids_protocolo(analisis_ia)
+    plan_a_ids, plan_b_ids = extraer_ids_protocolo(analisis_ia, unlocked_set)
     total_items = len(items)
     grupos = {}
 
@@ -858,7 +891,12 @@ def main():
             print("      ✔ Bitácora táctica de la IA generada exitosamente.", flush=True)
 
     if not items_guia:
-        bloqueados = data.get("todos_bloqueados", [])
+        unlocked_set = set(data.get("desbloqueados_ids", []))
+        if not unlocked_set:
+            latest, _ = find_latest_saves(BASE_DIR / "save_backups")
+            if latest:
+                unlocked_set = get_unlocked_ids(latest)
+        bloqueados = [b for b in data.get("todos_bloqueados", []) if es_logro_factible(b, unlocked_set)]
         bloqueados_ordenados = sorted(
             bloqueados,
             key=lambda b: -(evaluar_utilidad_logro(b) + evaluar_facilidad_logro(b))

@@ -24,6 +24,107 @@ def load_achievement_map():
     with open(MAP_FILE, "r", encoding="utf-8") as f:
         return {int(k): v for k, v in json.load(f).items()}
 
+CHARACTER_UNLOCK_MAP = {
+    # Personajes estándar
+    "Magdalene": 1,
+    "Cain": 2,
+    "Judas": 3,
+    "???": 32,
+    "Blue Baby": 32,
+    "??? (Blue Baby)": 32,
+    "Eve": 42,
+    "Samson": 67,
+    "Azazel": 79,
+    "Lazarus": 80,
+    "Eden": 81,
+    "The Lost": 82,
+    "Lost": 82,
+    "Lilith": 199,
+    "Keeper": 251,
+    "Apollyon": 340,
+    "The Forgotten": 390,
+    "Forgotten": 390,
+    "Bethany": 404,
+    "Jacob & Esau": 405,
+    "Jacob and Esau": 405,
+    "Jacob": 405,
+    # Personajes Tainted
+    "Tainted Isaac": 474,
+    "Tainted Magdalene": 475,
+    "Tainted Cain": 476,
+    "Tainted Judas": 477,
+    "Tainted ???": 478,
+    "Tainted Blue Baby": 478,
+    "Tainted ??? (The Soiled)": 478,
+    "Tainted Eve": 479,
+    "Tainted Samson": 480,
+    "Tainted Azazel": 481,
+    "Tainted Lazarus": 482,
+    "Tainted Eden": 483,
+    "Tainted Lost": 484,
+    "Tainted Lilith": 485,
+    "Tainted Keeper": 486,
+    "Tainted Apollyon": 487,
+    "Tainted Forgotten": 488,
+    "Tainted Bethany": 489,
+    "Tainted Jacob": 490,
+}
+
+ALL_NON_TAINTED_CHARS = [1, 2, 3, 32, 42, 67, 79, 80, 81, 82, 199, 251, 340, 390, 404, 405]
+ALL_TAINTED_CHARS = list(range(474, 491))
+ALL_CHARS_SORTED = sorted(CHARACTER_UNLOCK_MAP.keys(), key=lambda x: -len(x))
+
+CHALLENGE_UNLOCK_REQS = {
+    4: 157, 5: 158, 6: 159, 7: 160, 8: 161, 9: 162, 10: 163, 11: 164,
+    19: 165, 20: 166, 21: 265, 22: 266, 23: 267, 24: 268, 25: 269,
+    26: 270, 27: 271, 28: 272, 29: 273, 30: 274, 31: 277, 32: 278,
+    33: 279, 34: 280, 35: 281, 37: 508, 38: 509, 39: 510, 40: 511,
+    41: 512, 42: 513, 43: 514, 44: 515, 45: 516
+}
+
+def es_logro_factible(item, unlocked_set):
+    """
+    Determina si un logro es jugable/factible en este momento con los personajes
+    y desafíos que el jugador ya tiene desbloqueados.
+    """
+    cond = str(item.get("desbloqueo", item.get("condition", "")))
+    cond_clean = re.sub(r"\(o\s+con\s+[^)]+\)", "", cond, flags=re.IGNORECASE)
+
+    # 1. Requiere todos los personajes o completismo masivo
+    if any(k in cond_clean.lower() for k in [
+        "todos los personajes", "todos los demás logros",
+        "recoger todos los objetos", "todos los secretos", "100% de rebirth"
+    ]):
+        if len(unlocked_set) < 600:
+            return False
+        if "tainted" in cond_clean.lower() and "no-tainted" not in cond_clean.lower():
+            if any(cid not in unlocked_set for cid in ALL_NON_TAINTED_CHARS + ALL_TAINTED_CHARS):
+                return False
+        else:
+            if any(cid not in unlocked_set for cid in ALL_NON_TAINTED_CHARS):
+                return False
+
+    # 2. Requiere jugar con un personaje específico no desbloqueado
+    for char in ALL_CHARS_SORTED:
+        pattern = rf"\bcon\s+{re.escape(char)}(?=$|[^\w&?])"
+        if re.search(pattern, cond_clean, re.IGNORECASE):
+            unlock_id = CHARACTER_UNLOCK_MAP.get(char)
+            if unlock_id and unlock_id not in unlocked_set:
+                return False
+            break
+
+    # 3. Requiere completar un desafío aún no desbloqueado
+    if "desbloquea desafío" not in cond_clean.lower():
+        m_chal = re.search(r"completar\s+(?:el\s+)?desafío", cond_clean, re.IGNORECASE)
+        if m_chal:
+            for c_num_str in re.findall(r"#(\d+)", cond_clean):
+                c_num = int(c_num_str)
+                req_aid = CHALLENGE_UNLOCK_REQS.get(c_num)
+                if req_aid and req_aid not in unlocked_set:
+                    return False
+
+    return True
+
 def get_unlocked_ids(dat_path):
     p = Path(dat_path)
     if not p.exists() or p.stat().st_size < 32:
@@ -81,6 +182,7 @@ def enrich_progress(current_save, prev_save=None, achievement_map=None):
         "archivo_previo": Path(prev_save).name if prev_save else None,
         "total_logros_juego": 641,
         "desbloqueados_total": len(current_unlocked),
+        "desbloqueados_ids": sorted(list(current_unlocked)),
         "porcentaje_completado": round((len(current_unlocked) / 641) * 100, 2),
         "nuevos_esta_sesion": [],
         "pendientes_clave": [],
@@ -105,7 +207,7 @@ def enrich_progress(current_save, prev_save=None, achievement_map=None):
                 "prioridad": info.get("priority", "Media")
             })
 
-    # Recopilar todos los logros bloqueados y los pendientes clave
+    # Recopilar todos los logros bloqueados y factibles de conseguir actualmente
     for aid, data in achievement_map.items():
         if aid not in current_unlocked:
             entry = {
@@ -114,9 +216,10 @@ def enrich_progress(current_save, prev_save=None, achievement_map=None):
                 "desbloqueo": data.get("condition"),
                 "prioridad": data.get("priority", "Media")
             }
-            output["todos_bloqueados"].append(entry)
-            if data.get("priority") in ["Crítica", "Alta"]:
-                output["pendientes_clave"].append(entry)
+            if es_logro_factible(entry, current_unlocked):
+                output["todos_bloqueados"].append(entry)
+                if data.get("priority") in ["Crítica", "Alta"]:
+                    output["pendientes_clave"].append(entry)
 
     # Ordenar pendientes: Crítica primero, luego Alta, y por ID
     priority_order = {"Crítica": 0, "Alta": 1, "Media": 2, "Baja": 3}

@@ -823,14 +823,11 @@ def main():
     elif not sys.stdin.isatty():
         data = json.load(sys.stdin)
     else:
-        backups = sorted(list((BASE_DIR / "save_backups").glob("*.rep+persistentgamedata*.dat")), reverse=True)
-        if not backups:
+        from isaac_enricher import find_latest_saves, enrich_progress
+        latest, prev = find_latest_saves(BASE_DIR / "save_backups")
+        if not latest:
             print("Error: No se encontraron archivos de guardado en save_backups/", file=sys.stderr)
             sys.exit(1)
-        latest = backups[0]
-        prev = backups[1] if len(backups) > 1 else None
-
-        from isaac_enricher import enrich_progress
         data = enrich_progress(latest, prev)
 
     analisis_ia = None

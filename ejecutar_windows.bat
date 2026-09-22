@@ -1,11 +1,11 @@
 @echo off
-chcp 65001 >nul
-title Isaac Progress Tracker & Guide
+setlocal
 
-:: Comprobar si se abrió desde un zip sin descomprimir
+title Isaac Tracker & Guide Generator
+
 if not exist "%~dp0win\auto.bat" (
-    echo [ERROR] No se encuentra win\auto.bat.
-    echo Asegurate de DESCOMPRIMIR (Extraer todo) el archivo ZIP antes de ejecutar.
+    echo [ERROR] No se encuentra la carpeta win\ ni el archivo auto.bat.
+    echo Asegurate de haber descomprimido el archivo ZIP por completo (Extraer todo).
     echo.
     pause
     exit /b 1

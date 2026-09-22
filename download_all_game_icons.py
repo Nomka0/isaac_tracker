@@ -170,9 +170,9 @@ def main():
     images_dir = BASE_DIR / "images"
     rooms_dir = images_dir / "rooms"
     bosses_dir = images_dir / "bosses"
-    items_dir = images_dir / "items"
+    pickups_dir = images_dir / "pickups"
 
-    for d in [rooms_dir, bosses_dir, items_dir]:
+    for d in [rooms_dir, bosses_dir, pickups_dir]:
         d.mkdir(parents=True, exist_ok=True)
 
     print("--- Descargando iconos de salas (images/rooms/) ---")
@@ -185,12 +185,12 @@ def main():
         if download_and_save(bosses_dir, name, f):
             print(f"  [OK] images/bosses/{name}.png")
 
-    print("\n--- Descargando consumibles e items (images/items/) ---")
+    print("\n--- Descargando consumibles e items (images/pickups/) ---")
     for name, f in ITEMS.items():
-        if download_and_save(items_dir, name, f):
-            print(f"  [OK] images/items/{name}.png")
+        if download_and_save(pickups_dir, name, f):
+            print(f"  [OK] images/pickups/{name}.png")
 
-    # Alias convenientes para items
+    # Alias convenientes para items/pickups
     item_aliases = {
         "coin.png": "penny.png",
         "red_heart.png": "heart_red.png",
@@ -209,23 +209,12 @@ def main():
         "stone_chest.png": "chest_stone.png",
         "double_key.png": "key_ring.png"
     }
-    add_aliases(items_dir, item_aliases)
-
-    # Crear carpeta pickups/ como reflejo de items/ dentro de images/ para compatibilidad
-    pickups_dir = images_dir / "pickups"
-    if pickups_dir.is_symlink():
-        pickups_dir.unlink()
-    elif pickups_dir.exists():
-        shutil.rmtree(pickups_dir)
-    try:
-        pickups_dir.symlink_to("items")
-    except Exception:
-        shutil.copytree(items_dir, pickups_dir)
+    add_aliases(pickups_dir, item_aliases)
 
     print("\n✓ Proceso completado exitosamente.")
     print(f"  images/rooms/: {len(list(rooms_dir.glob('*.png')))} imágenes")
     print(f"  images/bosses/: {len(list(bosses_dir.glob('*.png')))} imágenes")
-    print(f"  images/items/ (y pickups/): {len(list(items_dir.glob('*.png')))} imágenes")
+    print(f"  images/pickups/: {len(list(pickups_dir.glob('*.png')))} imágenes")
 
 if __name__ == "__main__":
     main()

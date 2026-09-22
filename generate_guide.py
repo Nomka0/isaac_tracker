@@ -4,7 +4,7 @@ generate_guide.py - Generador 100% dinámico de GUIA_PROXIMOS_DESBLOQUEOS.md par
 Cumple estrictamente con:
 - Uso de iconos del repositorio (images/...) sin emojis Unicode.
 - Tuberías escapadas (\\|) en wikilinks dentro de tablas Markdown para no romper columnas.
-- Representación visual de calidad/tier usando estrellas de pixel art (![[images/items/star.png\\|14]]) o insignias de categoría.
+- Representación visual de calidad/tier usando estrellas de pixel art (![[images/pickups/star.png\\|14]]) o insignias de categoría.
 - Enriquecimiento automático de requisitos con iconos de jefes, personajes y consumibles.
 - Renderizado determinista y robusto a través de guide_template.j2.
 """
@@ -95,11 +95,11 @@ CHAR_ICONS = {
 CATEGORIA_METADATA = {
     "Greed Machine": {
         "titulo": "Máquina de Donación de Greed & Fundación de Personajes",
-        "icono": "images/items/greed_machine.png",
+        "icono": "images/pickups/greed_machine.png",
         "icono_size": 30,
         "orden": 1,
         "descripcion": "La máquina de Greed es la mayor inversión estructural de la partida. Desbloquear el Holy Mantle para The Lost y al propio Keeper sienta los cimientos obligatorios antes de intentar cualquier marca seria en modo Difícil.",
-        "tip": "No juegues con un solo personaje porque el porcentaje de atasco de la máquina aumenta drásticamente con cada moneda donada por el mismo héroe. Rota entre ![[images/characters/lilith.png|24]] **Lilith** (reina indiscutible de Greed con Box of Friends), ![[images/characters/judas.png|24]] **Judas** (daño base con Book of Belial) y ![[images/characters/azazel.png|24]] **Azazel** para transferir 60-90 ![[images/items/penny.png|24]] monedas por run sin atascos prematuros."
+        "tip": "No juegues con un solo personaje porque el porcentaje de atasco de la máquina aumenta drásticamente con cada moneda donada por el mismo héroe. Rota entre ![[images/characters/lilith.png|24]] **Lilith** (reina indiscutible de Greed con Box of Friends), ![[images/characters/judas.png|24]] **Judas** (daño base con Book of Belial) y ![[images/characters/azazel.png|24]] **Azazel** para transferir 60-90 ![[images/pickups/penny.png|24]] monedas por run sin atascos prematuros."
     },
     "Jacob & Esau": {
         "titulo": "Jacob & Esau: Los Multiplicadores de Victoria",
@@ -123,11 +123,11 @@ CATEGORIA_METADATA = {
         "icono_size": 36,
         "orden": 4,
         "descripcion": "Con Mom's Knife y D6 en el arsenal básico de Isaac, completar el cofre y la ruta alternativa es el camino de menor resistencia mecánica para obtener un generador de partidas infinitas en Greed y una herramienta de control de masas.",
-        "tip": "En la ruta hacia The Chest (vía Cathedral con The Polaroid), maximiza las ![[images/rooms/angel.png|24]] **Salas del Ángel** evitando pactos en ![[images/rooms/devil.png|24]] **Salas del Diablo** para conseguir baterías o pasivos de daño sin sacrificar contenedores de ![[images/items/heart_red.png|24]]. Guarda el D6 para los 4 cofres iniciales de The Chest."
+        "tip": "En la ruta hacia The Chest (vía Cathedral con The Polaroid), maximiza las ![[images/rooms/angel.png|24]] **Salas del Ángel** evitando pactos en ![[images/rooms/devil.png|24]] **Salas del Diablo** para conseguir baterías o pasivos de daño sin sacrificar contenedores de ![[images/pickups/heart_red.png|24]]. Guarda el D6 para los 4 cofres iniciales de The Chest."
     },
     "Desafíos": {
         "titulo": "Desafíos Clave: Limpieza de Pools y Mitigación de Maldiciones",
-        "icono": "images/items/swords.png",
+        "icono": "images/pickups/swords.png",
         "icono_size": 26,
         "orden": 5,
         "descripcion": "Desafíos rápidos que eliminan fricción en runs normales, asegurando protección contra maldiciones y generadores de recursos masivos para emergencias.",
@@ -135,15 +135,15 @@ CATEGORIA_METADATA = {
     },
     "Apertura Vía Tainted": {
         "titulo": "Apertura de la Vía Tainted: Acceso a Home",
-        "icono": "images/items/home_key.png",
+        "icono": "images/pickups/home_key.png",
         "icono_size": 28,
         "orden": 6,
-        "descripcion": "Alcanzar la zona de Home con una llave roja (![[images/items/red_key.png|24]]) o fragmento (![[images/items/cracked_key.png|24]]) abre la puerta a los 17 personajes Tainted, desbloqueando el 50% restante del contenido de Repentance.",
-        "tip": "Durante el descenso normal, suelta cualquier baratija (Trinket) en una Boss Room o Treasure Room. Al ascender de regreso durante la secuencia de The Ascent, esa baratija se habrá transformado en un ![[images/items/cracked_key.png|24]] Cracked Key garantizado."
+        "descripcion": "Alcanzar la zona de Home con una llave roja (![[images/pickups/red_key.png|24]]) o fragmento (![[images/pickups/cracked_key.png|24]]) abre la puerta a los 17 personajes Tainted, desbloqueando el 50% restante del contenido de Repentance.",
+        "tip": "Durante el descenso normal, suelta cualquier baratija (Trinket) en una Boss Room o Treasure Room. Al ascender de regreso durante la secuencia de The Ascent, esa baratija se habrá transformado en un ![[images/pickups/cracked_key.png|24]] Cracked Key garantizado."
     },
     "Personajes Tainted": {
         "titulo": "Personajes Tainted: Los Game-Breakers Absolutos",
-        "icono": "images/items/crown.png",
+        "icono": "images/pickups/crown.png",
         "icono_size": 28,
         "orden": 7,
         "descripcion": "El escalón más alto de poder en el juego. Sus recompensas reescriben las reglas de generación de objetos, tiendas y generación de almas.",
@@ -167,7 +167,7 @@ CATEGORIA_METADATA = {
     },
     "Endgame": {
         "titulo": "Cúspide del Completismo: Endgame Máximo",
-        "icono": "images/items/dead_god.png",
+        "icono": "images/pickups/dead_god.png",
         "icono_size": 30,
         "orden": 10,
         "descripcion": "Los objetivos que cierran el 100% de The Binding of Isaac Repentance+. Representan maestría absoluta de todas las mecánicas y otorgan control absoluto sobre cualquier partida futura.",
@@ -225,7 +225,7 @@ def enriquecer_requisito(texto):
         res = re.sub(r"(Angel Room|Sala del Ángel)", r"![[images/rooms/angel.png\|24]] \1", res)
 
     # Monedas
-    res = re.sub(r"(\d+)\s+monedas\s+en\s+la\s+máquina", r"\1 ![[images/items/penny.png\|24]] monedas en la máquina", res, flags=re.IGNORECASE)
+    res = re.sub(r"(\d+)\s+monedas\s+en\s+la\s+máquina", r"\1 ![[images/pickups/penny.png\|24]] monedas en la máquina", res, flags=re.IGNORECASE)
 
     return res
 
@@ -234,7 +234,7 @@ def formatear_tier(item, custom_tier=None):
     if custom_tier and "![" in custom_tier:
         return custom_tier
 
-    star = "![[images/items/star.png\\|14]]"
+    star = "![[images/pickups/star.png\\|14]]"
     prio = item.get("prioridad", "Media").lower()
     nombre = item.get("nombre", "").lower()
     req = item.get("desbloqueo", "").lower()
@@ -243,15 +243,15 @@ def formatear_tier(item, custom_tier=None):
     if "personaje" in prio or "personaje" in nombre or aid in [82, 251]:
         return "![[images/characters/isaac.png\\|18]] Personaje"
     if "runa" in nombre or "rune" in nombre:
-        return "![[images/items/rune.png\\|18]] Runa / S"
+        return "![[images/pickups/rune.png\\|18]] Runa / S"
     if any(k in nombre for k in ["carta", "card", "reversed", "inverted", "the stars", "the moon"]):
-        return "![[images/items/card.png\\|18]] Carta / A"
+        return "![[images/pickups/card.png\\|18]] Carta / A"
     if "trinket" in nombre or "baratija" in req:
-        return "![[images/items/trinket.png\\|18]] Trinket / A"
+        return "![[images/pickups/trinket.png\\|18]] Trinket / A"
     if aid in [249, 250, 251, 341] or "máquina de greed" in req:
-        return "![[images/items/greed_machine.png\\|18]] Máquina"
+        return "![[images/pickups/greed_machine.png\\|18]] Máquina"
     if aid in [636, 637] or "dead god" in nombre:
-        return "![[images/items/dead_god.png\\|18]] Medalla Final"
+        return "![[images/pickups/dead_god.png\\|18]] Medalla Final"
 
     tiers = {"crítica": 4, "critica": 4, "god": 4, "alta": 3, "media": 2}
     t = tiers.get(prio, 1)
@@ -504,7 +504,7 @@ Ordena la lista de todas las categorías presentes estrictamente de MAYOR A MENO
 En 'orden_secciones', incluye para cada categoría su nombre y un 'motivo' de 1 línea explicando por qué ocupa ese lugar de prioridad.
 
 REGLAS DE FORMATO (ESTRICTO):
-- PROHIBIDO usar emojis Unicode (nada de 💀, 🧠, ⚔️, 🔥). Usa iconos en formato Obsidian: ![[images/characters/<nombre>.png|20]], ![[images/bosses/<jefe>.png|20]], ![[images/items/<item>.png|20]].
+- PROHIBIDO usar emojis Unicode (nada de 💀, 🧠, ⚔️, 🔥). Usa iconos en formato Obsidian: ![[images/characters/<nombre>.png|20]], ![[images/bosses/<jefe>.png|20]], ![[images/pickups/<item>.png|20]].
 - Devuelve ÚNICAMENTE un JSON válido con esta estructura:
 {{
   "protocolo": "- **Plan A (Principal):** ...\\n- **Plan B (Alternativo):** ...",
@@ -671,7 +671,7 @@ def sanear_texto_ia(texto):
         if aid and (BASE_DIR / f"images/achievements/{aid}.png").exists():
             return f"![[images/achievements/{aid}.png{pipe}{size}]]"
 
-        for folder in ["characters", "bosses", "rooms", "items"]:
+        for folder in ["characters", "bosses", "rooms", "pickups"]:
             cand = f"images/{folder}/{stem}.png"
             if (BASE_DIR / cand).exists():
                 return f"![[{cand}{pipe}{size}]]"
@@ -722,7 +722,7 @@ def procesar_guia(data, items, analisis_ia=None, tips_ia=None, orden_secciones_i
         if cat_key not in grupos:
             meta = CATEGORIA_METADATA.get(cat_key, {
                 "titulo": f"{cat_key}: Desbloqueos Clave",
-                "icono": "images/items/compass.png",
+                "icono": "images/pickups/compass.png",
                 "icono_size": 30,
                 "descripcion": "Objetivos estratégicos recomendados para la sesión actual.",
                 "tip": "Prioriza sinergias de daño y familiarízate con los patrones de las salas."

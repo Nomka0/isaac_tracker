@@ -1,12 +1,12 @@
 {
   "49": {
     "name": "D20 (The D20)",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3 (Clave)",
-    "efecto": "Rerollea todos los pickups de la sala. Es la piedra angular para romper por completo el modo Greed: basta con comprar una batería en la tienda y rerollear ![[images/items/penny.png\\|24]] monedas tras oleadas para spawnear ![[images/items/chest_golden.png\\|24]] cofres dorados infinitos."
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3 (Clave)",
+    "efecto": "Rerollea todos los pickups de la sala. Es la piedra angular para romper por completo el modo Greed: basta con comprar una batería en la tienda y rerollear ![[images/pickups/penny.png\\|24]] monedas tras oleadas para spawnear ![[images/pickups/chest_golden.png\\|24]] cofres dorados infinitos."
   },
   "440": {
     "name": "Meat Cleaver",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 2",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 2",
     "efecto": "Activa que divide a los enemigos en versiones más pequeñas con menor vida. Muy eficaz para mitigar la armadura de daño en jefes dobles o despejar salas saturadas en Corpse."
   },
   "82": {
@@ -16,7 +16,7 @@
   },
   "250": {
     "name": "Lost holds Holy Mantle",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Núcleo)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Núcleo)",
     "efecto": "Otorga un escudo que absorbe un impacto por sala de forma permanente a ![[images/characters/the_lost.png\\|24]] The Lost. Convierte al personaje de un suicidio constante a uno de los héroes más consistentes y letales del juego."
   },
   "251": {
@@ -26,43 +26,43 @@
   },
   "92": {
     "name": "Rune of Dagaz",
-    "tier": "![[images/items/rune.png\\|18]] Runa / S",
-    "efecto": "Otorga +1 ![[images/items/heart_soul.png\\|24]] Soul Heart y purga cualquier maldición activa en el piso (Blind, Lost, Unknown, Maze). Imprescindible para evitar perder runs en pisos profundos por culpa de Curse of the Blind."
+    "tier": "![[images/pickups/rune.png\\|18]] Runa / S",
+    "efecto": "Otorga +1 ![[images/pickups/heart_soul.png\\|24]] Soul Heart y purga cualquier maldición activa en el piso (Blind, Lost, Unknown, Maze). Imprescindible para evitar perder runs en pisos profundos por culpa de Curse of the Blind."
   },
   "120": {
     "name": "Suicide King",
-    "tier": "![[images/items/card.png\\|18]] Carta / A",
-    "efecto": "Al usarse mata al jugador y spawnea 10 consumibles/pedestales valiosos (![[images/items/heart_red.png\\|24]] ![[images/items/penny.png\\|24]] ![[images/items/bomb.png\\|24]] ![[images/items/key.png\\|24]]). Sinergia letal con ítems de revivir (Dead Cat, Lazarus' Rags, 1-Up) para farmear objetos sin penalización."
+    "tier": "![[images/pickups/card.png\\|18]] Carta / A",
+    "efecto": "Al usarse mata al jugador y spawnea 10 consumibles/pedestales valiosos (![[images/pickups/heart_red.png\\|24]] ![[images/pickups/penny.png\\|24]] ![[images/pickups/bomb.png\\|24]] ![[images/pickups/key.png\\|24]]). Sinergia letal con ítems de revivir (Dead Cat, Lazarus' Rags, 1-Up) para farmear objetos sin penalización."
   },
   "431": {
     "name": "Birthright",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4",
     "efecto": "Ítem pasivo con efectos personalizados y transformativos para cada personaje (ej. duplica slots para Tainted Isaac, fusiona vida en Forgotten)."
   },
   "432": {
     "name": "Damocles",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4",
     "efecto": "Duplica cada pedestal que aparezca en la partida por el resto de la run. Si recibes daño, una espada pende sobre tu cabeza; con The Lost o escudos es ganancia neta absoluta sin riesgo."
   },
   "436": {
     "name": "Genesis",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4",
     "efecto": "Activa de un solo uso que borra tu inventario y te traslada a un dormitorio celestial donde eliges 1 de 3 ítems por cada objeto sacrificado, curando tu salud al máximo."
   },
   "190": {
     "name": "Incubus",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4",
     "efecto": "Familiar que replica exactamente las lágrimas, efectos de estado y daño base de tu personaje. Multiplica tu DPS por 2 instantáneamente en cualquier run."
   },
   "56": {
     "name": "Blood Rights",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 2",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 2",
     "efecto": "Inflige 40 de daño a todos los enemigos de la sala a cambio de un contenedor de vida. Roto sin límites en combinación con invulnerabilidad (Book of Shadows, Algiz, Isaac's Heart)."
   },
   "113": {
     "name": "Fate",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
-    "efecto": "Otorga vuelo permanente y +1 ![[images/items/heart_eternal.png\\|24]] Eternal Heart. Proporciona evasión instantánea frente a creep y fosas en los primeros pisos."
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
+    "efecto": "Otorga vuelo permanente y +1 ![[images/pickups/heart_eternal.png\\|24]] Eternal Heart. Proporciona evasión instantánea frente a creep y fosas en los primeros pisos."
   },
   "477": {
     "name": "Tainted Judas (The Deceiver)",
@@ -77,166 +77,166 @@
   "486": {
     "name": "Tainted Keeper (The Miser)",
     "tier": "![[images/characters/isaac.png\\|18]] Personaje",
-    "efecto": "Enemigos muertos dropean ![[images/items/penny.png\\|24]] monedas temporales; todas las tiendas ofrecen 4 pedestales de ítems por dinero. Máquina de armar builds rotas de calidad 4."
+    "efecto": "Enemigos muertos dropean ![[images/pickups/penny.png\\|24]] monedas temporales; todas las tiendas ofrecen 4 pedestales de ítems por dinero. Máquina de armar builds rotas de calidad 4."
   },
   "491": {
     "name": "Glitched Crown",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Dios)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Dios)",
     "efecto": "Cada pedestal de la partida cicla a gran velocidad entre 5 objetos diferentes. Con sincronía visual, garantiza armar runs invencibles en cada piso."
   },
   "584": {
     "name": "Spindown Dice",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Dios)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Dios)",
     "efecto": "Activa que resta 1 al ID interno de cualquier pedestal (ej. Bloodbag se convierte en Brimstone; Toothpicks en Sacred Heart). Permite craftear Tier 4 a voluntad."
   },
   "504": {
     "name": "Echo Chamber",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4",
     "efecto": "Cada vez que usas una píldora, carta o runa, dispara en cadena los efectos de todos los consumibles usados anteriormente en la run. Generador de bucles infinitos."
   },
   "607": {
     "name": "Crane Game",
-    "tier": "![[images/items/greed_machine.png\\|18]] Máquina",
-    "efecto": "Introduce máquinas de gancho en ![[images/rooms/shop.png\\|24]] tiendas y ![[images/rooms/arcade.png\\|24]] arcades que sortean pedestales de calidad 2, 3 y 4 por 5 ![[images/items/penny.png\\|24]] monedas. Mejora drásticamente el valor de las tiendas."
+    "tier": "![[images/pickups/greed_machine.png\\|18]] Máquina",
+    "efecto": "Introduce máquinas de gancho en ![[images/rooms/shop.png\\|24]] tiendas y ![[images/rooms/arcade.png\\|24]] arcades que sortean pedestales de calidad 2, 3 y 4 por 5 ![[images/pickups/penny.png\\|24]] monedas. Mejora drásticamente el valor de las tiendas."
   },
   "616": {
     "name": "Confessional",
-    "tier": "![[images/items/greed_machine.png\\|18]] Máquina",
-    "efecto": "Permite pagar con vida roja para obtener ![[images/items/heart_soul.png\\|24]] Soul Hearts, purgar maldiciones o spawnear objetos exclusivos de la ![[images/rooms/angel.png\\|24]] pool de Ángel."
+    "tier": "![[images/pickups/greed_machine.png\\|18]] Máquina",
+    "efecto": "Permite pagar con vida roja para obtener ![[images/pickups/heart_soul.png\\|24]] Soul Hearts, purgar maldiciones o spawnear objetos exclusivos de la ![[images/rooms/angel.png\\|24]] pool de Ángel."
   },
   "587": {
     "name": "Dark Arts",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Habilidad ofensiva que otorga frames de invulnerabilidad mientras congela y daña a todos los enemigos en pantalla."
   },
   "629": {
     "name": "Soul of Lilith",
-    "tier": "![[images/items/rune.png\\|18]] Runa / S",
+    "tier": "![[images/pickups/rune.png\\|18]] Runa / S",
     "efecto": "Genera un familiar aleatorio de cualquier pool de forma completamente permanente para el resto de la run. Aumenta drásticamente el DPS sin ocupar espacio de pedestal."
   },
   "156": {
     "name": "Godhead",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Dios)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Dios)",
     "efecto": "Otorga lágrimas teledirigidas envueltas en un halo brillante que inflige daño masivo continuo por tick. Destruye jefes con hitboxes amplias en segundos."
   },
   "460": {
     "name": "Lost Soul",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Familiar que muere de un solo golpe enemigo. Si logras mantenerlo vivo hasta el siguiente piso, entrega 2 recompensas de alto calibre (ítems de ángel, corazones de alma o consumibles raros)."
   },
   "204": {
     "name": "Rib of Greed",
-    "tier": "![[images/items/trinket.png\\|18]] Trinket / A",
+    "tier": "![[images/pickups/trinket.png\\|18]] Trinket / A",
     "efecto": "Impide la aparición de Greed o Super Greed en tiendas y salas secretas, manteniendo las tiendas completas y reduciendo la tasa de atasco de máquinas de donación."
   },
   "240": {
     "name": "Sticky Nickels",
-    "tier": "![[images/items/home_key.png\\|18]] Mecánica",
-    "efecto": "Convierte monedas ordinarias de 1 centavo en ![[images/items/sticky_nickel.png\\|24]] monedas de 5 centavos pegadas al suelo que requieren ![[images/items/bomb.png\\|24]] explosivos para recogerse, sumando al conteo obligatorio de completismo."
+    "tier": "![[images/pickups/home_key.png\\|18]] Mecánica",
+    "efecto": "Convierte monedas ordinarias de 1 centavo en ![[images/pickups/sticky_nickel.png\\|24]] monedas de 5 centavos pegadas al suelo que requieren ![[images/pickups/bomb.png\\|24]] explosivos para recogerse, sumando al conteo obligatorio de completismo."
   },
   "547": {
     "name": "Mega Mush",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Dios)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Dios)",
     "efecto": "Activa que transforma al jugador en un coloso gigante e invulnerable con daño multiplicador masivo (+4x) y rayos destructores durante 30 segundos por carga."
   },
   "636": {
     "name": "Death Certificate",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Omnipotente)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Omnipotente)",
     "efecto": "Teletransporta a un laberinto infinito que contiene absolutamente todos los objetos existentes en el juego para elegir uno libremente."
   },
   "637": {
     "name": "Dead God",
-    "tier": "![[images/items/dead_god.png\\|18]] Medalla Final",
+    "tier": "![[images/pickups/dead_god.png\\|18]] Medalla Final",
     "efecto": "Completismo supremo absoluto. Corona la partida con la pantalla de guardado definitiva de Repentance+."
   },
   "29": {
     "name": "The D6",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Núcleo)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Núcleo)",
     "efecto": "Permite a Isaac comenzar todas sus partidas con el D6 equipado permanentemente. Convierte al personaje en el más consistente y versátil del juego."
   },
   "429": {
     "name": "The Stairway",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4",
     "efecto": "Genera una escalera al inicio de cada piso que conduce a una tienda del Ángel exclusiva. Permite comprar ítems celestiales garantizados a cambio de monedas."
   },
   "430": {
     "name": "Red Stew",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Otorga +21.6 de daño temporal que decae lentamente y restaura toda la vida roja. Clave para reventar pisos iniciales y salas de boss challenge con total facilidad."
   },
   "433": {
     "name": "Rock Bottom",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Dios)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Dios)",
     "efecto": "Impide que cualquier estadística disminuya una vez alcanzada. Sinergia legendaria con efectos temporales (cartas Strength, Red Stew, píldoras) e ítems como Soy Milk."
   },
   "434": {
     "name": "Inner Child",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Otorga una vida extra encogiendo al héroe con lágrimas diminutas y espectrales. En rutas duras como Mother o The Beast actúa como un seguro de run salvador."
   },
   "435": {
     "name": "Vanishing Twin",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Familiar que duplica el jefe de la sala pero a cambio genera un segundo pedestal de recompensa adicional al derrotar a ambos."
   },
   "437": {
     "name": "Suplex!",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Activa que permite embestir a cualquier enemigo o jefe, lanzándolo contra el suelo con daño masivo de área e invulnerabilidad temporal durante el agarre."
   },
   "438": {
     "name": "Solomon's Baby",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 2",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 2",
     "efecto": "Familiar defensivo que rota alrededor del personaje y dispara proyectiles espectrales mientras absorbe lágrimas enemigas."
   },
   "463": {
     "name": "C Section",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Dios)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Dios)",
     "efecto": "Dispara fetos teledirigidos que causan daño continuo por contacto devastador. Uno de los ítems de daño más rotos de todo The Binding of Isaac Repentance."
   },
   "472": {
     "name": "Magic Skin",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Genera un pedestal de objeto a cambio de vida o daño, con la peculiaridad de reaparecer en pools futuras. Excelente para generar pedestales en Secret Rooms."
   },
   "501": {
     "name": "Sacred Orb",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4 (Dios)",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4 (Dios)",
     "efecto": "Purga todos los objetos de calidad 0 y 1 del juego y aumenta la probabilidad de transformar calidad 2 en calidad 3 o 4. Convierte las runs en desfiles de Tier 4."
   },
   "502": {
     "name": "Twisted Pair",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 4",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 4",
     "efecto": "Dos familiares que imitan los disparos y efectos de lágrimas del personaje con un 37.5% de daño cada uno, otorgando un multiplicador pasivo descomunal."
   },
   "541": {
     "name": "XVII - The Stars? (Reversed)",
-    "tier": "![[images/items/card.png\\|18]] Carta / A",
+    "tier": "![[images/pickups/card.png\\|18]] Carta / A",
     "efecto": "Elimina tus dos ítems pasivos más antiguos para spawnear dos pedestales de la pool de la sala actual. Clave para farmear objetos exclusivos en Secret Rooms."
   },
   "542": {
     "name": "XVIII - The Moon? / XIX - The Sun? (Reversed)",
-    "tier": "![[images/items/card.png\\|18]] Carta / A",
+    "tier": "![[images/pickups/card.png\\|18]] Carta / A",
     "efecto": "The Moon? teletransporta directamente a la Ultra Secret Room del piso sin requerir Red Key. Acceso directo a pedestales planetarios/angelicales."
   },
   "594": {
     "name": "Ghost Bombs",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Otorga +5 bombas y hace que las explosiones liberen un fantasma amigable que inflige daño continuo y ralentiza a los enemigos circundantes."
   },
   "601": {
     "name": "Mega Chest",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Habilita cofres gigantes en pisos normales que requieren múltiples llaves pero expulsan una cascada de consumibles, baratijas y pedestales simultáneos."
   },
   "180": {
     "name": "Purity",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Otorga auras elementales aleatorias (+4 daño, x1.5 lágrimas, velocidad o rango) que se mantienen activas hasta recibir un impacto."
   },
   "425": {
     "name": "Star of Bethlehem",
-    "tier": "![[images/items/star.png\\|14]]![[images/items/star.png\\|14]]![[images/items/star.png\\|14]] Tier 3",
+    "tier": "![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]]![[images/pickups/star.png\\|14]] Tier 3",
     "efecto": "Familiar que avanza hacia la sala del jefe proyectando un halo que otorga daño masivo, lágrimas teledirigidas y lágrimas infinitas al colocarse en su interior."
   }
 }

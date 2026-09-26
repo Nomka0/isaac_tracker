@@ -15,6 +15,11 @@ set "GUIDE_MD=%ROOT_DIR%\GUIA_PROXIMOS_DESBLOQUEOS.md"
 set "ENRICHER=%ROOT_DIR%\isaac_enricher.py"
 set "GENERATOR=%ROOT_DIR%\generate_guide.py"
 
+:: Incluir agy en el PATH si está instalado en %LOCALAPPDATA%\agy\bin
+if exist "%LOCALAPPDATA%\agy\bin" (
+    set "PATH=%LOCALAPPDATA%\agy\bin;%PATH%"
+)
+
 echo ====================================================
 echo     Iniciando sincronizacion de partida Isaac (Win)
 echo ====================================================

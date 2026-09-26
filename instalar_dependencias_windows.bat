@@ -4,7 +4,15 @@ setlocal EnableDelayedExpansion
 title Instalador de Dependencias Isaac - Windows 10/11
 
 set "SCRIPT_DIR=%~dp0"
-set "PS_SCRIPT=%SCRIPT_DIR%instalar_dependencias.ps1"
+set "PS_SCRIPT=%SCRIPT_DIR%win\instalar_dependencias.ps1"
+
+if not exist "%PS_SCRIPT%" (
+    echo [ERROR] No se encuentra win\instalar_dependencias.ps1.
+    echo Asegurate de DESCOMPRIMIR el archivo ZIP antes de ejecutar.
+    echo.
+    pause
+    exit /b 1
+)
 
 echo ====================================================
 echo   Instalador de Dependencias Isaac (Win 10/11)

@@ -31,6 +31,9 @@ BASE_DIR = Path(__file__).resolve().parent
 TEMPLATE_PATH = BASE_DIR / "guide_template.j2"
 EFFECTS_PATH = BASE_DIR / "achievement_effects.json"
 DEFAULT_OUT = BASE_DIR / "GUIA_PROXIMOS_DESBLOQUEOS.md"
+WIKI_URLS_PATH = BASE_DIR / "achievement_wiki_urls.json"
+WIKI_ENTITIES_PATH = BASE_DIR / "wiki_entities.json"
+AI_CACHE_PATH = BASE_DIR / "ai_protocol_cache.json"
 
 # Mapeo de jefes a iconos en images/bosses/
 BOSS_ICONS = {
@@ -193,49 +196,205 @@ def cargar_efectos_existentes():
             pass
     return {}
 
+BOSS_WIKI_MAP = {
+    "Satan": "https://bindingofisaacrebirth.wiki.gg/wiki/Satan",
+    "Satanás": "https://bindingofisaacrebirth.wiki.gg/wiki/Satan",
+    "Mega Satan": "https://bindingofisaacrebirth.wiki.gg/wiki/Mega_Satan",
+    "Mom": "https://bindingofisaacrebirth.wiki.gg/wiki/Mom",
+    "Mom's Heart": "https://bindingofisaacrebirth.wiki.gg/wiki/Mom%27s_Heart",
+    "Corazón de Mom": "https://bindingofisaacrebirth.wiki.gg/wiki/Mom%27s_Heart",
+    "It Lives!": "https://bindingofisaacrebirth.wiki.gg/wiki/It_Lives!",
+    "It Lives": "https://bindingofisaacrebirth.wiki.gg/wiki/It_Lives!",
+    "Isaac": "https://bindingofisaacrebirth.wiki.gg/wiki/Isaac_(Boss)",
+    "??? (Blue Baby)": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Boss)",
+    "Blue Baby": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Boss)",
+    "???": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Boss)",
+    "The Lamb": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Lamb",
+    "Hush": "https://bindingofisaacrebirth.wiki.gg/wiki/Hush",
+    "Delirium": "https://bindingofisaacrebirth.wiki.gg/wiki/Delirium",
+    "Mother": "https://bindingofisaacrebirth.wiki.gg/wiki/Mother",
+    "The Beast": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Beast",
+    "Ultra Greedier": "https://bindingofisaacrebirth.wiki.gg/wiki/Ultra_Greedier",
+    "Ultra Greed": "https://bindingofisaacrebirth.wiki.gg/wiki/Ultra_Greed",
+    "Dogma": "https://bindingofisaacrebirth.wiki.gg/wiki/Dogma",
+    "Boss Rush": "https://bindingofisaacrebirth.wiki.gg/wiki/Boss_Rush",
+    "Baby Plum": "https://bindingofisaacrebirth.wiki.gg/wiki/Baby_Plum",
+    "The Siren": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Siren",
+}
+
+CHAR_WIKI_MAP = {
+    "Isaac": "https://bindingofisaacrebirth.wiki.gg/wiki/Isaac",
+    "Magdalene": "https://bindingofisaacrebirth.wiki.gg/wiki/Magdalene",
+    "Maggy": "https://bindingofisaacrebirth.wiki.gg/wiki/Magdalene",
+    "Cain": "https://bindingofisaacrebirth.wiki.gg/wiki/Cain",
+    "Judas": "https://bindingofisaacrebirth.wiki.gg/wiki/Judas",
+    "??? (Blue Baby)": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Character)",
+    "Blue Baby": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Character)",
+    "???": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Character)",
+    "Eve": "https://bindingofisaacrebirth.wiki.gg/wiki/Eve",
+    "Samson": "https://bindingofisaacrebirth.wiki.gg/wiki/Samson",
+    "Azazel": "https://bindingofisaacrebirth.wiki.gg/wiki/Azazel",
+    "Lazarus": "https://bindingofisaacrebirth.wiki.gg/wiki/Lazarus",
+    "Eden": "https://bindingofisaacrebirth.wiki.gg/wiki/Eden",
+    "The Lost": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Lost",
+    "Lost": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Lost",
+    "Lilith": "https://bindingofisaacrebirth.wiki.gg/wiki/Lilith",
+    "Keeper": "https://bindingofisaacrebirth.wiki.gg/wiki/Keeper",
+    "Apollyon": "https://bindingofisaacrebirth.wiki.gg/wiki/Apollyon",
+    "The Forgotten": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Forgotten",
+    "Forgotten": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Forgotten",
+    "Bethany": "https://bindingofisaacrebirth.wiki.gg/wiki/Bethany",
+    "Jacob & Esau": "https://bindingofisaacrebirth.wiki.gg/wiki/Jacob_%26_Esau",
+    "Jacob and Esau": "https://bindingofisaacrebirth.wiki.gg/wiki/Jacob_%26_Esau",
+    "Jacob": "https://bindingofisaacrebirth.wiki.gg/wiki/Jacob_%26_Esau",
+    "Esau": "https://bindingofisaacrebirth.wiki.gg/wiki/Jacob_%26_Esau",
+    "Tainted Isaac": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Isaac",
+    "Tainted Magdalene": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Magdalene",
+    "Tainted Cain": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Cain",
+    "Tainted Judas": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Judas",
+    "Tainted ???": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_%3F%3F%3F",
+    "Tainted Blue Baby": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_%3F%3F%3F",
+    "Tainted Eve": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Eve",
+    "Tainted Samson": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Samson",
+    "Tainted Azazel": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Azazel",
+    "Tainted Lazarus": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Lazarus",
+    "Tainted Eden": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Eden",
+    "Tainted Lost": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Lost",
+    "Tainted Lilith": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Lilith",
+    "Tainted Keeper": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Keeper",
+    "Tainted Apollyon": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Apollyon",
+    "Tainted Forgotten": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Forgotten",
+    "Tainted Bethany": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Bethany",
+    "Tainted Jacob": "https://bindingofisaacrebirth.wiki.gg/wiki/Tainted_Jacob",
+}
+
+def cargar_wiki_urls():
+    if WIKI_URLS_PATH.exists():
+        try:
+            with open(WIKI_URLS_PATH, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+def cargar_wiki_entities():
+    if WIKI_ENTITIES_PATH.exists():
+        try:
+            with open(WIKI_ENTITIES_PATH, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+WIKI_ACH_MAP = cargar_wiki_urls()
+WIKI_ENTITIES_MAP = cargar_wiki_entities()
+SORTED_WIKI_TERMS = sorted(WIKI_ENTITIES_MAP.keys(), key=lambda x: -len(x))
+
+def enlazar_terminos_wiki(texto):
+    """Enlaza automáticamente personajes, ítems, jefes y logros a wiki.gg sin alterar links existentes."""
+    if not texto:
+        return ""
+    placeholders = []
+    def hide(m):
+        placeholders.append(m.group(0))
+        return f"\x00PH_{len(placeholders)-1}\x00"
+
+    # Proteger links existentes, wikilinks de imagen y tags HTML
+    t = re.sub(r"!\[\[[^\]]+\]\]|\[[^\]]+\]\([^\)]+\)|<[^>]+>", hide, str(texto))
+
+    # Desambiguación de jefes precedidos por 'vs' o 'contra'
+    boss_vs = {
+        "??? (Blue Baby)": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Boss)",
+        "Blue Baby": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Boss)",
+        "???": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Boss)",
+        "Isaac": "https://bindingofisaacrebirth.wiki.gg/wiki/Isaac_(Boss)",
+    }
+    for b_name, b_url in sorted(boss_vs.items(), key=lambda x: -len(x[0])):
+        pat = re.compile(rf"(\b(?:vs|contra)\s+(?:\x00PH_\d+\x00\s+)?){re.escape(b_name)}(?=$|[^\w&?])", re.IGNORECASE)
+        def repl_boss(m, name=b_name, url=b_url):
+            prefix = m.group(1)
+            placeholders.append(f"[{name}]({url})")
+            return f"{prefix}\x00PH_{len(placeholders)-1}\x00"
+        t = pat.sub(repl_boss, t)
+
+    for term in SORTED_WIKI_TERMS:
+        if len(term) < 2:
+            continue
+        url = WIKI_ENTITIES_MAP[term]
+        escaped = re.escape(term)
+        pattern = re.compile(rf"(?<![\w/]){escaped}(?![\w/])")
+        if pattern.search(t):
+            def repl(m):
+                matched = m.group(0)
+                placeholders.append(f"[{matched}]({url})")
+                return f"\x00PH_{len(placeholders)-1}\x00"
+            t = pattern.sub(repl, t)
+
+    for i, orig in enumerate(placeholders):
+        t = t.replace(f"\x00PH_{i}\x00", orig)
+    return t
+
 def enriquecer_requisito(texto):
-    """Inserta iconos con pipe escapado en textos de requisitos para tablas."""
+    """Inserta iconos con pipe escapado y enlaces a wiki.gg en textos de requisitos para tablas."""
     if not texto:
         return "Condición no especificada"
-
-    # Si ya contiene wikilinks con imágenes, retornar tal cual
-    if "![[" in texto:
-        return texto
 
     res = texto
 
     # Caso especial: Boss Rush
-    if "Boss Rush" in res:
-        res = re.sub(r"\bBoss Rush\b", r"![[images/bosses/boss_rush.png\|26]] Boss Rush", res)
+    if "Boss Rush" in res and "images/bosses/boss_rush.png" not in res:
+        url = BOSS_WIKI_MAP.get("Boss Rush", "https://bindingofisaacrebirth.wiki.gg/wiki/Boss_Rush")
+        res = re.sub(r"\bBoss Rush\b", rf"![[images/bosses/boss_rush.png\|26]] [Boss Rush]({url})", res)
 
     # Jefes ordenados por longitud descendente para evitar colisiones
     for boss in sorted(BOSS_ICONS.keys(), key=lambda x: -len(x)):
         if boss == "Boss Rush":
             continue
         icon = BOSS_ICONS[boss]
-        # Match 'Derrotar a <boss>' o 'Vencer a <boss>'
-        pattern = re.compile(rf"(derrotar a|vencer a)\s+{re.escape(boss)}", re.IGNORECASE)
-        res = pattern.sub(rf"\1 ![[{icon}\|26]] {boss}", res)
+        url = BOSS_WIKI_MAP.get(boss, f"https://bindingofisaacrebirth.wiki.gg/wiki/{boss}")
+        pattern = re.compile(rf"(derrotar a|vencer a|dejar escapar a)\s+{re.escape(boss)}", re.IGNORECASE)
+        res = pattern.sub(rf"\1 ![[{icon}\|26]] [{boss}]({url})", res)
+        pattern2 = re.compile(rf"\bo\s+{re.escape(boss)}", re.IGNORECASE)
+        res = pattern2.sub(rf"o ![[{icon}\|26]] [{boss}]({url})", res)
 
     # Personajes: "con <Personaje>"
     for char in sorted(CHAR_ICONS.keys(), key=lambda x: -len(x)):
         icon = CHAR_ICONS[char]
+        url = CHAR_WIKI_MAP.get(char, f"https://bindingofisaacrebirth.wiki.gg/wiki/{char}")
         pattern = re.compile(rf"\bcon\s+{re.escape(char)}(?=$|[^\w&?])", re.IGNORECASE)
-        res = pattern.sub(rf"con ![[{icon}\|24]] {char}", res)
+        res = pattern.sub(rf"con ![[{icon}\|24]] [{char}]({url})", res)
+
+    # Desafíos
+    def chal_repl(m):
+        num = m.group(1)
+        name = m.group(2)
+        full = m.group(0)
+        url = WIKI_ENTITIES_MAP.get(f"Desafío #{num} ({name})") or WIKI_ENTITIES_MAP.get(name) or "https://bindingofisaacrebirth.wiki.gg/wiki/Challenges"
+        return f"[{full}]({url})"
+    res = re.sub(r"Desafío #(\d+)\s*\(([^)]+)\)", chal_repl, res)
 
     # Salas
     if "Sacrifice Room" in res:
-        res = res.replace("Sacrifice Room", "![[images/rooms/sacrifice.png\\|24]] Sacrifice Room")
+        url = WIKI_ENTITIES_MAP.get("Sacrifice Room", "https://bindingofisaacrebirth.wiki.gg/wiki/Sacrifice_Room")
+        res = res.replace("Sacrifice Room", f"![[images/rooms/sacrifice.png\\|24]] [Sacrifice Room]({url})")
     if "Curse Room" in res:
-        res = res.replace("Curse Room", "![[images/rooms/curse.png\\|24]] Curse Room")
+        url = WIKI_ENTITIES_MAP.get("Curse Room", "https://bindingofisaacrebirth.wiki.gg/wiki/Curse_Room")
+        res = res.replace("Curse Room", f"![[images/rooms/curse.png\\|24]] [Curse Room]({url})")
     if "Devil Room" in res or "Sala del Diablo" in res:
-        res = re.sub(r"(Devil Room|Sala del Diablo)", r"![[images/rooms/devil.png\|24]] \1", res)
+        url = WIKI_ENTITIES_MAP.get("Devil Room", "https://bindingofisaacrebirth.wiki.gg/wiki/Devil_Room")
+        res = re.sub(r"(Devil Room|Sala del Diablo)", rf"![[images/rooms/devil.png\|24]] [\1]({url})", res)
     if "Angel Room" in res or "Sala del Ángel" in res:
-        res = re.sub(r"(Angel Room|Sala del Ángel)", r"![[images/rooms/angel.png\|24]] \1", res)
+        url = WIKI_ENTITIES_MAP.get("Angel Room", "https://bindingofisaacrebirth.wiki.gg/wiki/Angel_Room")
+        res = re.sub(r"(Angel Room|Sala del Ángel)", rf"![[images/rooms/angel.png\|24]] [\1]({url})", res)
 
-    # Monedas
-    res = re.sub(r"(\d+)\s+monedas\s+en\s+la\s+máquina", r"\1 ![[images/pickups/penny.png\|24]] monedas en la máquina", res, flags=re.IGNORECASE)
+    # Monedas / Máquina Greed
+    gm_url = WIKI_ENTITIES_MAP.get("máquina de Greed", "https://bindingofisaacrebirth.wiki.gg/wiki/Greed_Donation_Machine")
+    res = re.sub(r"(\d+)\s+monedas\s+en\s+la\s+máquina(\s+de\s+greed)?",
+                 rf"\1 ![[images/pickups/penny.png\|24]] monedas en la [máquina de Greed]({gm_url})",
+                 res, flags=re.IGNORECASE)
 
+    # Enlazar cualquier otro término remanente (ej. Red Key, Cracked Key)
+    res = enlazar_terminos_wiki(res)
     return res
 
 def formatear_tier(item, custom_tier=None):
@@ -438,14 +597,14 @@ def evaluar_utilidad_logro(item, custom_tier=None):
 
     return score
 
-def consultar_ia_bitacora_y_curacion(data, limit=25, timeout=120):
+def consultar_ia_bitacora_y_curacion(data, limit=25, timeout=45):
     """
-    Pasa todos los logros bloqueados a la IA para que:
+    Pasa los logros bloqueados prioritarios a la IA para que:
     1. Determine qué N objetos son genuinamente buenos y valiosos (independientemente del tier) para este punto de la partida.
     2. Redacte la bitácora estratégica con 2 sugerencias de run.
     """
     if not shutil.which("agy"):
-        return None, None
+        return None, None, {}, []
 
     unlocked_set = set(data.get("desbloqueados_ids", []))
     if not unlocked_set:
@@ -477,7 +636,12 @@ def consultar_ia_bitacora_y_curacion(data, limit=25, timeout=120):
                 bloqueados.append(entry)
 
     bloqueados_dict = {b["id"]: b for b in bloqueados}
-    locked_lines = "\n".join([f"{item['id']}: {item['nombre']} | {item['desbloqueo']}" for item in bloqueados])
+    # Seleccionar los mejores candidatos para la IA (ordenados por utilidad + facilidad)
+    candidatos_ia = sorted(
+        bloqueados,
+        key=lambda b: -(evaluar_utilidad_logro(b) + evaluar_facilidad_logro(b))
+    )[:50]
+    locked_lines = "\n".join([f"{item['id']}: {item['nombre']} | {item['desbloqueo']}" for item in candidatos_ia])
 
     nuevos = [
         f"{n.get('nombre', '')} ({n.get('como_se_obtuvo', '')})"
@@ -545,8 +709,16 @@ REGLAS DE FORMATO (ESTRICTO):
 
     try:
         env = dict(os.environ, DBUS_SESSION_BUS_ADDRESS="")
+        cmd = [
+            "agy",
+            "--model", "gemini-3.8-flash-low",
+            "--effort", "low",
+            "--disable-slash-commands",
+            "--dangerously-skip-permissions",
+            "-p", prompt
+        ]
         res = subprocess.run(
-            ["agy", "--dangerously-skip-permissions", "-p", prompt],
+            cmd,
             capture_output=True,
             text=True,
             encoding="utf-8",
@@ -617,8 +789,18 @@ REGLAS DE FORMATO (ESTRICTO):
                 for p in candidatos:
                     seen_ids.add(p["id"])
                     items_seleccionados.append(p)
-                    if len(items_seleccionados) >= limit:
-                        break
+            if bitacora:
+                try:
+                    with open(AI_CACHE_PATH, "w", encoding="utf-8") as f:
+                        json.dump({
+                            "desbloqueados_total": data.get("desbloqueados_total", 0),
+                            "protocolo": bitacora,
+                            "tips_categorias": tips_categorias,
+                            "orden_secciones": orden_secciones,
+                            "seleccionados": items_seleccionados
+                        }, f, indent=2, ensure_ascii=False)
+                except Exception:
+                    pass
 
             return bitacora, items_seleccionados, tips_categorias, orden_secciones
     except Exception as e:
@@ -785,13 +967,18 @@ def procesar_guia(data, items, analisis_ia=None, tips_ia=None, orden_secciones_i
 
         custom_tier = effects_db.get(str(item.get("id")), {}).get("tier")
         score = calcular_puntaje_logro(item, idx, total_items, plan_a_ids, plan_b_ids, custom_tier)
+        aid_str = str(item.get("id"))
+        wiki_url = WIKI_ACH_MAP.get(aid_str, "https://bindingofisaacrebirth.wiki.gg/wiki/Achievements")
+        efecto_raw = item.get("motivo") or generar_efecto_tactico(item, effects_db)
+        efecto_enlazado = enlazar_terminos_wiki(efecto_raw)
 
         grupos[cat_key]["logros"].append({
             "id": item.get("id"),
             "nombre": item.get("nombre", f"Logro #{item.get('id')}"),
+            "wiki_url": wiki_url,
             "requisito": enriquecer_requisito(item.get("desbloqueo", "")),
             "tier": formatear_tier(item, custom_tier),
-            "efecto": item.get("motivo") or generar_efecto_tactico(item, effects_db),
+            "efecto": efecto_enlazado,
             "score": score
         })
 
@@ -808,16 +995,22 @@ def procesar_guia(data, items, analisis_ia=None, tips_ia=None, orden_secciones_i
 
     categorias_ordenadas = sorted(grupos.values(), key=lambda x: -x["prioridad_total"])
 
+    for cat in categorias_ordenadas:
+        cat["titulo"] = enlazar_terminos_wiki(cat["titulo"])
+        cat["descripcion"] = enlazar_terminos_wiki(cat["descripcion"])
+        cat["tip"] = enlazar_terminos_wiki(cat["tip"])
+
     # Lista global de logros ordenados estrictamente por prioridad
     items_priorizados = [
         {
             "id": l["id"],
             "nombre": l["nombre"],
+            "wiki_url": l["wiki_url"],
             "requisito": l["requisito"],
             "tier": l["tier"],
             "efecto": l["efecto"].replace(r"\|", "|").replace("|", r"\|"),
             "score": l["score"],
-            "cat_nombre": cat["nombre_corto"],
+            "cat_nombre": enlazar_terminos_wiki(cat["nombre_corto"]),
             "cat_icono": cat["icono"],
         }
         for cat in categorias_ordenadas
@@ -830,10 +1023,13 @@ def procesar_guia(data, items, analisis_ia=None, tips_ia=None, orden_secciones_i
         {
             "id": n.get("id"),
             "nombre": n.get("nombre", f"Logro #{n.get('id')}"),
+            "wiki_url": WIKI_ACH_MAP.get(str(n.get("id")), "https://bindingofisaacrebirth.wiki.gg/wiki/Achievements"),
             "como_se_obtuvo": enriquecer_requisito(n.get("como_se_obtuvo", "")).replace(r"\|", "|")
         }
         for n in data.get("nuevos_esta_sesion", [])
     ]
+
+    analisis_ia_enlazado = enlazar_terminos_wiki(analisis_ia) if analisis_ia else None
 
     return {
         "progreso_pct": data.get("porcentaje_completado", 0),
@@ -841,12 +1037,33 @@ def procesar_guia(data, items, analisis_ia=None, tips_ia=None, orden_secciones_i
         "total_logros": data.get("total_logros_juego", 641),
         "archivo_actual": data.get("archivo_actual", ""),
         "archivo_previo": data.get("archivo_previo", ""),
-        "hitos_recientes": data.get("hitos_recientes", ""),
+        "hitos_recientes": enlazar_terminos_wiki(data.get("hitos_recientes", "")) if data.get("hitos_recientes") else "",
         "nuevos_esta_sesion": nuevos_formateados,
-        "analisis_ia": analisis_ia,
+        "analisis_ia": analisis_ia_enlazado,
         "items_priorizados": items_priorizados,
         "categorias": categorias_ordenadas
     }
+
+def generar_protocolo_fallback(items):
+    """Genera un Plan A y Plan B determinista a partir de los ítems de mayor prioridad."""
+    if not items:
+        return None
+    p_a = items[0]
+    p_b = items[1] if len(items) > 1 else items[0]
+
+    aid_a = p_a.get("id")
+    nom_a = p_a.get("nombre")
+    req_a = p_a.get("desbloqueo", "")
+    efecto_a = p_a.get("motivo") or p_a.get("efecto") or "Maximizar sinergias de daño y supervivencia."
+
+    aid_b = p_b.get("id")
+    nom_b = p_b.get("nombre")
+    req_b = p_b.get("desbloqueo", "")
+    efecto_b = p_b.get("motivo") or p_b.get("efecto") or "Ruta de menor resistencia mecánica y utilidad duradera."
+
+    line_a = f"- **Plan A (Principal - Mejor balance Utilidad/Facilidad):** ![[images/achievements/{aid_a}.png|20]] **{nom_a}** — Requisito: {req_a}. Directiva: {efecto_a}"
+    line_b = f"- **Plan B (Alternativo):** ![[images/achievements/{aid_b}.png|20]] **{nom_b}** — Requisito: {req_b}. Directiva: {efecto_b}"
+    return f"{line_a}\n{line_b}"
 
 def main():
     import argparse
@@ -855,6 +1072,7 @@ def main():
     parser.add_argument("-o", "--output", default=str(DEFAULT_OUT), help="Ruta de salida del archivo Markdown")
     parser.add_argument("-n", "--limit", type=int, default=25, help="Número fijo de logros recomendados a incluir en la guía (por defecto 25)")
     parser.add_argument("--no-ai", action="store_true", help="Omitir análisis y curación con IA (agy)")
+    parser.add_argument("--force-ai", action="store_true", help="Forzar consulta a la IA incluso si no hay nuevos logros en la sesión")
     args = parser.parse_args()
 
     if args.summary_json:
@@ -879,16 +1097,46 @@ def main():
     tips_ia = None
     orden_secciones_ia = None
     if not args.no_ai and shutil.which("agy"):
-        print(f"      ✦ Curando los {args.limit} mejores objetivos, bitácora y consejos tácticos con IA (agy)...", flush=True)
-        analisis_ia, items_guia, tips_ia, orden_secciones_ia = consultar_ia_bitacora_y_curacion(data, limit=args.limit)
-        if items_guia:
-            print(f"      ✔ {len(items_guia)} logros seleccionados estratégicamente por la IA.", flush=True)
-        if tips_ia:
-            print(f"      ✔ {len(tips_ia)} consejos tácticos por categoría generados por la IA.", flush=True)
-        if orden_secciones_ia:
-            print(f"      ✔ Prioridad de {len(orden_secciones_ia)} secciones determinada por la IA.", flush=True)
-        if analisis_ia:
-            print("      ✔ Bitácora táctica de la IA generada exitosamente.", flush=True)
+        usar_cache = (
+            not args.force_ai
+            and AI_CACHE_PATH.exists()
+        )
+        if usar_cache:
+            try:
+                with open(AI_CACHE_PATH, "r", encoding="utf-8") as f:
+                    cached = json.load(f)
+                cached_total = cached.get("desbloqueados_total")
+                current_total = data.get("desbloqueados_total", 0)
+                cached_proto = cached.get("protocolo")
+                cached_items = cached.get("seleccionados")
+                if (
+                    cached_proto
+                    and cached_items
+                    and cached_total is not None
+                    and cached_total == current_total
+                ):
+                    unlocked_set = set(data.get("desbloqueados_ids", []))
+                    valid_items = [it for it in cached_items if it.get("id") not in unlocked_set]
+                    if len(valid_items) >= args.limit:
+                        analisis_ia = cached_proto
+                        items_guia = valid_items[:args.limit]
+                        tips_ia = cached.get("tips_categorias", {})
+                        orden_secciones_ia = cached.get("orden_secciones", [])
+                        print("      ⚡ Sin cambios en la partida: Protocolo y curación cargados de caché (0.01s).", flush=True)
+            except Exception:
+                pass
+
+        if not items_guia:
+            print(f"      ✦ Curando los {args.limit} mejores objetivos, bitácora y consejos tácticos con IA (agy)...", flush=True)
+            analisis_ia, items_guia, tips_ia, orden_secciones_ia = consultar_ia_bitacora_y_curacion(data, limit=args.limit)
+            if items_guia:
+                print(f"      ✔ {len(items_guia)} logros seleccionados estratégicamente por la IA.", flush=True)
+            if tips_ia:
+                print(f"      ✔ {len(tips_ia)} consejos tácticos por categoría generados por la IA.", flush=True)
+            if orden_secciones_ia:
+                print(f"      ✔ Prioridad de {len(orden_secciones_ia)} secciones determinada por la IA.", flush=True)
+            if analisis_ia:
+                print("      ✔ Bitácora táctica de la IA generada exitosamente.", flush=True)
 
     if not items_guia:
         unlocked_set = set(data.get("desbloqueados_ids", []))
@@ -902,6 +1150,24 @@ def main():
             key=lambda b: -(evaluar_utilidad_logro(b) + evaluar_facilidad_logro(b))
         )
         items_guia = bloqueados_ordenados[:args.limit]
+
+    # Recuperación de bitácora táctica (Plan A / Plan B) si no hubo respuesta en vivo de la IA
+    if not analisis_ia and AI_CACHE_PATH.exists():
+        try:
+            with open(AI_CACHE_PATH, "r", encoding="utf-8") as f:
+                cached = json.load(f)
+            cached_proto = cached.get("protocolo")
+            if cached_proto:
+                analisis_ia = cached_proto
+                if not tips_ia:
+                    tips_ia = cached.get("tips_categorias", {})
+                if not orden_secciones_ia:
+                    orden_secciones_ia = cached.get("orden_secciones", [])
+        except Exception:
+            pass
+
+    if not analisis_ia:
+        analisis_ia = generar_protocolo_fallback(items_guia)
 
     context = procesar_guia(data, items_guia, analisis_ia=analisis_ia, tips_ia=tips_ia, orden_secciones_ia=orden_secciones_ia)
 

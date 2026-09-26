@@ -13,7 +13,7 @@
 > 
 > **Nuevos logros obtenidos en esta sesión:**
 {% for item in nuevos_esta_sesion %}
-> - ![[images/achievements/{{ item.id }}.png|38]] **{{ item.nombre }}** (ID {{ item.id }}) — {{ item.como_se_obtuvo }}
+> - ![[images/achievements/{{ item.id }}.png|38]] [**{{ item.nombre }}**]({{ item.wiki_url }}) (ID {{ item.id }}) — {{ item.como_se_obtuvo }}
 {% endfor %}
 {% endif %}
 
@@ -31,7 +31,7 @@
 | Icono | Logro | Requisito | Calidad / Tier | Sección | Efecto y Por Qué Sacarlo |
 | :---: | :--- | :--- | :---: | :--- | :--- |
 {% for item in items_priorizados %}
-| ![[images/achievements/{{ item.id }}.png\|38]] | **{{ item.nombre }}** | {{ item.requisito }} | {{ item.tier }} | ![[{{ item.cat_icono }}\|18]] {{ item.cat_nombre }} | {{ item.efecto }} |
+| ![[images/achievements/{{ item.id }}.png\|38]] | [**{{ item.nombre }}**]({{ item.wiki_url }}) | {{ item.requisito }} | {{ item.tier }} | ![[{{ item.cat_icono }}\|18]] {{ item.cat_nombre }} | {{ item.efecto }} |
 {% endfor %}
 
 ---
@@ -44,7 +44,7 @@
 | Icono | Logro | Requisito | Calidad / Tier | Efecto y Por Qué Sacarlo |
 | :---: | :--- | :--- | :---: | :--- |
 {% for row in cat.logros -%}
-| ![[images/achievements/{{ row.id }}.png\|45]] | **{{ row.nombre }}** | {{ row.requisito }} | {{ row.tier }} | {{ row.efecto }} |
+| ![[images/achievements/{{ row.id }}.png\|45]] | [**{{ row.nombre }}**]({{ row.wiki_url }}) | {{ row.requisito }} | {{ row.tier }} | {{ row.efecto }} |
 {% endfor %}
 
 > [!tip] Consejo táctico para {{ cat.nombre_corto }}:

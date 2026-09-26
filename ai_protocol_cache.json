@@ -1,0 +1,199 @@
+{
+  "desbloqueados_total": 265,
+  "protocolo": "- **Plan A (Principal):** ![[images/achievements/431.png|20]] **Birthright** con ![[images/characters/jacob_esau.png|20]] Jacob & Esau vs ![[images/bosses/blue_baby.png|20]] ??? (Blue Baby). Directiva: Concéntrate en la ruta de Catedral acumulando ítems en Esau y usando salas del tesoro dobles en Alt Path.\n- **Plan B (Alternativo):** ![[images/achievements/218.png|20]] **Rune Bag** con ![[images/characters/lilith.png|20]] Lilith vs ![[images/bosses/isaac.png|20]] Isaac. Directiva: Aprovecha Box of Friends y las cargas de batería en Catedral para derretir a Isaac sin riesgo.",
+  "tips_categorias": {
+    "Desafíos": "Prioriza #39, #37 y #4 aprovechando las sinergias nativas iniciales sin desviarte a salas secundarias innecesarias.",
+    "Apertura Vía Tainted": "Suelta un abalorio en Boss/Treasure Room durante el descenso para recoger la Cracked Key en Home y abrir el armario.",
+    "Jacob & Esau": "Concentra los ítems defensivos en Jacob y los ofensivos en Esau; toma rutas alternativas para obtener ambos pedestales.",
+    "Personajes Clásicos": "Guarda cargas de batería en la ruta de Catedral para maximizar Box of Friends con Lilith frente a Isaac y Hush.",
+    "Greed Machine": "Alterna personajes con bajo porcentaje de atasco (Cain, Judas, Lilith) y acumula 2 of Diamonds para donar en masa.",
+    "Tainted Isaac": "Selecciona ítems con sinergias estables antes de descartar pasivas débiles y aprovecha el pool de Dogma y Beast.",
+    "The Lost & Keeper": "Mantén activado Mom's Box para forzar la aparición de Missing Poster y suicídate en cuanto encuentres una Sacrifice Room."
+  },
+  "orden_secciones": [
+    "Desafíos",
+    "Apertura Vía Tainted",
+    "Jacob & Esau",
+    "Personajes Clásicos",
+    "Greed Machine",
+    "Tainted Isaac",
+    "The Lost & Keeper"
+  ],
+  "seleccionados": [
+    {
+      "id": 431,
+      "nombre": "Birthright",
+      "desbloqueo": "Derrotar a ??? (Blue Baby) con Jacob & Esau",
+      "prioridad": "Crítica",
+      "motivo": "Efecto transformador único por personaje; Blue Baby en The Chest es una ruta accesible con doble DPS."
+    },
+    {
+      "id": 520,
+      "nombre": "Spirit Sword",
+      "desbloqueo": "Completar el Desafío #39 (Isaac's Awakening)",
+      "prioridad": "Alta",
+      "motivo": "Spirit Sword sustituye lágrimas por daño masivo y bloqueo de proyectiles; desafío con build ya cerrada."
+    },
+    {
+      "id": 518,
+      "nombre": "Sigil of Baphomet",
+      "desbloqueo": "Completar el Desafío #37 (Bloody Mary)",
+      "prioridad": "Alta",
+      "motivo": "Escudo de invulnerabilidad temporal al matar enemigos; trivializa salas densas y se obtiene en un desafío simple."
+    },
+    {
+      "id": 485,
+      "nombre": "Tainted Lilith (The Harlot)",
+      "desbloqueo": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Lilith",
+      "prioridad": "Crítica",
+      "motivo": "Tainted Lilith es de los personajes más fuertes y consistentes para farmear marcas futuras; ruta Home directa."
+    },
+    {
+      "id": 477,
+      "nombre": "Tainted Judas (The Deceiver)",
+      "desbloqueo": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Judas",
+      "prioridad": "Crítica",
+      "motivo": "Tainted Judas ofrece frames de invulnerabilidad constantes con Dark Arts; fácil obtención con Cracked Key."
+    },
+    {
+      "id": 218,
+      "nombre": "Rune Bag",
+      "desbloqueo": "Derrotar a Isaac con Lilith",
+      "prioridad": "Alta",
+      "motivo": "Generación sostenida de runas de alto valor cada pocas salas; Isaac con Lilith es altamente consistente."
+    },
+    {
+      "id": 92,
+      "nombre": "Rune of Dagaz",
+      "desbloqueo": "Completar el Desafío #4 (Darkness Falls)",
+      "prioridad": "Alta",
+      "motivo": "Limpia maldiciones de piso y otorga un corazón de alma; reto Darkness Falls muy asequible."
+    },
+    {
+      "id": 432,
+      "nombre": "Damocles",
+      "desbloqueo": "Derrotar a The Lamb con Jacob & Esau",
+      "prioridad": "Crítica",
+      "motivo": "Duplica todos los pedestales futuros por el riesgo de daño; The Lamb es un jefe accesible con alto daño de Esau."
+    },
+    {
+      "id": 101,
+      "nombre": "Swallowed Penny",
+      "desbloqueo": "Completar el Desafío #15 (Slow Roll)",
+      "prioridad": "Media",
+      "motivo": "Moneda garantizada al recibir daño, clave para mecánicas de sacrificio y Keeper; reto Slow Roll trivial."
+    },
+    {
+      "id": 190,
+      "nombre": "Incubus",
+      "desbloqueo": "Derrotar a Hush con Lilith",
+      "prioridad": "Crítica",
+      "motivo": "Familiar que replica disparos y efectos de lágrimas; Hush exige DPS pero Lilith lo supera con Box of Friends."
+    },
+    {
+      "id": 476,
+      "nombre": "Tainted Cain (The Hoarder)",
+      "desbloqueo": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Cain",
+      "prioridad": "Alta",
+      "motivo": "Desbloquea Bag of Crafting para manipular la generación de ítems; requiere solo llegar a Home con Cain."
+    },
+    {
+      "id": 481,
+      "nombre": "Tainted Azazel (The Benighted)",
+      "desbloqueo": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Azazel",
+      "prioridad": "Alta",
+      "motivo": "Acceso a Tainted Azazel con estornudo de hemoptisis y sinergias brutales; apertura directa en Home."
+    },
+    {
+      "id": 517,
+      "nombre": "Dirty Mind",
+      "desbloqueo": "Completar el Desafío #36 (Scat Man)",
+      "prioridad": "Alta",
+      "motivo": "Convierte caca en moscas y arañas aliadas con efectos elementales; reto Scat Man rápido y sencillo."
+    },
+    {
+      "id": 250,
+      "nombre": "Lost holds Holy Mantle",
+      "desbloqueo": "Donar 879 monedas en la máquina de Greed",
+      "prioridad": "Crítica",
+      "motivo": "Otorga Holy Mantle a The Lost al inicio, haciéndolo viable para completar marcas; farmeo constante de Greed."
+    },
+    {
+      "id": 54,
+      "nombre": "Bloody Lust",
+      "desbloqueo": "Derrotar a Isaac con Samson",
+      "prioridad": "Media",
+      "motivo": "Aumenta considerablemente el daño por cada golpe recibido por piso; Isaac con Samson es un paseo."
+    },
+    {
+      "id": 318,
+      "nombre": "Smelter",
+      "desbloqueo": "Derrotar a Mom's Heart o It Lives! en Difícil con Apollyon",
+      "prioridad": "Media",
+      "motivo": "Permite absorber abalorios permanentemente como pasivas; Mom's Heart en difícil con Apollyon es directo."
+    },
+    {
+      "id": 480,
+      "nombre": "Tainted Samson (The Savage)",
+      "desbloqueo": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Samson",
+      "prioridad": "Alta",
+      "motivo": "Acceso a modo Berserk para limpiar pisos completos a melee; desbloqueo en Home garantizado con Samson."
+    },
+    {
+      "id": 475,
+      "nombre": "Tainted Magdalene (The Dauntless)",
+      "desbloqueo": "Usar Red Key (o Cracked Key) para abrir el armario oculto en Home con Magdalene",
+      "prioridad": "Alta",
+      "motivo": "Habilita recuperación agresiva de salud por contacto cuerpo a cuerpo; desbloqueo en Home con Magdalene."
+    },
+    {
+      "id": 89,
+      "nombre": "Rune of Hagalaz",
+      "desbloqueo": "Completar el Desafío #1 (Pitch Black)",
+      "prioridad": "Media",
+      "motivo": "Destruye todas las rocas de la sala, facilitando accesos secretos y tintadas; reto Pitch Black muy básico."
+    },
+    {
+      "id": 82,
+      "nombre": "The Lost",
+      "desbloqueo": "Morir en una Sacrifice Room llevando equipado el Missing Poster",
+      "prioridad": "Crítica",
+      "motivo": "Desbloquea al personaje The Lost para iniciar su árbol de marcas; solo requiere morir con Missing Poster en Sacrifice Room."
+    },
+    {
+      "id": 491,
+      "nombre": "Glitched Crown",
+      "desbloqueo": "Derrotar a The Beast con Tainted Isaac",
+      "prioridad": "Crítica",
+      "motivo": "Cicla 5 ítems por pedestal garantizando builds divinas; The Beast con Tainted Isaac exige preparación previa."
+    },
+    {
+      "id": 392,
+      "nombre": "Marrow",
+      "desbloqueo": "Derrotar a Mom's Heart o It Lives! en Difícil con The Forgotten",
+      "prioridad": "Media",
+      "motivo": "Contenedor de hueso y spawn de corazones al recibir daño; matar a Mom's Heart con The Forgotten es trivial."
+    },
+    {
+      "id": 21,
+      "nombre": "Sack of Pennies (A Bag of Pennies)",
+      "desbloqueo": "Derrotar a Isaac con Cain",
+      "prioridad": "Media",
+      "motivo": "Suministro constante de monedas a lo largo de los pisos; Isaac con Cain se resuelve fácil con Lucky Foot."
+    },
+    {
+      "id": 46,
+      "nombre": "Bomb Bag (A Bag of Bombs)",
+      "desbloqueo": "Derrotar a Satan con Cain",
+      "prioridad": "Media",
+      "motivo": "Generación sostenida de bombas cada pocas salas; Satan con Cain es rápido y de bajo riesgo."
+    },
+    {
+      "id": 251,
+      "nombre": "Keeper",
+      "desbloqueo": "Donar 1000 monedas en la máquina de Greed",
+      "prioridad": "Crítica",
+      "motivo": "Desbloquea al personaje Keeper para expandir el pool general; meta de 1000 monedas en Greed Machine."
+    }
+  ]
+}

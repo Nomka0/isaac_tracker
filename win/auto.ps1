@@ -26,6 +26,11 @@ Write-Host "`n====================================================" -ForegroundC
 Write-Host "    🔄 Sincronización de Partida Isaac (Windows)   " -ForegroundColor Cyan
 Write-Host "====================================================" -ForegroundColor Cyan
 
+# Incluir agy en PATH si está instalado en %LOCALAPPDATA%\agy\bin
+if (Test-Path "$env:LOCALAPPDATA\agy\bin") {
+    $env:Path = "$env:LOCALAPPDATA\agy\bin;$env:Path"
+}
+
 # 1. Detectar Python
 $PyCmd = if (Get-Command py -ErrorAction SilentlyContinue) { "py -3" } elseif (Get-Command python -ErrorAction SilentlyContinue) { "python" } else { $null }
 if (-not $PyCmd) {

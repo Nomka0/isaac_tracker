@@ -4,23 +4,19 @@ Instrucciones para ejecutar el analizador de guardados y generador de guía estr
 
 ---
 
-## 1. Requisitos Previos
+## 1. Instalación Automática (1 Clic)
 
-1. **Python 3.10 o superior:**
-   - Descargar de [python.org](https://www.python.org/downloads/).
-   - **IMPORTANTE:** Durante la instalación, marcar la casilla `Add python.exe to PATH`.
+Haz doble clic sobre el archivo en la raíz del proyecto:
+```
+instalar_dependencias_windows.bat
+```
+*(O ejecuta `win\instalar_dependencias.bat` / `win\instalar_dependencias.ps1`)*
 
-2. **Dependencias de Python:**
-   - Haz doble clic en `win\instalar_dependencias.bat` para instalarlas de forma automática.
-   - O alternativamente ejecuta en consola:
-   ```cmd
-   pip install -r win\requirements.txt
-   ```
-   *(Solo requiere `jinja2`). Además, `win\auto.bat` las instalará automáticamente si detecta que faltan.*
-
-3. **(Opcional) CLI de IA Antigravity:**
-   - Si tienes instalado el comando `agy` en el PATH de Windows, generará bitácoras tácticas con IA automáticamente.
-   - Si no está instalado, la herramienta usa el motor heurístico determinista sin errores.
+El instalador:
+1. **Gestiona permisos:** Solicita elevación de Administrador (UAC) automáticamente.
+2. **Instala Python 3.12:** Si no está presente, lo descarga e instala con la casilla `Add to PATH` activada.
+3. **Instala Jinja2:** Actualiza pip e instala `jinja2` (motor de plantillas).
+4. **Instala Antigravity CLI (`agy`):** Configura el CLI de IA oficial para el análisis táctico automático.
 
 ---
 
